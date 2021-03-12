@@ -15,23 +15,21 @@ Below are defined terms for the following sections:
 * **Combined fund**: a fund that is made up of other single-fund tokens. This type of fund was previously referred to as a D2 fund during the pre-launch phase; this type of fund was then referred to as a top-level fund. Now, **NFTX refers to this type of fund as a combined fund**.
 * **Single fund**: a fund that has 1:1 backing between a single NFT contract and the ERC20 contract. This type of fund was previously referred to as a D1 fund during the pre-launch phase; this type of fund was then referred to as an input fund. Now, **NFTX refers to this type of fund as a single fund**.
 
-## Launched
-
-* Cryptopunks
-* Cryptocubes
-* Bullrun Babes
-* Hashmasks()
-* Variant-Davis()
+### Launched
 
 {% page-ref page="cryptopunks.md" %}
 
 {% endpage-ref %}
 
-{% page-ref page="variantdavis.md" %}
+{% page-ref page="cryptocubes.md" %}
 
-{% endpage-ref %}
+{% page-ref page="bullrun-babes.md" %}
 
-## In Progress
+{% page-ref page="hashmasks.md" %}
+
+{% page-ref page="variant-davis.md" %}
+
+### In Progress
 
 {% page-ref page="autoglyphs.md" %}
 

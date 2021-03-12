@@ -7,6 +7,10 @@
 ## NFT Index Funds
 
 * [Index Funds by NFTX](nft-index-funds/index-funds/README.md)
+  * [Crypto Stamp](nft-index-funds/index-funds/crypto-stamp.md)
+  * [Bullrun babes](nft-index-funds/index-funds/bullrun-babes.md)
+  * [Hashmasks](nft-index-funds/index-funds/hashmasks.md)
+  * [Cryptocubes](nft-index-funds/index-funds/cryptocubes.md)
   * [Variant-Davis](nft-index-funds/index-funds/variant-davis.md)
   * [CryptoPunks](nft-index-funds/index-funds/cryptopunks.md)
   * [Autoglyphs](nft-index-funds/index-funds/autoglyphs.md)
