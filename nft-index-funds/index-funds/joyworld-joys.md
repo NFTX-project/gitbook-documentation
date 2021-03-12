@@ -2,7 +2,7 @@
 
 A JOY is an original, virtual muse from JOYWORLD. Each one brings you a unique magical power when you collect them. All JOYs are one-of-one, handmade in virtual reality by John Orion Young.
 
-**Website:** [_https://www.joy.lol/_](https://www.joy.lol/)\_\_
+**Website:** [_https://www.joy.lol/_](https://www.joy.lol/)
 
 {% hint style="warning" %}
 Liquidity for JOY pools has not been set up by the NFTX DAO yet, therefore top-level index funds are not yet available.
