@@ -2,7 +2,7 @@
 
 CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed.
 
-**Website:** __[_https://www.cryptokitties.co_](https://www.cryptokitties.co/)\_\_
+**Website:** [_https://www.cryptokitties.co_](https://www.cryptokitties.co/)
 
 {% hint style="warning" %}
 Liquidity for CryptoKittie pools has not been set up by the NFTX DAO yet, therefore top-level index funds are not yet available.
@@ -22,7 +22,7 @@ _Kitty-Gen-0 is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties 
 
 ### **Kitty-Gen-0-F**
 
-_Kitty-Gen-0-F is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties NFT with [**fast cooldown speed**](https://guide.cryptokitties.co/guide/cat-features/cooldown-speed) that is supplied to the single-fund pool.
+_Kitty-Gen-0-F is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties NFT with [**fast cooldown speed**](https://guide.cryptokitties.co/guide/cat-features/cooldown-speed) that is supplied to the single-fund pool._
 
 **Contract address**: [0xc4bf60B93ac60dB9A45AD232368d50de0A354849](https://etherscan.io/token/0xc4bf60B93ac60dB9A45AD232368d50de0A354849)  
 **Link to Liquidity Pool:** _Coming soon_  
