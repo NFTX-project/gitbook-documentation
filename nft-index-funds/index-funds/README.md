@@ -14,6 +14,8 @@ The categories for which the DAO provides liquidity, including their contract ad
 
 {% page-ref page="cryptopunks.md" %}
 
+{% page-ref page="variant-davis.md" %}
+
 ## In Progress
 
 {% page-ref page="autoglyphs.md" %}
