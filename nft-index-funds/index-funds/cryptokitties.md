@@ -12,7 +12,7 @@ Information provided below is limited to the D1 input funds used to launch the c
 More information coming soon.
 {% endhint %}
 
-### **Kitty-Gen-0**
+## **Kitty-Gen-0**
 
 _Kitty-Gen-0 is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties NFT that is supplied to the single-fund pool._
 
@@ -20,22 +20,19 @@ _Kitty-Gen-0 is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties 
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/7](https://nftx.org/#/fund/7)
 
-### **Kitty-Gen-0-F**
+## **Kitty-Gen-0-F**
 
-_Kitty-Gen-0-F is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties NFT with [**fast cooldown speed**](https://guide.cryptokitties.co/guide/cat-features/cooldown-speed) that is supplied to the single-fund pool._
+_Kitty-Gen-0-F is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties NFT with_ [_**fast cooldown speed**_](https://guide.cryptokitties.co/guide/cat-features/cooldown-speed) _that is supplied to the single-fund pool._
 
 **Contract address**: [0xc4bf60B93ac60dB9A45AD232368d50de0A354849](https://etherscan.io/token/0xc4bf60B93ac60dB9A45AD232368d50de0A354849)  
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/8](https://nftx.org/#/fund/8)
 
-### **Kitty-Founder**
+## **Kitty-Founder**
 
-_Kitty-Founder is a single-fund token, 1:1 backed only by any Founder CryptoKitties NFT (the first 100 ever created) that is supplied to the single-fund pool._
+_Kitty-Founder is a single-fund token, 1:1 backed only by any Founder CryptoKitties NFT \(the first 100 ever created\) that is supplied to the single-fund pool._
 
 **Contract address**: [0x77ECd352D737eBB9A7E7F35172f56da36D91e895](https://etherscan.io/token/0x77ecd352d737ebb9a7e7f35172f56da36d91e895)  
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/9](https://nftx.org/#/fund/9)
-
-  
-
 

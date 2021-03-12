@@ -12,7 +12,7 @@ Information provided below is limited to the D1 input funds used to launch the c
 More information coming soon.
 {% endhint %}
 
-### **JOY**
+## **JOY**
 
 _Joy is a single-fund token, 1:1 backed by any JOYWORLD JOY NFT that is supplied to the single-fund pool._
 

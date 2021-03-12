@@ -12,7 +12,7 @@ Information provided below is limited to the D1 input funds used to launch the c
 More information coming soon.
 {% endhint %}
 
-### **GLYPH**
+## **GLYPH**
 
 _Glyph is a single-fund token, 1:1 backed by any Autoglyph NFT that is supplied to the single-fund pool._
 

@@ -12,30 +12,27 @@ Information provided below is limited to the D1 input funds used to launch the c
 More information coming soon.
 {% endhint %}
 
-### **Axie-Origin**
+## **Axie-Origin**
 
-_Axie-Origin is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT that is supplied to the single-fund pool. _ 
+_Axie-Origin is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT that is supplied to the single-fund pool._ 
 
 **Contract address**: [0x5b9F63F256FAC333bC2Bc73c7867BA4865a49729](https://etherscan.io/token/0x5b9F63F256FAC333bC2Bc73c7867BA4865a49729)  
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/4](https://nftx.org/#/fund/4)
 
-### **Axie-Mystic-1**
+## **Axie-Mystic-1**
 
-_Axie-Mystic-1 is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT with [**one Mystic body part**](http://axie.wiki/index.php?title=Parts#Mystic) that is supplied to the single-fund pool._
+_Axie-Mystic-1 is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT with_ [_**one Mystic body part**_](http://axie.wiki/index.php?title=Parts#Mystic) _that is supplied to the single-fund pool._
 
 **Contract address**: [0xb10d6A165ed1ff64C02557213B2e060FDCb6244A](https://etherscan.io/token/0xb10d6A165ed1ff64C02557213B2e060FDCb6244A)  
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/5](https://nftx.org/#/fund/5)
 
-### **Axie-Mystic-2**
+## **Axie-Mystic-2**
 
-_Axie-Mystic-2 is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT with [**two Mystic body parts**](http://axie.wiki/index.php?title=Parts#Mystic) that is supplied to the single-fund pool._
+_Axie-Mystic-2 is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT with_ [_**two Mystic body parts**_](http://axie.wiki/index.php?title=Parts#Mystic) _that is supplied to the single-fund pool._
 
 **Contract address**: [0x6030021c45D4365A296c9e16A3901b4957061c21](https://etherscan.io/token/0x6030021c45D4365A296c9e16A3901b4957061c21)  
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/6](https://nftx.org/#/fund/6)
-
-  
-
 

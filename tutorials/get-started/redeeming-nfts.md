@@ -2,8 +2,7 @@
 
 In this tutorial, we will go through the entire process of redeeming a random NFT \(like a CryptoPunk\) from one of the NFTX Index funds on NFTX.org.
 
-{% embed url="https://www.youtube.com/watch?v=J7VTrOJiaCY" %}
-
+{% embed url="https://www.youtube.com/watch?v=J7VTrOJiaCY" caption="" %}
 
 If you have a single-fund index token that you want to use to redeem an NFT from the underlying fund, you can use the instructions below.
 
@@ -19,7 +18,7 @@ In the top right-hand corner of the page, you will see the Connect Account butto
 
 When you click this button, you will be prompted to connect using either a MetaMask or Frame wallet. Connect your wallet to proceed with the rest of the steps below.
 
-Select the [...] button next to the PUNK-BASIC fund from the homepage.
+Select the \[...\] button next to the PUNK-BASIC fund from the homepage.
 
 You will see three options: Mint, Redeem, or Inspect.
 
@@ -31,10 +30,11 @@ A pop-out window will appear on the right-hand side of the page and there will b
 
 When you enter the number of tokens you want to redeem in the field, you will be prompted to approve the transaction. If you are using multiple PUNK-BASIC tokens to redeem NFTs, you can select the **Approve All** button at the bottom of the page. Doing this will approve all the tokens at once and save you on gas for the txn fee.
 
-After the approval transaction is complete, you are ready to redeem your NFT(s).
+After the approval transaction is complete, you are ready to redeem your NFT\(s\).
 
 Click **Redeem PUNK-BASIC** to complete the final txn in the redemption process.
 
 Once complete, you will see the “Redemption was successful” message and the Token ID for your random CryptoPunk that was redeemed from the fund holdings.
 
 You have now successfully redeemed an NFT from your single-fund index token and withdrawn the underlying asset.
+

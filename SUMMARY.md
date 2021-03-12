@@ -7,6 +7,7 @@
 ## NFT Index Funds
 
 * [Index Funds by NFTX](nft-index-funds/index-funds/README.md)
+  * [Variant-Davis](nft-index-funds/index-funds/variant-davis.md)
   * [CryptoPunks](nft-index-funds/index-funds/cryptopunks.md)
   * [Autoglyphs](nft-index-funds/index-funds/autoglyphs.md)
   * [Avastars](nft-index-funds/index-funds/avastars.md)

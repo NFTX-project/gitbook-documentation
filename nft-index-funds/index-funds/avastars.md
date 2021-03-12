@@ -12,7 +12,7 @@ Information provided below is limited to the D1 input funds used to launch the c
 More information coming soon.
 {% endhint %}
 
-### **Avastar-Basic**
+## **Avastar-Basic**
 
 _Avastar-Basic is a single-fund token, 1:1 backed by any Avastars NFT that is supplied to the single-fund pool._
 
@@ -22,7 +22,7 @@ _This category acts as a Avastars floor price indicator._
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/10](https://nftx.org/#/fund/10)
 
-### **Avastar-Rank-30**
+## **Avastar-Rank-30**
 
 _Avastar-Rank-30 is a single-fund token, 1:1 backed only by Avastars NFT with a **ranking of 30 or higher** that is supplied to the single-fund pool._
 
@@ -30,7 +30,7 @@ _Avastar-Rank-30 is a single-fund token, 1:1 backed only by Avastars NFT with a 
 **Link to Liquidity Pool:** _Coming soon_  
 **D1 Pool on NFTX.org:** [https://nftx.org/\#/fund/11](https://nftx.org/#/fund/11)
 
-### **Avastar-Rank-60**
+## **Avastar-Rank-60**
 
 _Avastar-Rank-60 is a single-fund token, 1:1 backed only by Avastars NFT with a **ranking 60 or higher** that is supplied to the single-fund pool._
 
