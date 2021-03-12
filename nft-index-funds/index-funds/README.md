@@ -21,6 +21,12 @@ Below are defined terms for the following sections:
 
 {% endpage-ref %}
 
+{% page-ref page="variantdavis.md" %}
+
+{% endpage-ref %}
+
+## In Progress
+
 {% page-ref page="autoglyphs.md" %}
 
 {% endpage-ref %}
