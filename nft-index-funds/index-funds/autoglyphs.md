@@ -14,7 +14,7 @@ More information coming soon.
 
 ### **GLYPH**
 
-_Glyph is an input token which also acts as the top-level fund token, 1:1 backed by Autoglyph NFTs that are supplied to the pool._
+_Glyph is a single-fund token, 1:1 backed by any Autoglyph NFT that is supplied to the single-fund pool._
 
 **Contract address:**[ ****0xc8aa432112814b9cab53811d4340ed45482cb2b5](https://etherscan.io/token/0xc8aa432112814b9cab53811d4340ed45482cb2b5)  
 **Link to Liquidity Pool:** _Coming soon_  
