@@ -18,6 +18,7 @@ Below are defined terms for the following sections:
 ## Launched
 
 {% page-ref page="cryptopunks.md" %}
+
 {% page-ref page="variant-davis.md" %}
 
 
