@@ -14,7 +14,7 @@ More information coming soon.
 
 ### **Avastar-Basic**
 
-_Avastar-Basic is a D1 input token, 1:1 backed by any Avastars NFTs that is supplied to the D1 pool._
+_Avastar-Basic is a single-fund token, 1:1 backed by any Avastars NFT that is supplied to the single-fund pool._
 
 _This category acts as a Avastars floor price indicator._
 
@@ -24,7 +24,7 @@ _This category acts as a Avastars floor price indicator._
 
 ### **Avastar-Rank-30**
 
-_Avastar-Rank-30 is a D1 input token, 1:1 backed only by Avastars NFTs with a **ranking of 30 or higher.**_
+_Avastar-Rank-30 is a single-fund token, 1:1 backed only by Avastars NFT with a **ranking of 30 or higher** that is supplied to the single-fund pool._
 
 **Contract address**: [0x59a82F0FF8E88804a34Dd467b7061F1986Fe1769](https://etherscan.io/token/0x59a82F0FF8E88804a34Dd467b7061F1986Fe1769)  
 **Link to Liquidity Pool:** _Coming soon_  
@@ -32,7 +32,7 @@ _Avastar-Rank-30 is a D1 input token, 1:1 backed only by Avastars NFTs with a **
 
 ### **Avastar-Rank-60**
 
-_Avastar-Rank-60 is a D1 input token, 1:1 backed only by Avastars NFTs with a **ranking 60 or higher.**_
+_Avastar-Rank-60 is a single-fund token, 1:1 backed only by Avastars NFT with a **ranking 60 or higher** that is supplied to the single-fund pool._
 
 **Contract address**: [0xabA49Db7E374cc6954401DC0A886E0B02670536e](https://etherscan.io/token/0xabA49Db7E374cc6954401DC0A886E0B02670536e)  
 **Link to Liquidity Pool:** _Coming soon_  
