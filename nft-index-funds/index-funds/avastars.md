@@ -2,7 +2,7 @@
 
 _Avastars are generative characters for the metaverse. Each one is unique and has their art and metadata stored on-chain. Avastars come licensed for use commercially by their owners. Collect Avastar Primes to later make Replicants._
 
-**Website:** [_https://avastars.io_](https://avastars.io/)\_\_
+**Website:** [_https://avastars.io_](https://avastars.io/)
 
 {% hint style="warning" %}
 Liquidity for Avastars pools has not been set up by the NFTX DAO yet, therefore top-level index funds are not yet available.
