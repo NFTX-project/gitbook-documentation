@@ -10,7 +10,7 @@ While the NFTX infrastructure is completely permissionless, the NFTX DAO provide
   
 The categories for which the DAO provides liquidity, including their contract addresses & links to liquidity pools, are listed below.
 
-## Launched
+## Launcheds
 
 {% page-ref page="cryptopunks.md" %}
 
