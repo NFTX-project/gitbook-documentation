@@ -1,4 +1,4 @@
-# Tutorials
+# Get Started
 
 Below are the tutorials available for interacting with NFTX.  
   
