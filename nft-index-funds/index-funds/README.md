@@ -17,6 +17,12 @@ Below are defined terms for the following sections:
 
 ## Launched
 
+* Cryptopunks
+* Cryptocubes
+* Bullrun Babes
+* Hashmasks()
+* Variant-Davis()
+
 {% page-ref page="cryptopunks.md" %}
 
 {% endpage-ref %}
