@@ -25,8 +25,9 @@
 
 ## Tutorials
 
-* [How to create an NFT Index Fund](tutorials/how-to-create-an-nft-index-fund.md)
-* [How to get my index fund listed on the NFTX Gallery?](tutorials/how-to-get-my-index-fund-listed-on-the-nftx-gallery.md)
-* [How to mint an NFT Index token with your NFT?](tutorials/minting-fund-tokens.md)
-* [How to redeem an NFT from an index fund?](tutorials/redeeming-nfts.md)
+* [Tutorials](tutorials/tutorials/README.md)
+  * [How to create an NFT Index Fund](tutorials/tutorials/how-to-create-an-nft-index-fund.md)
+  * [How to get my index fund listed on the NFTX Gallery?](tutorials/tutorials/how-to-get-my-index-fund-listed-on-the-nftx-gallery.md)
+  * [How to mint an NFT Index token with your NFT?](tutorials/tutorials/minting-fund-tokens.md)
+  * [How to redeem an NFT from an index fund?](tutorials/tutorials/redeeming-nfts.md)
 
