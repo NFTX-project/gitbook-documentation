@@ -2,7 +2,7 @@
 
 _Autoglyphs are the first “on-chain” generative art on the Ethereum blockchain. A completely self-contained mechanism for the creation and ownership of an artwork._
 
-**Website**_:_ [_https://www.larvalabs.com/autoglyphs_](https://www.larvalabs.com/autoglyphs)_
+**Website**_:_ [_https://www.larvalabs.com/autoglyphs_](https://www.larvalabs.com/autoglyphs)
 
 {% hint style="warning" %}
 Liquidity for Autoglyph pools has not been set up by the NFTX DAO yet, therefore top-level index funds are not yet available.
