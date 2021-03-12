@@ -14,7 +14,7 @@ More information coming soon.
 
 ### **JOY**
 
-_Joy is an input token which also acts as the top-level fund token, 1:1 backed by JOYWORLD JOY NFTs that are supplied to the pool._
+_Joy is a single-fund token, 1:1 backed by any JOYWORLD JOY NFT that is supplied to the single-fund pool._
 
 **Contract address:** [0x4acC9c89F47f5330b2f4F412ef157E3016333f58](https://etherscan.io/token/0x4acC9c89F47f5330b2f4F412ef157E3016333f58)  
 **Link to Liquidity Pool:** _Coming soon_  
