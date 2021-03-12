@@ -14,7 +14,7 @@ More information coming soon.
 
 ### **Kitty-Gen-0**
 
-_Kitty-Gen-0 is a D1 input token, 1:1 backed only by Gen 0 Cryptokitties NFTs._
+_Kitty-Gen-0 is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties NFT that is supplied to the single-fund pool._
 
 **Contract address**: [0x8712A5580995a1b0E10856e8C3E26B14C1CDF7b6](https://etherscan.io/token/0x8712A5580995a1b0E10856e8C3E26B14C1CDF7b6)  
 **Link to Liquidity Pool:** _Coming soon_  
@@ -22,7 +22,7 @@ _Kitty-Gen-0 is a D1 input token, 1:1 backed only by Gen 0 Cryptokitties NFTs._
 
 ### **Kitty-Gen-0-F**
 
-_Kitty-Gen-0-F is a D1 input token, 1:1 backed only by Gen 0 Cryptokitties NFTs with_ [_**fast** cooldown speed._](https://guide.cryptokitties.co/guide/cat-features/cooldown-speed)\_\_
+_Kitty-Gen-0-F is a single-fund token, 1:1 backed only by any Gen 0 CryptoKitties NFT with [**fast cooldown speed**](https://guide.cryptokitties.co/guide/cat-features/cooldown-speed) that is supplied to the single-fund pool.
 
 **Contract address**: [0xc4bf60B93ac60dB9A45AD232368d50de0A354849](https://etherscan.io/token/0xc4bf60B93ac60dB9A45AD232368d50de0A354849)  
 **Link to Liquidity Pool:** _Coming soon_  
@@ -30,7 +30,7 @@ _Kitty-Gen-0-F is a D1 input token, 1:1 backed only by Gen 0 Cryptokitties NFTs 
 
 ### **Kitty-Founder**
 
-_Kitty-Founder is a D1 input token, 1:1 backed only by Founder Cryptokitties NFTs \(the first 100 ever created\)._
+_Kitty-Founder is a single-fund token, 1:1 backed only by any Founder CryptoKitties NFT (the first 100 ever created) that is supplied to the single-fund pool._
 
 **Contract address**: [0x77ECd352D737eBB9A7E7F35172f56da36D91e895](https://etherscan.io/token/0x77ecd352d737ebb9a7e7f35172f56da36d91e895)  
 **Link to Liquidity Pool:** _Coming soon_  
