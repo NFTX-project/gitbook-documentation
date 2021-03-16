@@ -14,7 +14,7 @@ Information provided below is limited to the single-fund index used to launch th
 More information coming soon.
 {% endhint %}
 
-### MASK
+## MASK
 
 Mask is a single-fund token, 1:1 backed by any Hashmasks NFT that is supplied to the single-fund pool.
 

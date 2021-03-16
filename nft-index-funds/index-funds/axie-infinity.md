@@ -14,7 +14,7 @@ More information coming soon.
 
 ## **Axie-Origin**
 
-_Axie-Origin is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT that is supplied to the single-fund pool._ 
+_Axie-Origin is a single-fund token, 1:1 backed only by any Origin Axie Infinity NFT that is supplied to the single-fund pool._
 
 **Contract address**: [0x5b9F63F256FAC333bC2Bc73c7867BA4865a49729](https://etherscan.io/token/0x5b9F63F256FAC333bC2Bc73c7867BA4865a49729)  
 **Link to Liquidity Pool:** _Coming soon_  

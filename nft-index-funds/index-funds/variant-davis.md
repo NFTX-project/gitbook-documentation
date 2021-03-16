@@ -4,11 +4,11 @@ _Variant Plan \(F01Y20\) is an exclusive generative art commission for Variant F
 
 **Website:** [https://artblocks.io/project/5](https://artblocks.io/project/5)
 
-### _VARIANT-DAVIS_
+## _VARIANT-DAVIS_
 
 Variant-Davis is a single-fund token, 1:1 backed by any Variant-Davis NFT that is supplied to the single-fund pool.
 
-**Contract address:** [0xb547faF8BD5A52B1fe4ce5D740bdfB396140Eb08](https://etherscan.io/token/0xb547faF8BD5A52B1fe4ce5D740bdfB396140Eb08)   
-**Link to Liquidity Pool:** Coming soon   
+**Contract address:** [0xb547faF8BD5A52B1fe4ce5D740bdfB396140Eb08](https://etherscan.io/token/0xb547faF8BD5A52B1fe4ce5D740bdfB396140Eb08)  
+**Link to Liquidity Pool:** Coming soon  
 **Single-Fund Pool on NFTX.org:** [https://nftx.org/\#/fund/18](https://nftx.org/#/fund/18)
 

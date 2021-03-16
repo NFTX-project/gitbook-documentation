@@ -20,7 +20,7 @@ Information provided below is limited to the single-fund index used to launch th
 More information coming soon.
 {% endhint %}
 
-### BABES-BASIC
+## BABES-BASIC
 
 Babes-Basic is a single-fund token, 1:1 backed by any Bullrun Babes NFT that is supplied to the single-fund pool.
 

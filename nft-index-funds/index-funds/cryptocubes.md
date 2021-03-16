@@ -1,12 +1,12 @@
 # Cryptocubes
 
-CryptoCubes are algorithmically generated volumetric abstractions known as NFT’s on the Ethereum blockchain. Each CryptoCube is a unique output. 
+CryptoCubes are algorithmically generated volumetric abstractions known as NFT’s on the Ethereum blockchain. Each CryptoCube is a unique output.
 
 The goal of this project is to get CryptoCubes into the hands of the cryptoart and crypto game community so they can be shared, traded, and used in various 3d platforms.
 
 **Website**: [https://hanrgb.com/cryptocubes](https://hanrgb.com/cryptocubes)
 
-### CUBES
+## CUBES
 
 Cubes is a single-fund token, 1:1 backed by any Cubes NFT that is supplied to the single-fund pool.
 

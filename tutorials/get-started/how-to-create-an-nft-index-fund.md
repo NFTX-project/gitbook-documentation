@@ -1,7 +1,7 @@
 # How to create an NFT Index Fund
 
-One of the advantages of using the NFTX platform is the permissionless way in which anyone can create a fund. Below are the steps you need to go through to create a fund yourself.  
-  
+One of the advantages of using the NFTX platform is the permissionless way in which anyone can create a fund. Below are the steps you need to go through to create a fund yourself.
+
 Note: SushiSwap is currently having issues listing the tokens on the frontend, which should be resolved shortly.
 
 ## **Choosing your NFT collection**
@@ -36,7 +36,7 @@ Scroll through the list until you see the `CreateVault` function where you will 
 
 ![](https://lh6.googleusercontent.com/xOADj9mvPz2ulmcIUoAvQ8lcPKtKWx1aOA_u6n1ZO47TkPdvXNmLmLMOX8LSPaVT_SGQoLGRTytiZcK6U9o0WQvusC3DLC5sd441Wn0jB88F0frkCosCg1i2hTkiEhIaz3aK0b2A)
 
-If you are unsure what the contract address is for your NFT, you can find it in the Chain Info dropdown menu on your NFT OpenSea page \(you can also get an individual Token ID from here\). 
+If you are unsure what the contract address is for your NFT, you can find it in the Chain Info dropdown menu on your NFT OpenSea page \(you can also get an individual Token ID from here\).
 
 Clicking on the link will take you to Etherscan where you can copy the address. Keep that Etherscan page open; you'll need it soon.
 
@@ -84,7 +84,7 @@ As you can see, the Token Tracker contains the name and the token for the fund w
 
 **This step is only required if you are creating an ERC1155 fund, otherwise skip to Step 3: Finalising the vault.**
 
-Return to the[ https://nftx.org/\#/backend](https://nftx.org/#/backend) and choose the NFTX `Write` function again, except this time instead of creating a vault we want to use `setIs1155`. 
+Return to the[ https://nftx.org/\#/backend](https://nftx.org/#/backend) and choose the NFTX `Write` function again, except this time instead of creating a vault we want to use `setIs1155`.
 
 Include the vaultID as 29 \(which is the vaultID for TWERKY\) in the first field and the value "true" for the second field.
 
@@ -100,7 +100,7 @@ Once that has been completed, it's time to finalise your vault.
 
 We've almost finished.
 
-Head back to[ https://nftx.org/\#/backend](https://nftx.org/#/backend) and into the NFTX  → `Write` option again. This time find the `finalizeVault` function. Add the `vaultID` you confirmed a couple of steps back \(in our example, 29\).
+Head back to[ https://nftx.org/\#/backend](https://nftx.org/#/backend) and into the NFTX → `Write` option again. This time find the `finalizeVault` function. Add the `vaultID` you confirmed a couple of steps back \(in our example, 29\).
 
 ![](https://lh5.googleusercontent.com/xy4ubUJHsay6d3cIZA4XrZtfdYRLiCN37YsCCgE0q1uXDr4ERFH4szyZmx54uIIivFT1eagT0eYlY3vf9c29SI4RLqDzp64OwuSdqxkANNo8DheWGz5jJart4ZLXIOvQEKySDu1Y)
 
@@ -114,22 +114,22 @@ Congratulations, now you've created your first vault! 🦧🕳
 
 1. Once you create your vault, you will not appear on the list of available funds on the NFTX.org site automatically. While it is permissionless to create funds, we want to manually approve them for display in order to prevent scams. You can still send people to your fund by providing them with a direct link,[ https://nftx.org/\#/fund/](https://nftx.org/#/fund/29)**vaultID**, or in this case[ https://nftx.org/\#/fund/29](https://nftx.org/#/fund/29)
 2. Minting tokens isn't immediately possible until you have completed step 4. See the instructions below.
-3. Your fund will not automatically be displayed on the [NFTX Gallery](%20https://gallery.nftx.org) site. This is done for two \(2\) reasons: to prevent scam funds from being promoted on the NFTX site AND because there are some image/content requirements for fund displays. If you would like to be added to the Gallery, please complete this form:[ https://docs.google.com/forms/d/e/1FAIpQLScnaUGFuz6-iyLTCeLhcLcFfxAdpPhGzGfxDtET7qgBIJO\_xg/viewform](https://docs.google.com/forms/d/e/1FAIpQLScnaUGFuz6-iyLTCeLhcLcFfxAdpPhGzGfxDtET7qgBIJO_xg/viewform). Once you complete and submit this form, we will review your fund.
+3. Your fund will not automatically be displayed on the [NFTX Gallery](../../) site. This is done for two \(2\) reasons: to prevent scam funds from being promoted on the NFTX site AND because there are some image/content requirements for fund displays. If you would like to be added to the Gallery, please complete this form:[ https://docs.google.com/forms/d/e/1FAIpQLScnaUGFuz6-iyLTCeLhcLcFfxAdpPhGzGfxDtET7qgBIJO\_xg/viewform](https://docs.google.com/forms/d/e/1FAIpQLScnaUGFuz6-iyLTCeLhcLcFfxAdpPhGzGfxDtET7qgBIJO_xg/viewform). Once you complete and submit this form, we will review your fund.
 
 ## **Step 4: Allowing Minting**
 
 Now that the fund has been created, we need to give permissions in order to mint NFTs into that fund.
 
-We will need the Etherscan NFT Contract Address page for the next step\(s\). 
+We will need the Etherscan NFT Contract Address page for the next step\(s\).
 
 As a reminder, the contract address for the NFT collection \(_not your fund_\) can be found listed in the Chain Info on an OpenSea page:
 
 ![](https://lh6.googleusercontent.com/RAbDlw01O2w4obiK2F8fcriDRx1FOG_V9jG5teOkUPJmpkgsoPwReASDyNPWSiE_7ayZmjqu5vGvhlIwk3ri2T18GafuJGUocofm-3j713EkE2Knn8bGYFWXE9zhlqb7tF_3AyA3)
 
-Now that you've got that link \(in our example [https://etherscan.io/address/0xf4680c917a873e2dd6ead72f9f433e74eb9c623c](https://etherscan.io/address/0xf4680c917a873e2dd6ead72f9f433e74eb9c623c)\), visit it and move to Contract -&gt; `Write`. 
+Now that you've got that link \(in our example [https://etherscan.io/address/0xf4680c917a873e2dd6ead72f9f433e74eb9c623c](https://etherscan.io/address/0xf4680c917a873e2dd6ead72f9f433e74eb9c623c)\), visit it and move to Contract -&gt; `Write`.
 
-In this step, we are specifying the NFTX Proxy contract to allow interacting with the NFT contract, with the intent to mint index fund tokens in step 5 of this tutorial.  
-  
+In this step, we are specifying the NFTX Proxy contract to allow interacting with the NFT contract, with the intent to mint index fund tokens in step 5 of this tutorial.
+
 Use the following information to fill in the `setApprovalforAll` fields on Etherscan.
 
 * **\_operator:** 0xAf93fCce0548D3124A5fC3045adAf1ddE4e8Bf7e \(NFTX proxy contract\)
@@ -137,8 +137,7 @@ Use the following information to fill in the `setApprovalforAll` fields on Ether
 
 ![](https://lh6.googleusercontent.com/-uX1kJJMnNwp-iNZlDBCPLjPSJCS3cEQlgrA-_2V87g2ipMlvDwGYMDaMHof1kxYBWkql_st9yDfuyWO5Gmlffe9L6quLW5lnQeIDYmOjhOeiK21mYIeKUB2DxCUncZmNDxgCT5k)
 
-This will require another transaction and transaction fee.  
-****
+This will require another transaction and transaction fee.
 
 ![](https://lh5.googleusercontent.com/wvp90ovq73vL3vrlkOq0xCJoKUG6qaCnll2d6eEYRc0PQvHgimOgPMYayXOo3REPPZVm6FbbxtlOlNQ3bnMn9xyTP3xo-fyVmtVSufInxCWSL9HilNtduxpPNyRMQ3rh7F0xW5KC)
 
@@ -148,7 +147,7 @@ Now that you have set up your new NFT Index Fund and allowed Minting, you can st
 
 This can be done from the frontend once the fund has been approved. If you don't want to wait, you can get started instantly on Etherscan by following the guide below.
 
-[**Go to the NFTX contract address**](https://etherscan.io/address/0xAf93fCce0548D3124A5fC3045adAf1ddE4e8Bf7e#writeProxyContract) ****_0xAf93fCce0548D3124A5fC3045adAf1ddE4e8Bf7e_ , click on Contracts  → `Write as Proxy`, and then choose `Mint`.
+[**Go to the NFTX contract address**](https://etherscan.io/address/0xAf93fCce0548D3124A5fC3045adAf1ddE4e8Bf7e#writeProxyContract) _\*\*0xAf93fCce0548D3124A5fC3045adAf1ddE4e8Bf7e_ , click on Contracts → `Write as Proxy`, and then choose `Mint`.
 
 **You want to include:**
 
@@ -184,6 +183,5 @@ Some things that weren't covered in this guide, but are possible, include:
 * Adding Allow Deny lists for Funds. This is great if you want to create a fund like Punk Zombie and only allow certain NFTs \(the ones with Zombie traits\) from the same collection \(CryptoPunks\) to be minted.
 * Allowing Allow ranges — This is great for funds like Art Blocks that are all on the same NFT Contract, but each project has its own distinctive range for their NFTs \(based on the ID of the project\).
 
-If you have any[ suggestions or comments please drop by discord for a chat](https://discord.gg/tHgXRWFppU).  
-
+If you have any[ suggestions or comments please drop by discord for a chat](https://discord.gg/tHgXRWFppU).
 

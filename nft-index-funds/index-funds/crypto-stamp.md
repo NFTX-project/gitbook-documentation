@@ -4,11 +4,11 @@ The crypto stamp is the world’s first ever blockchain stamp. This makes Öster
 
 **Website:** [https://crypto.post.at/](https://crypto.post.at/)
 
-### CRYPTO-STAMP
+## CRYPTO-STAMP
 
 The main way to invest into a well-balanced Crypto Stamp Index Fund is through $CRYPTO-STAMP, the combined-fund token on NFTX that gives exposure to various Crypto Stamps.
 
-The $CRYPTO-STAMP token is built for investors looking to gain exposure to the entire Crypto Stamps market, without needing to be an expert on individual crypto stamps. 
+The $CRYPTO-STAMP token is built for investors looking to gain exposure to the entire Crypto Stamps market, without needing to be an expert on individual crypto stamps.
 
 This token is backed by its underlying Balancer Pool token, Crypto stamp Edition 1 \(CS1\).
 
