@@ -1,8 +1,6 @@
 # Overview
 
-## Overview
-
-### **Deployed Contracts** 
+## **Deployed Contracts** 
 
 | **Contracts** | **Code** | **Mainnet** | Rinkeby |
 | :--- | :--- | :--- | :--- |
@@ -18,6 +16,11 @@
 | **ProxyController** | [**GitHub**](https://github.com/NFTX-project/x-contracts/blob/master/contracts/ProxyController.sol) | [**0x947c0bfA2bf3Ae009275f13F548Ba539d38741C2**](https://etherscan.io/address/0x947c0bfA2bf3Ae009275f13F548Ba539d38741C2) |  |
 | **xTokenClonable** | [**GitHub**](https://github.com/NFTX-project/x-contracts-private/blob/master/contracts/XTokenClonable.sol) | [**0x925297edcb4893d0d914e6d28f49381d47b864b0**](https://etherscan.io/address/0x925297edcb4893d0d914e6d28f49381d47b864b0) |  |
 
+## Contract User Interfaces
+
+**Mainnet:** https://nftx.org/#backend/
+**Rinkeby:** https://rinkeby.nftx.org/#/backend/
+
 ## **NFTX Interfaces**
 
 **Source code:** [**https://github.com/NFTX-project/x-frontend/blob/master/src/contracts/NFTXv7.json**](https://github.com/NFTX-project/x-frontend/blob/master/src/contracts/NFTXv7.json)
@@ -26,7 +29,7 @@
 
 #### **Structure Summary** 
 
-At the core of NFTX is the core NFTX Fund contract which holds all NFTs stored by all various NFTX funds. The NFTX Fund contract maintains a vault per NFT address identified with a vault ID. Using the vault ID, the NFTX Fund contract accesses all fund/vault related storage through the xStore contract.
+At the core of NFTX is the NFTX Fund contract which holds all NFTs stored by all various NFTX funds. The NFTX Fund contract maintains a vault per NFT address identified with a vault ID. Using the vault ID, the NFTX Fund contract accesses all fund/vault related storage through the xStore contract.
 
 For every vault, there is a fund token \(xToken\) deployed for it, which is eligible for redeeming a pseudorandom NFT from the fund.
 
@@ -141,7 +144,7 @@ function redeem(uint256 vaultId, uint256 amount) public payable virtual nonReent
 function onlyPrivileged(uint256 vaultId) internal view;
 ```
 
-It takes as argument a vaultId and it checks if the vault is finalized or not, if it's finalized only the owner can continue forward otherwise only the manager can call it.
+It takes as argument a vaultId and it checks if the vault is finalized or not, if it's finalized only the [owner](#permissioning) can continue forward otherwise only the [manager](#permissioning) can call it.
 
 **The functions that use this access control are:**
 
