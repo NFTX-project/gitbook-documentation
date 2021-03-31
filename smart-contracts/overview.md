@@ -1,6 +1,6 @@
 # Overview
 
-## **Deployed Contracts** 
+## **Deployed Contracts**
 
 | **Contracts** | **Code** | **Mainnet** | Rinkeby |
 | :--- | :--- | :--- | :--- |
@@ -18,8 +18,7 @@
 
 ## Contract User Interfaces
 
-**Mainnet:** https://nftx.org/#backend/
-**Rinkeby:** https://rinkeby.nftx.org/#/backend/
+**Mainnet:** [https://nftx.org/\#backend/](https://nftx.org/#backend/) **Rinkeby:** [https://rinkeby.nftx.org/\#/backend/](https://rinkeby.nftx.org/#/backend/)
 
 ## **NFTX Interfaces**
 
@@ -27,7 +26,7 @@
 
 ### **NFTX Contracts**
 
-#### **Structure Summary** 
+#### **Structure Summary**
 
 At the core of NFTX is the NFTX Fund contract which holds all NFTs stored by all various NFTX funds. The NFTX Fund contract maintains a vault per NFT address identified with a vault ID. Using the vault ID, the NFTX Fund contract accesses all fund/vault related storage through the xStore contract.
 
@@ -64,7 +63,7 @@ This function expects the contract to have approval of the NFTs or set as an ope
 function redeem(uint256 vaultId, uint256 amount) external;
 ```
 
-The redeem function allows users to use their NFTX Fund tokens to redeem NFTs pseudorandomly from the proper vault. 
+The redeem function allows users to use their NFTX Fund tokens to redeem NFTs pseudorandomly from the proper vault.
 
 This function expects the contract to have approval of the NFTX Fund token by the `msg.sender`.
 
@@ -95,9 +94,9 @@ function reservesContains(uint256 vaultId, uint256 elem) external view returns (
 function reservesAt(uint256 vaultId, uint256 index) external view returns (uint256);
 ```
 
-A reserve defines the vault's contents, which consists of ERC721s. 
+A reserve defines the vault's contents, which consists of ERC721s.
 
-You can view the total amount of assets in a vault; if an asset is present in a vault; and which asset is located at a given index. 
+You can view the total amount of assets in a vault; if an asset is present in a vault; and which asset is located at a given index.
 
 #### **Permissioning**
 
@@ -114,8 +113,7 @@ There is 1 modifier and 2 functions that are used as a permission check.
 modifier onlyOwner()
 ```
 
-Only the owner can execute the functions with this modifier.  
-
+Only the owner can execute the functions with this modifier.
 
 #### **onlyOwnerIfPaused**
 
@@ -144,7 +142,7 @@ function redeem(uint256 vaultId, uint256 amount) public payable virtual nonReent
 function onlyPrivileged(uint256 vaultId) internal view;
 ```
 
-It takes as argument a vaultId and it checks if the vault is finalized or not, if it's finalized only the [owner](#permissioning) can continue forward otherwise only the [manager](#permissioning) can call it.
+It takes as argument a vaultId and it checks if the vault is finalized or not, if it's finalized only the [owner](overview.md#permissioning) can continue forward otherwise only the [manager](overview.md#permissioning) can call it.
 
 **The functions that use this access control are:**
 

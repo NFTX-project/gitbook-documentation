@@ -18,21 +18,21 @@ This is the fully written name you'd like the fund to have when listed on the Ga
 
 To be consistent between the fund as listed on the NFTX Homepage and the Gallery listing, we recommend using the same fund name that appears under the **Ticker** field on the fund page.
 
-![](https://github.com/BraveNewDeFi/Graphics/blob/main/FundNameGraphic.PNG)
+![](../../.gitbook/assets/fundnamegraphic.png)
 
 ### **Vault ID**
 
 Please supply the fund's VaultID number. When you're unsure what your fund's VaultID is, please follow the [How to create an NFT Index Fund tutorial. ](how-to-create-an-nft-index-fund.md)
 
-You can also find the VaultID by checking the fund page. It is listed at the end of the **URL** and the VaultID will match the **Fund #** on the fund's page.
+You can also find the VaultID by checking the fund page. It is listed at the end of the **URL** and the VaultID will match the **Fund \#** on the fund's page.
 
-![](https://github.com/BraveNewDeFi/Graphics/blob/main/VaultIDGraphic.PNG)
+![](../../.gitbook/assets/vaultidgraphic.png)
 
 ### **Description**
 
 Please describe your fund and its underlying NFT collateral. The more clear you are describing your project, the easier it will be for users to understand and interact with your fund\(s\) once listed.
 
-![](https://github.com/BraveNewDeFi/Graphics/blob/main/DescriptionGraphic.PNG)
+![](../../.gitbook/assets/descriptiongraphic.png)
 
 ### **Buy Fund URL**
 
@@ -42,7 +42,7 @@ If you fund has liquidity spread over multiple different exchanges, please suppl
 
 If there is no listing on an AMM available for your Index Fund, we will create an **Add Liquidity** button that will direct users to SushiSwap where anyone can add liquidity to create a liquidity pool for your fund.
 
-![](https://github.com/BraveNewDeFi/Graphics/blob/main/BuyFundURLGraphic.PNG)
+![](../../.gitbook/assets/buyfundurlgraphic.png)
 
 ### **Name**
 
