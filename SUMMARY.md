@@ -1,38 +1,45 @@
 # Table of contents
 
-* [Litepaper](README.md)
-* [Community Raise](community-raise.md)
+* [Introduction to NFTX](README.md)
 * [FAQ](faq.md)
 
-## NFT Index Funds
+## Tutorials
 
-* [Index Funds by NFTX](nft-index-funds/index-funds/README.md)
-  * [Autoglyphs](nft-index-funds/index-funds/autoglyphs.md)
-  * [Avastars](nft-index-funds/index-funds/avastars.md)
-  * [Axie Infinity](nft-index-funds/index-funds/axie-infinity.md)
-  * [Bullrun babes](nft-index-funds/index-funds/bullrun-babes.md)
-  * [CryptoPunks](nft-index-funds/index-funds/cryptopunks.md)
-  * [Crypto Stamp](nft-index-funds/index-funds/crypto-stamp.md)
-  * [Cryptocubes](nft-index-funds/index-funds/cryptocubes.md)
-  * [CryptoKitties](nft-index-funds/index-funds/cryptokitties.md)
-  * [Hashmasks](nft-index-funds/index-funds/hashmasks.md)
-  * [JOYWORLD JOY's](nft-index-funds/index-funds/joyworld-joys.md)
-  * [Variant-Davis](nft-index-funds/index-funds/variant-davis.md)
-
-## Ecosystem
-
-* [🎨 Brand Kit](ecosystem/brand-kit.md)
+* [Get Started](tutorials/get-started-v1.x/README.md)
+  * [Minting](tutorials/get-started-v1.x/minting.md)
+  * [Redeeming \(Coming soon\)](tutorials/get-started-v1.x/redeeming-coming-soon.md)
+  * [Vault Creation \(Coming soon\)](tutorials/get-started-v1.x/vault-creation-coming-soon.md)
 
 ## Smart Contracts
 
 * [Overview](smart-contracts/overview.md)
+* [Contract Addresses](smart-contracts/contract-addresses.md)
 * [Audit & Risks](smart-contracts/audit-report.md)
 
-## Tutorials
+## Ecosystem
 
-* [Get Started](tutorials/get-started/README.md)
-  * [How to create an NFT Index Fund](tutorials/get-started/how-to-create-an-nft-index-fund.md)
-  * [How to get my index fund listed on the NFTX Gallery?](tutorials/get-started/how-to-get-my-index-fund-listed-on-the-nftx-gallery.md)
-  * [How to mint an NFT Index token with your NFT?](tutorials/get-started/minting-fund-tokens.md)
-  * [How to redeem an NFT from an index fund?](tutorials/get-started/redeeming-nfts.md)
+* [Litepaper](ecosystem/litepaper.md)
+* [Token Distribution](ecosystem/token-distribution.md)
+* [🎨 Brand Kit](ecosystem/brand-kit.md)
+
+## Archive
+
+* [Get Started](archive/get-started/README.md)
+  * [How to create an NFT Index Fund](archive/get-started/how-to-create-an-nft-index-fund.md)
+  * [How to get my index fund listed on the NFTX Gallery?](archive/get-started/how-to-get-my-index-fund-listed-on-the-nftx-gallery.md)
+  * [How to mint an NFT Index token with your NFT?](archive/get-started/minting-fund-tokens.md)
+  * [How to redeem an NFT from an index fund?](archive/get-started/redeeming-nfts.md)
+* [Community Raise](archive/community-raise.md)
+* [Index Funds by NFTX](archive/index-funds/README.md)
+  * [Autoglyphs](archive/index-funds/autoglyphs.md)
+  * [Avastars](archive/index-funds/avastars.md)
+  * [Axie Infinity](archive/index-funds/axie-infinity.md)
+  * [Bullrun babes](archive/index-funds/bullrun-babes.md)
+  * [CryptoPunks](archive/index-funds/cryptopunks.md)
+  * [Crypto Stamp](archive/index-funds/crypto-stamp.md)
+  * [Cryptocubes](archive/index-funds/cryptocubes.md)
+  * [CryptoKitties](archive/index-funds/cryptokitties.md)
+  * [Hashmasks](archive/index-funds/hashmasks.md)
+  * [JOYWORLD JOY's](archive/index-funds/joyworld-joys.md)
+  * [Variant-Davis](archive/index-funds/variant-davis.md)
 

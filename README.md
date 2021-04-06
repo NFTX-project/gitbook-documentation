@@ -1,91 +1,74 @@
-# Litepaper
+# Introduction to NFTX
 
-## Introduction
+NFTX is a platform for creating liquid markets for illiquid Non-Fungible Tokens \(NFTs\).
 
-NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles. These tokens are called funds, and \(like all ERC20s\) they are fungible and composable. With NFTX, it is possible to create and trade funds based on your favorite collectibles such as CryptoPunks, Axies, CryptoKitties, and Avastars, right from a DEX like Uniswap.
+Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(xToken\) that represents a claim on a random asset from within the vault.
 
-There are two types of funds on NFTX:
+**Benefits include:**
 
-* D1 funds \(input\) have a 1:1 backing between a single NFT contract and an ERC20 contract. For example, if Alice owns 2 PUNK-ZOMBIE, that means she can redeem exactly two random zombie CryptoPunks at any moment. Another example would be Alice owning 1 AXIE-MYSTIC-2, giving her the ability to redeem one random Axie with two [Mystic parts](http://axie.wiki/index.php?title=Parts#Mystic).  
-* D2 funds \(top-level\) are Balancer pools which combine D1 funds. For example, AVASTR will be a D2 fund which combines three different D1 Avastar input funds \(AVASTR-BASIC, AVASTR-RANK-30 & AVASTR-RANK-60\). The point of this is to offer more diverse exposure without requiring users to hold multiple tokens. 
+* Use minted xTokens to earn yield \(see more\)
+* Better distribution and price discovery for NFT projects
+* Instantly sell any NFT by minting it as an ERC20 and swapping via Sushiswap
+* Increased liquidity for NFT investors and speculators
 
-When a new fund is created, the account which sends the transaction is designated as the fund manager. This allows the creator to change fund parameters like fees, supplier incentives, and NFT eligibility. When the creator is done modifying the fund they can then “finalize” it which gives up their control to increase trustlessness.
+### How does it work?
 
-## Target Users
+#### Vault Creation
 
-A common misconception is that NFTX is a project for NFT collectors, but most NFT collectors enjoy browsing and trading individual NFTs, so there is no reason for them to wrap their collections into fungible tokens. There are, however, many people out there that don’t have the time or knowledge to trade individual NFTs but would like exposure to NFT markets. These are the NFTX target users—the people trading top-level funds of NFT blue-chips such as AXIE, PUNK & KITTY on Uniswap, not the people minting/redeeming their NFT on the NFTX website. Most of the time the only people minting/redeeming fund tokens will be arbitrageurs. This is similar to the dynamic with WBTC. Most people that trade WBTC do not mint and burn it themselves.
+Vaults can be created by anyone for any NFT asset on Ethereum. Once a vault has been created, any user can then deposit eligible NFTs into the vault to mint a fungible NFT-backed token referred to as an "xToken".
 
-NFTX will start out with just D1 funds, so at first the homepage will have quite specific funds listed, however once the top-level D2 funds are created then the homepage can shift focus to those funds instead. The idea is for NFTX to be somewhat like a CoinMarketCap or DefiPulse style website but for the NFT space. Users will arrive at the homepage and be greeted with metrics for top-level funds backed by NFT blue-chips such as [CryptoPunks](https://www.larvalabs.com/cryptopunks), [Axies](https://marketplace.axieinfinity.com), [CryptoKitties](https://www.cryptokitties.co/), and [Avastars](https://avastars.io/).
+[Learn more about vault creation](tutorials/get-started-v1.x/vault-creation-coming-soon.md)
 
-Eventually, the hope is for NFTX to become home to over a hundred top-level NFT funds, each of which will feature real-time price, volume and TVL data.
+#### Minting xTokens
 
-## Token Rights & Distribution
+Anyone can deposit NFTs into an existing vault \(or one they have created\) in order to mint a fungible xToken that represents a 1:1 claim on a random NFT from within the vault.
 
-The NFTX smart contract uses an upgradeable proxy which is controlled by the NFTX Dao \(on Aragon\). This means that NFTX token holders have the power to change the NFTX smart contract if we reach consensus. Right now all changes require 80% of participating \(i.e. voting\) tokens to support a proposal in order for it to pass, with the voting period lasting for 24 hours. In the future we will propose decreasing the support threshold and increasing the duration \(e.g. 65% support over 5 days\), but for now the shorter duration allows our platform to make updates faster, and the 80% threshold helps protect against governance attacks.
+[Learn more about minting](tutorials/get-started-v1.x/minting.md)
 
-The NFTX token supply is 650,000, and the distribution is as follows:
+#### Floor Prices
 
-* 10% vested over 5 years for founder
-* 30% distributed for NFT contributions
-* 30% distributed for ETH contributions
-* 10% earmarked for NFTX liquidity
-* 20% earmarked for farming
+Users can then pool their minted xTokens in Automated Market Makers \(AMMs\) like Sushiswap to create a liquid market for other users to trade. With liquidity and trading volume established, the NFT-backed xToken enters into price discovery and a "floor price" is discovered.
 
-_See "Conclusion" for more information about treasury expenses._
+The floor price denotes the lowest price for a particular NFT. Users establish a floor price by minting and selling xTokens in markets where they consider their NFT to be overvalued.
 
-Keeping popular funds liquid is important, so the community raise will be accepting ETH as well as NFTs \(in the form of D1 fund tokens\) in exchange for vested NFTX tokens. The idea is for the NFTX Dao to raise enough NFTs and ETH to bootstrap AMM pools with liquidity. Being an LP makes sense for our Dao because it improves the liquidity of funds \(i.e. our product\) while also earning yield for our treasury.
+{% hint style="info" %}
+NFTX is helping to establish reliable floor price feeds for NFTs, enabling their wider application in decentralized finance on Ethereum.
+{% endhint %}
 
-## Platform Management
+For example, a user has 5 Hashmasks and values 2 of them highly. However, they consider the other 3 Hashmasks to be lower value than the market price for the Mask vault on Sushiswap. The user deposits these 3 Hashmasks and sells their 3 minted MASK tokens on Sushiswap, lowering its price and aiding price discovery.
 
-The process for creating a fund was inspired by Balancer’s process for creating a pool. Essentially, the pool creator gets “manager” privileges but can also call a “finalize” function which renounces their control. Like Balancer pools, NFTX funds also have a finalize function, but unlike Balancer, when the NFTX finalize function is called then control of the fund is handed over to the NFTX Dao. There are two reasons for this.
+The above process will continue until a floor price is achieved.
 
-The first reason for the Dao receiving fund management privileges is that in some cases funds require ongoing governance \(e.g. having new eligibilities added\). The second, more controversial, reason for why the Dao receives management rights is so that we can guide the platform to evolve in a way that we see fit. If funds start cannibalizing each other \(e.g. multiple funds targeting similar NFT subsets\) then that can hurt our platform’s UX, so in such a situation we can decide to close all but one of the funds so that the remaining one may prosper.
+#### Eligibilities
 
-The goal is for NFTX to offer one top-level fund which gets most of the liquidity for each major NFT contract. For example, if someone wants to create a AVASTR-V2 fund that differs from the main AVASTR fund, then that is fine \(and actually encouraged\), but if we get into a situation where AVASTR and AVASTR-V2 are splitting the liquidity down the middle and there is an easy fix \(e.g. merging the differences\) then that is something that the Dao can consider doing.
+The Mask vault allows any Hashmask to be deposited, however other vaults use an eligibility list that only allows a specific sub-category of NFTs to be deposited. For example, the Punk-Female vault has an eligibility list that includes only female CryptoPunk NFT IDs. Other CryptoPunks cannot be deposited.
 
-## Moat & Value Capture
+### Who Benefits From NFTX?
 
-Long-term, the goal for NFTX is to develop a moat as the primary issuer of wrapped NFT funds. This is potentially a huge use-case with the legitimate possibility of one day eclipsing the present market cap of all cryptocurrencies combined. Digital land, in-game items, lease-agreements, digital art, digital collectibles, digital lottery tickets and more can all be represented as NFTs. As the NFT ecosystem grows it will get increasingly difficult to keep track of, and tokenized funds will become a necessity for many investors and trading platforms.
+#### Collectors
 
-In terms of value capture, it’s not inconceivable to consider a 2.5% fee in the future on all NFTX mint and burn operations. This added cost would mostly be absorbed by arbitrageurs and would essentially cause fund tokens to drift off-peg slightly more than usual. For a wrapped token like WBTC, a 2.5% price difference from regular BTC would be a major UX flaw, but for NFT funds \(which represent an inherently illiquid category of assets\) a 2.5% price difference would likely be unnoticeable.
+NFTs in their basic form do not earn yield. However, when they are used to mint xTokens they can tap into the world of decentralized finance. Put simply, collectors can use NFTX to unlock more value from their NFTs:
 
-## Avenues For Growth
+* Earn protocol fees \(coming soon\)
+* Earn trading fees as a liquidity provider
+* Farm with stablecoins using xTokens as loan collateral
 
-1. **NFT→ ERC20 Loans —** Minting a D1 fund token requires handing over an NFT, and in many cases people will want the benefits of a fund token without having to give up ownership of their NFT. These people would prefer to lockup their NFT in return for a loan \(similar to minting Dai with ETH\). By having a surplus of D1 tokens in the NFTX treasury, our platform will be able to provide low-interest ERC20 loans to NFT collectors. Furthermore, these loans will have zero risk of unexpected liquidation because NFTs are always worth at least as much as the D1 funds which they are eligible for.  
-2. **On-Chain Liquidity** — _\*\*_One of the biggest problems in the NFT space is price discovery. Unless market makers are in "the know" it can be challenging for them to determine the real price of an asset. One reason for this is wash-trading, another reason is illiquidity and gaps between sales. Having real-time price feeds from popular funds largely solves both of these issues. As a concrete example, if a trader can check that PUNK-ATTR-4 is 150% the price of PUNK-BASIC, and that PUNK-ZOMBIE is 60 ETH, then they are able to determine that a zombie CryptoPunk with four attributes should be about 150% of 60 ETH, or 90 ETH. With this problem ameliorated, it's not hard to imagine NFTX branching into the on-chain liquidity game, enabling NFT market makers to automate their strategies, and aiming to become somewhat of a "Kyber for the NFT space."
-3. **Randomized Packs & Gift Cards** — Having a large reserve of NFTs opens up a number of possible usecases for NFTX. One such possibility is a service offering randomized packs with varying likelihoods of different NFTs. Another possibility is gift cards. Currently when a user redeems an NFT by burning a fund token, the NFT they receive is randomly selected, however it is possible for us to extend the NFTX smart contract so that \(for a added charge\) users can select the exact NFT which they want. This would be analogous to a gift-card and would enable recipients to enjoy the process of selecting their own unique items from the NFTX reserves.
+#### Content Creators
 
-## Near-Term Roadmap
+By launching on the NFTX protocol, content creators are able to earn protocol fees in perpetuity \(coming soon\) whilst also improving the reach and fairness of distribution:
 
-The first item on our organizational to-do list is the NFTX community raise, which will be deployed in the coming week, and which will likely run for a number of months. More information about this raise can be found [here](https://nftx.gitbook.io/nftx/community-raise).
+* Earn protocol fees \(coming soon\)
+* Distribute NFTs via an AMM in the form of xTokens
+* Create instantly liquid markets for new content
 
-Once the community raise is partially complete, and all of the D1 funds have at least one asset in them, then it will be possible for our Dao to launch the top-level D2 funds. This will be a top priority, and in many ways we will consider NFTX to be in a pre-launch state until the top level funds \(PUNK, KITTY, AXIE, and AVASTR\) are up and running, as these will be four of our six initial flagship tokens \(along with GLYPH and JOY\).
+#### Investors
 
-The current front-end site for the NFTX dapp is quite buggy and needs a number of improvements. This will be an ongoing process over the next couple months, which will become a greater priority as we approach the the start of our liquidity mining program, sometime in late Q1 or early Q2 of 2021, the details of which are still undecided.
+NFTs are typically highly illiquid and difficult to price. NFTX makes speculating and investing in the NFT market a far simpler process:
 
-Some project followers have already reached out with questions regarding the NFTX brand. In addition to improving the functionality of the front-end, we are also very open to a doing a full rebrand based on the preferences of our nascent community. If you have thoughts on this we encourage you to reach out or put together a community proposal. Like everything else about NFTX, the brand is not fixed in stone and may be altered subject to voter approval.
+* Access the most liquid markets for NFTs
+* Track the price of particular categories of NFT
 
-In terms of governance, we will begin by using only Discord and Aragon. Discord will be used for discussion and Aragon will be used to enact decisions we have reached consensus on. Of course, Aragon may also be used to decide internal conflicts, but we will do our best to avoid contentious issues early on. Once we have found our bearings as a community we will create a Discourse forum and begin outlining some more formal procedures for decision making.
 
-There will be no employees to begin with, however it is very likely that our organization will employ people in the future, so it's worth noting that we will aim to offer competitive compensation that is similar to what could be expected in the tech industry.
 
-## V2 & Gas
 
-Although NFTX version 1 is only just taking off, there are already improvements in mind for version 2. Some of these improvements involve new features, like smart funds, which will have dynamic rule sets. Other improvements involve security concerns which were brought up during our audit but which were tabled on account of being considered low severity. Likely the most pressing issue for version 1 will be gas costs, which are quite high, and which will be considered a top priority improvement for NFTX v2.
-
-Even though most end-users \(top-level fund traders backed by blue-chip NFTs\) are unaffected by platform costs, it can still be a high friction point for arbitrageurs and the occasional users who do mint or redeem. High fees also limit NFTX's ability to offer price-accurate funds for lower value items \(e.g. NFTs &lt; 0.1 ETH\). In the mean time we will make do by subsidizing platform costs if necessary and recommending that users avoid minting and burning during high volume periods.
-
-## Conclusion
-
-If there is one important take-away for readers it should be that NFTX is entirely community-governed. This document describes a vision for the future, but that future depends entirely on what NFTX token holders decide to implement. All assets from the community raise will be considered as part of the NFTX treasury and will be under the control of token holders. The intention is to use the bulk of the treasury to supply liquidity for fund tokens and also for the NFTX token, however, make no mistake, those are treasury assets and may at any moment be used to cover expenses, should the Dao choose to do so.
-
-The current NFTX mission is to become a DeFi black hole for NFT assets. We will aspire to remain objective about which NFTs we give preferential treatment, focusing above all else on what is best for the long-term appreciation of the NFTX token. That said, we will also place high value on principles of decentralization and endeavor to work with like-minded organizations.
-
-The only potentially unpopular opinions the NFTX DAO will have which community members should be aware of is \(A\) a bias for ETH and Ethereum, and \(B\) a bias for PUNK and CryptoPunks as a store of value for the NFTX DAO treasury.
-
-When in doubt, we will store our organization's wealth in these assets. And, unless met with no other option, we will always remain rooted on Ethereum. Treasury allocation may shift towards a more diversified basket of blue-chip NFTs such as Axies, Avastars, CryptoKitties, Autoglyphs & Joyworld Joys' as more community members get involved in DAO operations & a proposal to diversify gets voted in through DAO governance.
-
-We invite anyone and everyone to join us in our mission. Over time, that mission will inevitably change but it's important that we begin our journey on the same footing, and with the same principles in mind, so that we may move forward, not only as a community, but as an anti-fragile digital warband 😈
-
-Discord link: [https://discord.gg/5ygF8rxdYR](https://discord.gg/5ygF8rxdYR)
 
