@@ -7,8 +7,8 @@
 
 * [Get Started](tutorials/get-started-v1.x/README.md)
   * [Minting](tutorials/get-started-v1.x/minting.md)
-  * [Redeeming \(Coming soon\)](tutorials/get-started-v1.x/redeeming-coming-soon.md)
-  * [Vault Creation \(Coming soon\)](tutorials/get-started-v1.x/vault-creation-coming-soon.md)
+  * [Redeeming](tutorials/get-started-v1.x/redeeming-coming-soon.md)
+  * [Vault Creation](tutorials/get-started-v1.x/vault-creation-coming-soon.md)
 
 ## Smart Contracts
 
