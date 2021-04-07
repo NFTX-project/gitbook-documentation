@@ -24,7 +24,7 @@ When you arrive at [app.nftx.org](https://app.nftx.org) a list of your NFTs that
 
 ![](../../.gitbook/assets/two-hashmask-nfts-selected.jpg)
 
-Not seeing your NFT? [See our FAQ](https://app.gitbook.com/@nftx/s/nftx/tutorials/get-started-1.x/minting#mint-requests).
+Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v1.x/minting#mint-requests).
 
 ### Mint Basket
 
@@ -76,7 +76,7 @@ If you can't see an asset it will be for one of the following reasons:
 
 #### Your NFT is not eligible for the vault
 
-Some vaults use eligibilities to ensure that only certain sub-categories of an NFT can be included. For these vaults, it is possible to send a [mint request](https://docs.nftx.org/tutorials/get-started-1.x/minting#mint-requests).
+Some vaults use eligibilities to ensure that only certain sub-categories of an NFT can be included. For these vaults, it is possible to send a [mint request](https://docs.nftx.org/tutorials/get-started-v1.x/minting#mint-requests).
 
 #### Your NFT requires wrapping
 
