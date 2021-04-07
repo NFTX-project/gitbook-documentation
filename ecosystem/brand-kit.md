@@ -60,3 +60,21 @@ When you have further questions on usage, contact any of the contributors on our
 
 {% file src="../.gitbook/assets/favicon\_io.zip" caption="NFTX Favicon set" %}
 
+
+## **Color Palette**
+
+### **Primary color 1: Outrageous Orange**
+
+![](../.gitbook/assets/orange.png)
+
+**Hex: \#**FF6D41
+
+### **Primary color 2: Rose**
+
+![](../.gitbook/assets/rose.png)
+
+**Hex: \#**FA297F
+
+## Favicons
+
+{% file src="../.gitbook/assets/favicon\_io.zip" caption="NFTX Favicon set" %}
