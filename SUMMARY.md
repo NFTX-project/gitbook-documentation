@@ -5,10 +5,9 @@
 
 ## Tutorials
 
-* [Get Started](tutorials/get-started/README.md)
-  * [Minting](tutorials/get-started/minting.md)
-  * [Redeeming](tutorials/get-started/redeeming-coming-soon.md)
-  * [Vault Creation](tutorials/get-started/vault-creation-coming-soon.md)
+* [Minting](tutorials/minting.md)
+* [Redeeming](tutorials/redeeming-coming-soon.md)
+* [Vault Creation](tutorials/vault-creation-coming-soon.md)
 
 ## Smart Contracts
 

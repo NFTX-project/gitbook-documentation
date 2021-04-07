@@ -23,7 +23,7 @@ Vaults can be created by anyone for any NFT asset on Ethereum. Once a vault has 
 
 Anyone can deposit NFTs into an existing vault \(or one they have created\) in order to mint a fungible xToken that represents a 1:1 claim on a random NFT from within the vault.
 
-[Learn more about minting](tutorials/get-started/minting.md)
+[Learn more about minting](tutorials/minting.md)
 
 #### Floor Prices
 

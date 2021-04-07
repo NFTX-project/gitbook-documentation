@@ -1,6 +1,6 @@
 # Minting
 
-![](../../.gitbook/assets/nftx-nft-minter.jpg)
+![](../.gitbook/assets/nftx-nft-minter.jpg)
 
 NFTX v1.x introduces a new minting interface that allows you to easily mint a liquid ERC20 token from your NFT!
 
@@ -22,7 +22,7 @@ xTokens can be used to redeem a random vault NFT at any time.
 
 When you arrive at [app.nftx.org](https://app.nftx.org) a list of your NFTs that are available for minting will be shown. Select the NFTs you would like to mint and they will be added to your "Mint Basket".
 
-![](../../.gitbook/assets/nftx-choose-nfts.png)
+![](../.gitbook/assets/nftx-choose-nfts.png)
 
 Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v1.x/minting#faq).
 
@@ -30,7 +30,7 @@ Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v
 
 The mint basket will show you the NFTs you have selected, their approval status and mint value.
 
-![](../../.gitbook/assets/nftx-mint-baskets.jpg)
+![](../.gitbook/assets/nftx-mint-baskets.jpg)
 
 #### Approval
 
@@ -62,7 +62,7 @@ Many vaults have an eligibility list. This ensures that the vault only accepts a
 
 Some vaults do not have an eligibility list as it can be cumbersome to maintain. Instead, the vault may accept "mint requests". To submit a mint request, click the "Show ineligible" checkbox next to the vault's heading. You will now be able to select your ineligible NFTs and send them to the vault owner/manager as a mint request.
 
-![The minting request screens as you progress through the request to mint process](../../.gitbook/assets/nftx-mint-request-mint.jpg)
+![The minting request screens as you progress through the request to mint process](../.gitbook/assets/nftx-mint-request-mint.jpg)
 
 When sending a mint request, your NFT will be held in escrow until the manager approves or rejects the request. If approved, your xTokens will be minted to your wallet. If rejected, your NFT will be returned.
 
