@@ -22,7 +22,7 @@ xTokens can be used to redeem a random vault NFT at any time.
 
 When you arrive at [app.nftx.org](https://app.nftx.org) a list of your NFTs that are available for minting will be shown. Select the NFTs you would like to mint and they will be added to your "Mint Basket".
 
-![](../../.gitbook/assets/two-hashmask-nfts-selected.jpg)
+![](../../.gitbook/assets/nftx-choose-nfts.png)
 
 Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v1.x/minting#faq).
 
