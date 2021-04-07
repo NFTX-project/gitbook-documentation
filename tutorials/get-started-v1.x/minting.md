@@ -24,7 +24,7 @@ When you arrive at [app.nftx.org](https://app.nftx.org) a list of your NFTs that
 
 ![](../../.gitbook/assets/two-hashmask-nfts-selected.jpg)
 
-Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v1.x/minting#mint-requests).
+Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v1.x/minting#faq).
 
 ### Mint Basket
 
