@@ -76,7 +76,7 @@ If you can't see an asset it will be for one of the following reasons:
 
 #### Your NFT is not eligible for the vault
 
-Some vaults use eligibilities to ensure that only certain sub-categories of an NFT can be included. For these vaults, it is possible to send a [mint request](https://docs.nftx.org/tutorials/get-started-v1.x/minting#mint-requests).
+Some vaults use eligibilities to ensure that only certain sub-categories of an NFT can be included. For these vaults, it may be possible to send a [mint request](https://docs.nftx.org/tutorials/get-started-v1.x/minting#mint-requests).
 
 #### Your NFT requires wrapping
 
@@ -84,7 +84,7 @@ NFTs that were developed several years ago did not follow the ERC721 or ERC1155 
 
 #### You have just received your NFT
 
-We use the OpenSea API to detect the available NFTs that you have in your wallet. The API can sometimes take a few minutes to update before we are able to detect your NFT. Please wait 5 minutes and if it is still not showing, [reach out to us on Discord](https://discord.com/invite/fJg5burAKH).
+We use the OpenSea API to list the available NFTs that you may have in your wallet. The API can sometimes take a few minutes to update. Please wait 5 minutes and if it is still not showing, [reach out to us on Discord](https://discord.com/invite/fJg5burAKH).
 
 #### Your wallet contains more than 1,000 NFTs
 
