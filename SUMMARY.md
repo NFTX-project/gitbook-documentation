@@ -6,8 +6,8 @@
 ## Tutorials
 
 * [Minting](tutorials/minting.md)
-* [Redeeming](tutorials/redeeming-coming-soon.md)
-* [Vault Creation](tutorials/vault-creation-coming-soon.md)
+* [Redeeming](tutorials/redeeming.md)
+* [Vault Creation](tutorials/vault-creation.md)
 
 ## Smart Contracts
 
