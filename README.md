@@ -6,7 +6,7 @@ Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(xTo
 
 **Benefits include:**
 
-* Use minted xTokens to earn yield \(see more\)
+* Use minted xTokens to earn yield
 * Better distribution and price discovery for NFT projects
 * Instantly sell any NFT by minting it as an ERC20 and swapping via Sushiswap
 * Increased liquidity for NFT investors and speculators
