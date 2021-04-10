@@ -11,22 +11,20 @@ Above is the primary logomark for the NFTX DAO. Please use the correct version, 
 When you have further questions on usage, contact any of the contributors on our Discord.
 
 {% tabs %}
-{% tab title="On White Background" %}
+
+
+
 **.PNG format:**
 
 {% file src="../.gitbook/assets/nftx\_logo\_on\_white.png" caption="Logo PNG on White BG" %}
 
 {% file src="../.gitbook/assets/nftx\_logo\_on\_white.svg" caption="Logo SVG on White BG" %}
-{% endtab %}
 
-{% tab title="On Black Background" %}
 **.PNG format:**
 
 {% file src="../.gitbook/assets/nftx\_logo\_on\_black.png" caption="Logo PNG on Black BG" %}
 
 {% file src="../.gitbook/assets/nftx\_logo\_on\_black.svg" caption="Logo SVG on Black BG" %}
-{% endtab %}
-{% endtabs %}
 
 ## Logo**type**
 
@@ -37,14 +35,6 @@ Above is the logotype for the NFTX DAO. Please use the correct version, based on
 When you have further questions on usage, contact any of the contributors on our Discord.
 
 {% tabs %}
-{% tab title="On White Background" %}
-**.PNG format:**
-
-{% file src="../.gitbook/assets/nftx\_logotype\_on\_white.png" caption="Logotype PNG on White BG" %}
-
-{% file src="../.gitbook/assets/nftx\_logotype\_on\_white.svg" caption="Logotype PNG on White BG" %}
-{% endtab %}
-
 {% tab title="On Black Background" %}
 **.PNG format:**
 
@@ -59,7 +49,6 @@ When you have further questions on usage, contact any of the contributors on our
 {% file src="../.gitbook/assets/nftx\_all\_logos.zip" caption="NFTX Logopack ZIP file" %}
 
 {% file src="../.gitbook/assets/favicon\_io.zip" caption="NFTX Favicon set" %}
-
 
 ## **Color Palette**
 
@@ -78,3 +67,4 @@ When you have further questions on usage, contact any of the contributors on our
 ## Favicons
 
 {% file src="../.gitbook/assets/favicon\_io.zip" caption="NFTX Favicon set" %}
+

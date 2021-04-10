@@ -94,7 +94,13 @@ We currently limit the minter to scanning a wallet's first 1,000 NFTs that may b
 
 An xToken provides a claim on a single asset within a vault, however it does not allow the user to choose which asset. When redeeming an xToken for an NFT, the NFT received is selected at random. For this reason, depositing an NFT into a vault is not advisable for anyone with a particular attachment to that NFT.
 
+### My NFT can be deposited in multiple vaults, which one do I choose?
 
+Some NFTs can be deposited at more than one vault. For example, a female CryptoPunk can be deposited in either the Punk-Female or Punk-Basic vaults.
+
+In this case, it would be essential that the female CryptoPunk is deposited in the Punk-Female vault as this vault trades at a higher value. If the female CryptoPunk was deposited in Punk-Basic then it would be quickly redeemed by arbitrageurs as this asset trades higher than the PUNK-BASIC price on secondary markets like OpenSea.
+
+Always check an NFT's available vaults before minting an xToken to ensure the most appropriate one is selected.
 
 ### 
 
