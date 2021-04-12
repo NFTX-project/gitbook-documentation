@@ -2,11 +2,11 @@
 
 NFTX is a platform for creating liquid markets for illiquid Non-Fungible Tokens \(NFTs\).
 
-Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(xToken\) that represents a claim on a random asset from within the vault.
+Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(vToken\) that represents a claim on a random asset from within the vault.
 
 **Benefits include:**
 
-* Use minted xTokens to earn yield
+* Use minted vTokens to earn yield
 * Better distribution and price discovery for NFT projects
 * Instantly sell any NFT by minting it as an ERC20 and swapping via Sushiswap
 * Increased liquidity for NFT investors and speculators
@@ -15,21 +15,21 @@ Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(xTo
 
 #### Vault Creation
 
-Vaults can be created by anyone for any NFT asset on Ethereum. Once a vault has been created, any user can then deposit eligible NFTs into the vault to mint a fungible NFT-backed token referred to as an "xToken".
+Vaults can be created by anyone for any NFT asset on Ethereum. Once a vault has been created, any user can then deposit eligible NFTs into the vault to mint a fungible NFT-backed token referred to as an "vToken".
 
 [Learn more about vault creation](https://docs.nftx.org/archive/get-started/how-to-create-an-nft-index-fund)
 
-#### Minting xTokens
+#### Minting vTokens
 
-Anyone can deposit NFTs into an existing vault \(or one they have created\) in order to mint a fungible xToken that represents a 1:1 claim on a random NFT from within the vault.
+Anyone can deposit NFTs into an existing vault \(or one they have created\) in order to mint a fungible vToken that represents a 1:1 claim on a random NFT from within the vault.
 
 [Learn more about minting](tutorials/minting.md)
 
 #### Floor Prices
 
-Users can then pool their minted xTokens in Automated Market Makers \(AMMs\) like Sushiswap to create a liquid market for other users to trade. With liquidity and trading volume established, the NFT-backed xToken enters into price discovery and a "floor price" is discovered.
+Users can then pool their minted vTokens in Automated Market Makers \(AMMs\) like Sushiswap to create a liquid market for other users to trade. With liquidity and trading volume established, the NFT-backed vToken enters into price discovery and a "floor price" is discovered.
 
-The floor price denotes the lowest price for a particular NFT. Users establish a floor price by minting and selling xTokens in markets where they consider their NFT to be overvalued.
+The floor price denotes the lowest price for a particular NFT. Users establish a floor price by minting and selling vTokens in markets where they consider their NFT to be overvalued.
 
 {% hint style="info" %}
 NFTX is helping to establish reliable floor price feeds for NFTs, enabling their wider application in decentralized finance on Ethereum.
@@ -47,18 +47,18 @@ The Mask vault allows any Hashmask to be deposited, however other vaults use an 
 
 #### Collectors
 
-NFTs in their basic form do not earn yield. However, when they are used to mint xTokens they can tap into the world of decentralized finance. Put simply, collectors can use NFTX to unlock more value from their NFTs:
+NFTs in their basic form do not earn yield. However, when they are used to mint vTokens they can tap into the world of decentralized finance. Put simply, collectors can use NFTX to unlock more value from their NFTs:
 
 * Earn protocol fees \(coming soon\)
 * Earn trading fees as a liquidity provider
-* Farm with stablecoins using xTokens as loan collateral
+* Farm with stablecoins using vTokens as loan collateral
 
 #### Content Creators
 
 By launching on the NFTX protocol, content creators are able to earn protocol fees in perpetuity \(coming soon\) whilst also improving the reach and fairness of distribution:
 
 * Earn protocol fees \(coming soon\)
-* Distribute NFTs via an AMM in the form of xTokens
+* Distribute NFTs via an AMM in the form of vTokens
 * Create instantly liquid markets for new content
 
 #### Investors

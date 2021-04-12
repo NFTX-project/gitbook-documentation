@@ -6,7 +6,7 @@ NFTX v1.x introduces a new minting interface that allows you to easily mint a li
 
 ## Why mint an NFT?
 
-By adding your NFT to an NFTX vault you mint an ERC-20 token \(xToken\) that has a 1:1 claim on a random NFT inside the vault.
+By adding your NFT to an NFTX vault you mint an ERC-20 token \(vToken\) that has a 1:1 claim on a random NFT inside the vault.
 
 Unlike a non-fungible token \(NFT\), an ERC-20 is fungible \(all tokens are the same\) and this allows it to be:
 
@@ -14,7 +14,7 @@ Unlike a non-fungible token \(NFT\), an ERC-20 is fungible \(all tokens are the 
 * Pooled in an AMM to earn trading fees
 * Used as collateral to borrow stablecoins
 
-xTokens can be used to redeem a random vault NFT at any time.
+vTokens can be used to redeem a random vault NFT at any time.
 
 ## Minting Step-by-step
 
@@ -38,13 +38,13 @@ Your NFTs will need to be approved for use by the NFTX contract before they can 
 
 **Mint Value**
 
-Mint value is taken from the mid price of the token trading on Sushiswap. The mint value does not account for slippage and liquidity. If you are looking to mint an NFT in order to sell the xToken, it is recommended that you first check the exact value you would receive from selling on Sushiswap.
+Mint value is taken from the mid price of the token trading on Sushiswap. The mint value does not account for slippage and liquidity. If you are looking to mint an NFT in order to sell the vToken, it is recommended that you first check the exact value you would receive from selling on Sushiswap.
 
-If the mint value shown is $0 this means that there have been no recorded trades for the xToken on Sushiswap. This might be a good opportunity to [bootstrap liquidity](https://help.sushidocs.com/guides/how-to-add-tokens-to-sushiswap-exchange-as-an-lp) and earn liquidity provider fees!
+If the mint value shown is $0 this means that there have been no recorded trades for the vToken on Sushiswap. This might be a good opportunity to [bootstrap liquidity](https://help.sushidocs.com/guides/how-to-add-tokens-to-sushiswap-exchange-as-an-lp) and earn liquidity provider fees!
 
 ### **Minting**
 
-With your NFTs approved and your mint value confirmed, click the "Mint" button to generate your xTokens. Each NFT will return a single xToken.
+With your NFTs approved and your mint value confirmed, click the "Mint" button to generate your vTokens. Each NFT will return a single vToken.
 
 For example, minting 3 Hashmasks to the Mask vault will return 3 MASK ERC-20 tokens.
 
@@ -64,7 +64,7 @@ Some vaults do not have an eligibility list as it can be cumbersome to maintain.
 
 ![The minting request screens as you progress through the request to mint process](../.gitbook/assets/nftx-mint-request-mint.jpg)
 
-When sending a mint request, your NFT will be held in escrow until the manager approves or rejects the request. If approved, your xTokens will be minted to your wallet. If rejected, your NFT will be returned.
+When sending a mint request, your NFT will be held in escrow until the manager approves or rejects the request. If approved, your vTokens will be minted to your wallet. If rejected, your NFT will be returned.
 
 If there is no checkbox to show ineligible NFTs, then the vault does not accept mint requests.
 
@@ -92,7 +92,7 @@ We currently limit the minter to scanning a wallet's first 1,000 NFTs that may b
 
 ### Can I get my NFT back once I've added it to a vault?
 
-An xToken provides a claim on a single asset within a vault, however it does not allow the user to choose which asset. When redeeming an xToken for an NFT, the NFT received is selected at random. For this reason, depositing an NFT into a vault is not advisable for anyone with a particular attachment to that NFT.
+An vToken provides a claim on a single asset within a vault, however it does not allow the user to choose which asset. When redeeming an vToken for an NFT, the NFT received is selected at random. For this reason, depositing an NFT into a vault is not advisable for anyone with a particular attachment to that NFT.
 
 ### My NFT can be deposited in multiple vaults, which one do I choose?
 
@@ -100,7 +100,7 @@ Some NFTs are eligible to be deposited to multiple vaults. For example, a female
 
 In this case, it would be essential that the female CryptoPunk is deposited in the Punk-Female vault as this vault trades at a higher value. If the female CryptoPunk was deposited in the Punk-Basic vault then it would be quickly redeemed by arbitrageurs as this asset trades higher than the PUNK-BASIC price on secondary markets like OpenSea.
 
-Always check an NFT's available vaults before minting an xToken to ensure the most appropriate one is selected.
+Always check an NFT's available vaults before minting an vToken to ensure the most appropriate one is selected.
 
 ### 
 
