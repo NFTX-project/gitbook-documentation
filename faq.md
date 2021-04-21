@@ -71,5 +71,3 @@ NFTX is available for trading on decentralized exchanges. To find the best rates
 
 While the DAO contributors are working on creating better interfaces to invest in NFT Index Funds on NFTX.org, we've built a page that provides all current information below:
 
-{% page-ref page="archive/index-funds/" %}
-

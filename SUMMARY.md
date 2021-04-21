@@ -3,6 +3,13 @@
 * [Introduction to NFTX](README.md)
 * [FAQ](faq.md)
 
+## Products
+
+---
+
+* [NFTX App](https://app.nftx.org)
+* [Gallery](https://gallery.nftx.org)
+
 ## Tutorials
 
 * [Minting](tutorials/minting.md)
@@ -29,16 +36,4 @@
   * [How to mint an NFT Index token with your NFT?](archive/old-tutorials/minting-fund-tokens.md)
   * [How to redeem an NFT from an index fund?](archive/old-tutorials/redeeming-nfts.md)
 * [Community Raise](archive/community-raise.md)
-* [Index Funds by NFTX](archive/index-funds/README.md)
-  * [Autoglyphs](archive/index-funds/autoglyphs.md)
-  * [Avastars](archive/index-funds/avastars.md)
-  * [Axie Infinity](archive/index-funds/axie-infinity.md)
-  * [Bullrun babes](archive/index-funds/bullrun-babes.md)
-  * [CryptoPunks](archive/index-funds/cryptopunks.md)
-  * [Crypto Stamp](archive/index-funds/crypto-stamp.md)
-  * [Cryptocubes](archive/index-funds/cryptocubes.md)
-  * [CryptoKitties](archive/index-funds/cryptokitties.md)
-  * [Hashmasks](archive/index-funds/hashmasks.md)
-  * [JOYWORLD JOY's](archive/index-funds/joyworld-joys.md)
-  * [Variant-Davis](archive/index-funds/variant-davis.md)
 
