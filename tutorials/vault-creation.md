@@ -116,7 +116,7 @@ Naming conventions provide structure for NFTX vaults that makes them instantly r
 
 The tight recommendations on Vault Symbol are in place to conform to Twitter's cashtag standard.
 
-### My vault isn't showing in the NFTX app
+### Why isn't my vault isn't showing in the NFTX app?
 
 The most common reason for this is that your vault does not yet have holdings or has not been published. To add holdings, visit the vault management page and click "Add Holdings".
 
