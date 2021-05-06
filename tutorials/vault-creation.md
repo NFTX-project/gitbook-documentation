@@ -111,7 +111,7 @@ Naming conventions provide structure for NFTX vaults that makes them instantly r
 
 | Vault Name | Vault Symbol |
 | :--- | :--- |
-| Alphanumeric only | Less than 6 characters |
+| Alphanumeric only | Less than 7 characters |
 | Capitalized \(i.e. Punk Attribute 4\) | Singular \(i.e. PUNK for CryptoPunks floor vault\) |
 
 The tight recommendations on Vault Symbol are in place to conform to Twitter's cashtag standard.
