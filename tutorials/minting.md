@@ -60,13 +60,11 @@ Many vaults have an eligibility list. This ensures that the vault only accepts a
 
 ### Mint Requests
 
-Some vaults do not have an eligibility list as it can be cumbersome to maintain. Instead, the vault may accept "mint requests". To submit a mint request, click the "Show ineligible" checkbox next to the vault's heading. You will now be able to select your ineligible NFTs and send them to the vault owner/manager as a mint request.
+Some vaults do not have an eligibility list as it can be cumbersome to maintain. Instead, the vault may accept "mint requests". Vaults that accept mint requests will show your ineligible NFTs and allow you to send them to the vault as a mint request.
 
 ![The minting request screens as you progress through the request to mint process](../.gitbook/assets/nftx-mint-request-mint.jpg)
 
-When sending a mint request, your NFT will be held in escrow until the manager approves or rejects the request. If approved, your vTokens will be minted to your wallet. If rejected, your NFT will be returned.
-
-If there is no checkbox to show ineligible NFTs, then the vault does not accept mint requests.
+When sending a mint request, your NFT will be held in escrow until the manager approves. If approved, your vTokens will be minted to your wallet. You can cancel your mint request at any time.
 
 ## FAQ
 
