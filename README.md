@@ -17,7 +17,7 @@ Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(vTo
 
 Vaults can be created by anyone for any NFT asset on Ethereum. Once a vault has been created, any user can then deposit eligible NFTs into the vault to mint a fungible NFT-backed token referred to as an "vToken".
 
-[Learn more about vault creation](https://docs.nftx.org/archive/get-started/how-to-create-an-nft-index-fund)
+[Learn more about vault creation](tutorials/vault-creation.md)
 
 #### Minting vTokens
 
