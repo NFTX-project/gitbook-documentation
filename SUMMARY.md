@@ -12,6 +12,7 @@
 
 ## Tutorials
 
+* [Staking](tutorials/staking.md)
 * [Minting](tutorials/minting.md)
 * [Redeeming](tutorials/redeeming.md)
 * [Vault Creation](tutorials/vault-creation.md)

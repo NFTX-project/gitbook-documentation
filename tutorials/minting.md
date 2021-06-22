@@ -1,8 +1,8 @@
 # Minting
 
-![](../.gitbook/assets/nftx-nft-minter.jpg)
+NFTX v2 introduces a new minting interface that allows you to easily mint a liquid ERC20 token from your NFT!
 
-NFTX v1.x introduces a new minting interface that allows you to easily mint a liquid ERC20 token from your NFT!
+![](../.gitbook/assets/image%20%284%29.png)
 
 ## Why mint an NFT?
 
@@ -12,59 +12,82 @@ Unlike a non-fungible token \(NFT\), an ERC-20 is fungible \(all tokens are the 
 
 * Instantly sold at an AMM \(like Sushiswap\) 
 * Pooled in an AMM to earn trading fees
+* Staking
 * Used as collateral to borrow stablecoins
 
 vTokens can be used to redeem a random vault NFT at any time.
 
 ## Minting Step-by-step
 
+### Choose your vault
+
+The initial mint view shows all the current NFTX Vaults that you are able to mint into based on the contents of your connected wallet. In this example we're going to select the [Avastr vault](https://v2.nftx.org/mint/0xdcdc1c1cc33aa817cbdbe8f5e2390bf7cc43dc4b/).
+
+![](../.gitbook/assets/image%20%288%29.png)
+
 ### Selecting NFTs
 
-When you arrive at [app.nftx.org](https://app.nftx.org) a list of your NFTs that are available for minting will be shown. Select the NFTs you would like to mint and they will be added to your "Mint Basket".
+Choose the NFTs from your wallet that you would like to mint to the vault. Remember, the vaults are often floor vaults and minting a higher value NFT will provide the same result as a lower value NFT from the collection.
 
-![](../.gitbook/assets/nftx-choose-nfts.png)
+![](../.gitbook/assets/screenshot-2021-06-22-at-23.54.42.png)
 
 Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v1.x/minting#faq).
 
 ### Mint Basket
 
-The mint basket will show you the NFTs you have selected, their approval status and mint value.
+The mint basket will show you the NFTs you have selected, their approval status, mint fee and the number of tokens you will recieve after minting.
 
-![](../.gitbook/assets/nftx-mint-baskets.jpg)
+{% hint style="info" %}
+Although not shown in the screenshot below, you will sometimes need to "Approve" the NFTs to be minted into the Vault. Once Approved, the "Mint $AVASTR" \(or relevant NFT name\) will appear and you can complete the minting process.
+{% endhint %}
+
+![](../.gitbook/assets/screenshot-2021-06-22-at-23.57.38.png)
 
 #### Approval
 
-Your NFTs will need to be approved for use by the NFTX contract before they can be minted into an ERC-20. Click the NFT line item's "Approve" button to approve each NFT individually. To approve all your NFTs in this contract \(i.e. the Wrapped Punks contract\), click "Approve all".
+Your NFTs will need to be approved for use by the NFTX contract before they can be minted into an ERC-20. To approve all your NFTs in this contract \(i.e. the Wrapped Punks contract\), click "Approve all".
 
-**Mint Value**
+**Mint fee & Tokens received**
 
-Mint value is taken from the mid price of the token trading on Sushiswap. The mint value does not account for slippage and liquidity. If you are looking to mint an NFT in order to sell the vToken, it is recommended that you first check the exact value you would receive from selling on Sushiswap.
+The mint fee is new in v2 and will be distributed 100% to the liquidity providers.  The fee is set to a default of 1%, however during the vault creation process this can be changed to any value. Once the vault is published, only the DAO is able to update the mint fees via a governance vote.
 
-If the mint value shown is $0 this means that there have been no recorded trades for the vToken on Sushiswap. This might be a good opportunity to [bootstrap liquidity](https://help.sushidocs.com/guides/how-to-add-tokens-to-sushiswap-exchange-as-an-lp) and earn liquidity provider fees!
+With a 1% mint fee, each NFT minted will result in the distribution of 0.99 vTokens \(in this case $AVASTR tokens\) with the remainder distributed to the liquidity providers.
 
 ### **Minting**
 
-With your NFTs approved and your mint value confirmed, click the "Mint" button to generate your vTokens. Each NFT will return a single vToken.
+With your NFTs approved and your mint value confirmed, click the "Mint" button to generate your vTokens. Each NFT will return a single vToken, minus the mint fee.
 
-For example, minting 3 Hashmasks to the Mask vault will return 3 MASK ERC-20 tokens.
+For example, minting 2 Avastars to the Avastar vault will return 1.98 AVASTR ERC-20 tokens.
 
 {% hint style="info" %}
-It is important to mint your NFT to the appropriate vault. Do not mint high value NFTs \(i.e. a Punk Zombie\) to a lower value vault \(i.e. Punk-Basic\).
+It is important to mint your NFT to the appropriate vault. Do not mint high value NFTs \(i.e. a Avastar Rank 70\) to a lower value vault \(i.e. AVASTR\).
 {% endhint %}
 
 ## Additional Info
 
 ### Eligibilities
 
-Many vaults have an eligibility list. This ensures that the vault only accepts a certain sub-category of NFTs \(i.e. Punk-Female\).
+Many vaults have an eligibility list. This ensures that the vault only accepts a certain sub-category of NFTs \(i.e. Ringers for Art Blocks, or Gen 0 Kitties on the Kitty Vault\).
+
+There are two eligibility options available in v2, List Module and Range Module
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+
+
+**List Module** — takes a comma separated list of NFT ID's that are allowed to be minted into the vault. This could be handy if you wanted to create a PUNK Zombie vault and could add all the Punk Zombie NFT id's to the list. Once the list module is created and the vault approved, only the DAO can update the list.
+
+![](../.gitbook/assets/image%20%285%29.png)
+
+**Range Module** — Takes a start and end number. This is perfect for sets of NFTs that are minted off the same contract, like Art Blocks.  For example, Algorhythms Art Blocks project has 1000 in the series and starts at 64000000 and finishes at 64000999.
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+The platform can also be set to provide metadata checks for eligibilities. For example, for the v2 KITTY vault we use the onchain metadata to check to see if the NFT is Generation 0 before allowing the minting to occur. This is an improvement on the Mint Requests that were required in v1.
 
 ### Mint Requests
 
-Some vaults do not have an eligibility list as it can be cumbersome to maintain. Instead, the vault may accept "mint requests". Vaults that accept mint requests will show your ineligible NFTs and allow you to send them to the vault as a mint request.
-
-![The minting request screens as you progress through the request to mint process](../.gitbook/assets/nftx-mint-request-mint.jpg)
-
-When sending a mint request, your NFT will be held in escrow until the manager approves. If approved, your vTokens will be minted to your wallet. You can cancel your mint request at any time.
+In v2 there are no longer any mint requests.
 
 ## FAQ
 
@@ -90,69 +113,19 @@ We currently limit the minter to scanning a wallet's first 1,000 NFTs that may b
 
 ### Can I get my NFT back once I've added it to a vault?
 
-An vToken provides a claim on a single asset within a vault, however it does not allow the user to choose which asset. When redeeming an vToken for an NFT, the NFT received is selected at random. For this reason, depositing an NFT into a vault is not advisable for anyone with a particular attachment to that NFT.
+A vToken provides a claim on a single asset within a vault. In v2 we have introduced targeted redeems which allows you to choose any NFT from the vault for a 5% premium \(this is the default settings, vault owners can change this value during the vault creation process\).
 
 ### My NFT can be deposited in multiple vaults, which one do I choose?
 
-Some NFTs are eligible to be deposited to multiple vaults. For example, a female CryptoPunk can be deposited in either the Punk-Female or Punk-Basic vaults.
-
-In this case, it would be essential that the female CryptoPunk is deposited in the Punk-Female vault as this vault trades at a higher value. If the female CryptoPunk was deposited in the Punk-Basic vault then it would be quickly redeemed by arbitrageurs as this asset trades higher than the PUNK-BASIC price on secondary markets like OpenSea.
+Some NFTs are eligible to be deposited to multiple vaults. While this is still possible in v2, the initial vaults created have moved away from multiple vaults for the same NFT and towards floor vaults.
 
 Always check an NFT's available vaults before minting an vToken to ensure the most appropriate one is selected.
 
 ### I've minted my NFT but I haven't received my Token yet
 
-There are two potential causes.
+You need to add the vault token as a custom token to your metamask wallet \(see [an example of how to add custom tokens here](https://blog.nftx.org/how-do-i-view-my-nftx-tokens-in-metamask/#how-can-you-see-your-nftx-tokens-inside-of-metamask)\)
 
-1. You need to add the vault token as a custom token to your metamask wallet \(see [an example of how to add custom tokens here](https://blog.nftx.org/how-do-i-view-my-nftx-tokens-in-metamask/#how-can-you-see-your-nftx-tokens-inside-of-metamask)\)
-2. The NFT you were minting required "Request Mint" and needs to be approved.
 
-The second situation is the most common, so let's look at that in more detail.
-
-The majority of the vaults on NFTX are floor vaults which will accept any NFT from the project contract. For example, it doesn't matter what type of Hashmask you own, you can always add it to the vault.
-
-Other vaults are set up to only allow specific NFTs from the contract. These include vaults like Punk-Female which only accept Female Punks, or Punk-Zombie which only accept Zombie Punks. This eligibility is controlled through a list of permitted ID's assigned to vaults that require these limitations.
-
-For NFT projects like CryptoKitties and Avastars it is not possible to get a full list of eligible IDs because there's either tens of thousands of ID's \(Kitties\) or there are still new NFTs being created \(Avastars\). When you mint into the following vaults and the ID hasn't already been approved it will need to be manually checked before being accepted:
-
-* Kitty Gen 0
-* Kitty Gen 0 Fast
-* Avastar Rank 30
-* Avastar Rank 60
-
-The process usually takes a maximum of 24 hours, but can take longer. Here are the steps
-
-1. You Request Mint the NFT into the vault
-2. The NFTX contract holds that NFT is escrow while the check is made
-3. The product team is alerted an NFT requires checking
-4. The NFT is verified for the vault and a request to the dev team to approve the mint request
-5. The NFT comes out of escrow and the Vault Token is sent to your wallet.
-
-If the NFT is _not_ eligible for the vault, for example if you try to mint a generation 5 Kitty into the vault, or you try to mint a rank 20 avastar into the Rank-30 vault, then the NFT will remain in escrow until you remove it through the `revokeMintRequests` Function detailed below.
-
-{% hint style="info" %}
-The request mint is not going to be required once the vaults move across to NFTX V2. In V2 we will be using the CryptoKitties and Avastars onchain metadata to check the validity of the NFTs and not allow the mint process if they do not below in the vault.
-{% endhint %}
-
-### How to cancel/revoke your mint requests
-
-If you have request to mint an NFT into a vault that requires a review you can cancel that request at any time before it is accepted using the `revokeMintRequests` function.
-
-1. [ ] Visit [https://classic.nftx.org/\#/backend](https://classic.nftx.org/#/backend)
-2. [ ] Select "Connect Accout" and connect using the wallet you used to mint the NFT
-
-![](../.gitbook/assets/image%20%281%29.png)
-
-* [ ] Choose the drop down on the right hand side of the NFTX Contract and choose `Write`
-
-From there a side bar will open, and you can scroll down to `revokeMintRequests`
-
-![](../.gitbook/assets/image%20%282%29.png)
-
-To find the `vaultId` you can [review the list of current vaults and holdings](https://charts.mongodb.com/charts-nftx-funds-kgodb/public/dashboards/609e6965-a20a-4918-8849-9c686f6d2621). The `nftIDs` are the IDs of the NFT you would like to get back from escrow. For example:
-
-* **VaultId** `11` \(Avastar-Rank-30\)
-* **VauldIds** `[1234, 9786, 19111]`
 
 
 

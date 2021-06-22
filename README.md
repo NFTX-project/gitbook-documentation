@@ -1,5 +1,9 @@
 # Introduction to NFTX
 
+{% hint style="info" %}
+These docs are for v2 and are still in progress. If you are looking for the v1 documentation you can find them here.
+{% endhint %}
+
 NFTX is a platform for creating liquid markets for illiquid Non-Fungible Tokens \(NFTs\).
 
 Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(vToken\) that represents a claim on a random asset from within the vault.
