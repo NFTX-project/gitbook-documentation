@@ -31,10 +31,5 @@
 
 ## Archive
 
-* [Get Started](archive/old-tutorials/README.md)
-  * [How to create an NFT Index Fund](archive/old-tutorials/how-to-create-an-nft-index-fund.md)
-  * [How to get my index fund listed on the NFTX Gallery?](archive/old-tutorials/how-to-get-my-index-fund-listed-on-the-nftx-gallery.md)
-  * [How to mint an NFT Index token with your NFT?](archive/old-tutorials/minting-fund-tokens.md)
-  * [How to redeem an NFT from an index fund?](archive/old-tutorials/redeeming-nfts.md)
 * [Community Raise](archive/community-raise.md)
 
