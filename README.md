@@ -1,7 +1,7 @@
 # Introduction to NFTX
 
 {% hint style="info" %}
-These docs are for v2 and are still in progress. If you are looking for the v1 documentation you can find them here.
+These docs are for v2 and are still in progress. If you are looking for the[ v1 documentation you can find them here](https://docs.nftx.org/v/v1.0/).
 {% endhint %}
 
 NFTX is a platform for creating liquid markets for illiquid Non-Fungible Tokens \(NFTs\).
