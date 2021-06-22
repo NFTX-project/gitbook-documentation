@@ -6,7 +6,7 @@
 
 At the core of NFTX is the NFTX Fund contract which holds all NFTs stored by all various NFTX funds. The NFTX Fund contract maintains a vault per NFT address identified with a vault ID. Using the vault ID, the NFTX Fund contract accesses all fund/vault related storage through the xStore contract.
 
-For every vault, there is a fund token \(xToken\) deployed for it, which is eligible for redeeming a pseudorandom NFT from the fund.
+For every vault, there is a fund token \(vToken\) deployed for it, which is eligible for redeeming a pseudorandom NFT from the fund.
 
 ### [NFTXv7 Implementation](https://etherscan.io/address/0x87665c29ea77c4285ea7443f5f71c54ea90305b8)
 
@@ -21,7 +21,7 @@ function createVault(
 ) public virtual nonReentrant returns (uint256 vaultId);
 ```
 
-Anyone can create a vault by calling `createVault`. When a vault is made, a fund token \(xToken\) is deployed, and the vault ID is returned.
+Anyone can create a vault by calling `createVault`. When a vault is made, a fund token \(vToken\) is deployed, and the vault ID is returned.
 
 #### **Minting**
 
@@ -29,7 +29,7 @@ Anyone can create a vault by calling `createVault`. When a vault is made, a fund
 function mint(uint256 vaultId, uint256[] memory nftIds, uint256 d2Amount) external;
 ```
 
-The mint function allows you to mint an xToken for each NFT provided to the fund.
+The mint function allows you to mint an vToken for each NFT provided to the fund.
 
 This function expects the contract to have approval of the NFTs or set as an operator from `msg.sender`.
 
@@ -43,9 +43,9 @@ The redeem function allows users to use their NFTX Fund tokens to redeem NFTs ps
 
 This function expects the contract to have approval of the NFTX Fund token by the `msg.sender`.
 
-#### **xToken \(Fund Tokens\)**
+#### **vToken \(Fund Tokens\)**
 
-For every fund on NFTX, an xToken proxy clone contract is deployed to serve as the means of minting/redeeming through that fund. Every xToken is a standard ERC20.
+For every fund on NFTX, an vToken proxy clone contract is deployed to serve as the means of minting/redeeming through that fund. Every vToken is a standard ERC20.
 
 ### [**xStore**](https://etherscan.io/address/0xBe54738723cea167a76ad5421b50cAa49692E7B7)
 
@@ -58,7 +58,7 @@ function xTokenAddress(uint256 vaultId) external view returns (address);
 function assetAddress(uint256 vaultId) external view returns (address);
 ```
 
-The xToken address represents the token that is minted/redeemed for the assets in that vault ID. This is also referred to as the fund token.
+The vToken address represents the token that is minted/redeemed for the assets in that vault ID. This is also referred to as the fund token.
 
 The asset address is the asset used to mint fund tokens, and what is given back to the user when they redeem their fund tokens.
 
