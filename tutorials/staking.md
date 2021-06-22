@@ -1,5 +1,9 @@
 # Staking
 
+{% hint style="warning" %}
+The documentation on this page is still in progress.
+{% endhint %}
+
 ## Why stake on NFTX?
 
 Earn fees from the vault, currently 100% of protocol fees are paid out to those that stake. Stakers also receive an ERC20 “xToken” like xPUNK that is a claim on the underlying staked SLP. We expect other projects to build use cases for these xTokens.

@@ -1,5 +1,9 @@
 # Redeeming
 
+{% hint style="warning" %}
+The documentation on this page is still in progress.
+{% endhint %}
+
 ![](../.gitbook/assets/screenshot-2021-04-15-at-12.52.45.png)
 
 NFTX v1.x allows you to easily redeem your [minted](minting.md) ERC20 Vault Tokens \(vTokens\) for a random NFT within the vault.
