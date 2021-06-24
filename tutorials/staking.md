@@ -49,11 +49,9 @@ With you tokens you can now Redeem your NFTs from the Vault which will then allo
 
 #### Do I have to remove my Liquidity?
 
-No. You can keep your liquidity on the current vaults in V1 for as long as you would like and continue to earn fees on the trades on SushiSwap.  
+No. You can keep your liquidity on the current vaults in V1 for as long as you would like and continue to earn fees on the trades on SushiSwap.
 
-
-You will not be able to stake your liquidity and earn any of the 1% minting and 5% targeted fees on the new vaults unless you become a liquidity provider on V2.  
-
+You will not be able to stake your liquidity and earn any of the 1% minting and 5% targeted fees on the new vaults unless you become a liquidity provider on V2.
 
 #### I still have fractions of a token left after withdrawing my liquidity, what can I do?
 

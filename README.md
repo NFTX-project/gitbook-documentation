@@ -6,11 +6,11 @@ These docs are for v2 and are still in progress. If you are looking for the[ v1 
 
 NFTX is a platform for creating liquid markets for illiquid Non-Fungible Tokens \(NFTs\).
 
-Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(vToken\) that represents a claim on a random asset from within the vault.
+Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(vToken\) that represents a claim on a random asset from within the vault. vTokens can also be used to redeem a specific NFT from a vault.
 
 **Benefits include:**
 
-* Use minted vTokens to earn yield
+* LP and stake minted vTokens to earn yield
 * Better distribution and price discovery for NFT projects
 * Instantly sell any NFT by minting it as an ERC20 and swapping via Sushiswap
 * Increased liquidity for NFT investors and speculators

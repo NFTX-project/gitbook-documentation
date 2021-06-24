@@ -12,24 +12,17 @@
 
 ## Tutorials
 
-* [Staking](tutorials/staking.md)
 * [Minting](tutorials/minting.md)
 * [Redeeming](tutorials/redeeming.md)
+* [Staking](tutorials/staking.md)
 * [Vault Creation](tutorials/vault-creation.md)
 
 ## Smart Contracts
 
-* [Overview](smart-contracts/overview.md)
+* [Bug Bounty](smart-contracts/bug-bounty.md)
 * [Contract Addresses](smart-contracts/contract-addresses.md)
-* [Audit & Risks](smart-contracts/audit-report.md)
 
 ## Ecosystem
 
-* [Litepaper](ecosystem/litepaper.md)
-* [Token Distribution](ecosystem/token-distribution.md)
 * [🎨 Brand Kit](ecosystem/brand-kit.md)
-
-## Archive
-
-* [Community Raise](archive/community-raise.md)
 

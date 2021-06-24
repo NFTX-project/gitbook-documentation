@@ -63,28 +63,6 @@ For example, minting 2 Avastars to the Avastar vault will return 1.98 AVASTR ERC
 It is important to mint your NFT to the appropriate vault. Do not mint high value NFTs \(i.e. a Avastar Rank 70\) to a lower value vault \(i.e. AVASTR\).
 {% endhint %}
 
-## Additional Info
-
-### Eligibilities
-
-Many vaults have an eligibility list. This ensures that the vault only accepts a certain sub-category of NFTs \(i.e. Ringers for Art Blocks, or Gen 0 Kitties on the Kitty Vault\).
-
-There are two eligibility options available in v2, List Module and Range Module
-
-![](../.gitbook/assets/image%20%283%29.png)
-
-
-
-**List Module** — takes a comma separated list of NFT ID's that are allowed to be minted into the vault. This could be handy if you wanted to create a PUNK Zombie vault and could add all the Punk Zombie NFT id's to the list. Once the list module is created and the vault approved, only the DAO can update the list.
-
-![](../.gitbook/assets/image%20%285%29.png)
-
-**Range Module** — Takes a start and end number. This is perfect for sets of NFTs that are minted off the same contract, like Art Blocks.  For example, Algorhythms Art Blocks project has 1000 in the series and starts at 64000000 and finishes at 64000999.
-
-![](../.gitbook/assets/image%20%287%29.png)
-
-The platform can also be set to provide metadata checks for eligibilities. For example, for the v2 KITTY vault we use the onchain metadata to check to see if the NFT is Generation 0 before allowing the minting to occur. This is an improvement on the Mint Requests that were required in v1.
-
 ### Mint Requests
 
 In v2 there are no longer any mint requests.
