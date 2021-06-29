@@ -1,9 +1,5 @@
 # Staking
 
-{% hint style="warning" %}
-The documentation on this page is still in progress.
-{% endhint %}
-
 ## Why stake on NFTX?
 
 Earn fees from the vault, currently 100% of protocol fees are paid out to those that stake. Stakers also receive an ERC20 “xToken” like xPUNK that is a claim on the underlying staked SLP. We expect other projects to build use cases for these xTokens.
@@ -28,6 +24,8 @@ Alternatively, you can go to the Redeem section of the app and look to redeem an
 
 With a vToken, in this case an $AVASTR token, you can head over to the [Staking](https://v2.nftx.org/staking/) page.
 
+### Add Liquidity
+
 From the Staking page you can find the pair that you want to provide liquidity for, in this case it is the AVASTR-ETH SLP, and we want to Add Liquidity to that pool
 
 ![](../.gitbook/assets/image%20%2810%29.png)
@@ -37,6 +35,8 @@ From this page you can add the amount of AVASTR you want to add to the pool, and
 ![](../.gitbook/assets/image%20%2812%29.png)
 
 Once you have confirmed adding liquidity you will be issued with pool tokens.
+
+### Stake your LP
 
 With your pool tokens you can return to the Staking screen, Approve the use of the SLP \(this will be where the "Deposit SLP" button can be seen\), and then "Deposit SLP".
 
