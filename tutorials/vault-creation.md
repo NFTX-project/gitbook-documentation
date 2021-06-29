@@ -4,7 +4,9 @@
 The documentation on this page is still in progress.
 {% endhint %}
 
-NFTX v1.x introduces a new vault creation interface that allows you to easily create a public vault for any NFT or a specific subset of IDs for an NFT.
+NFTX v2 introduces a new vault creation interface that allows you to easily create a public vault for any NFT or a specific subset of IDs for an NFT.
+
+[Watch the video tutorial for creating vaults on NFTX V2](https://www.youtube.com/watch?v=Yt2aU7hxMmc)
 
 ## Why create a vault?
 
@@ -12,7 +14,7 @@ Vault creation is at the heart of the NFTX protocol and allows users and content
 
 By creating NFT-backed ERC20 tokens, users can create liquid markets for otherwise illiquid NFTs whilst also earning fees and rewards from liquidity provision.
 
-Protocol fees will also be introduced in V2 of the NFTX.
+Protocol fees are also introduced in V2 of the NFTX.
 
 ## Vault Creation Step-by-Step
 
