@@ -22,19 +22,19 @@ Protocol fees are also introduced in V2 of the NFTX.
 
 Three fields are required to create an NFTX vault as shown below.
 
-![](../.gitbook/assets/screenshot-2021-05-05-at-15.17.38.png)
+![](../.gitbook/assets/tutorial-v2-create-vault-02.png)
 
 **NFT Asset Address**
 
 The NFT asset address is immutable and points to the contract from which this vault will accept mints. By default, all NFT IDs from this contract will be eligible for minting in the vault.
 
 {% hint style="info" %}
-Eligibility lists can be added once the vault has been created. This will allow you to target specific properties like "Female Punks" from within an asset.
+Eligibility lists or ranges can be added once the vault has been created. This will allow you to target specific NFT IDs for groups of NFTs like "Female Punks", or create NFT ID ranges for specific projects like "720 Minutes" from Art Blocks, from within a single NFT contract address.
 {% endhint %}
 
-Some assets are already used in other vaults. For example, Wrapped CryptoPunks are used in multiple vaults and separated using eligibility lists. To avoid adding a duplicate vault and splitting liquidity, review the matching vaults list before proceeding.
+Some assets are already used in other vaults. For example, Art Blocks are used in multiple vaults and separated using eligibility ranges. To avoid adding a duplicate vault and splitting liquidity, review the matching vaults list before proceeding.
 
-![](../.gitbook/assets/screenshot-2021-05-05-at-15.16.59.png)
+![](../.gitbook/assets/check-matching-vaults%20%281%29.png)
 
 **Vault Name**
 
@@ -47,34 +47,34 @@ This will be the _symbol_ of the ERC20 token that is minted from this vault.
 Both the Vault Name and Vault symbol will appear anywhere that this token appears, from CoinGecko and Etherscan through to Sushi and Uniswap.
 
 {% hint style="info" %}
-A strong name and symbol play a critical part in a vault's long-term success. Please review our recommended naming conventions to help maximize your vault's exposure.
+A strong name and symbol play a critical part in a vault's long-term success. Try to keep the name singular \(PUNK, not PUNKS\), six characters or less \(to enable ticker links in Twitter\), and use a real word where possible \(BUNNY, not GENBIT\).
 {% endhint %}
 
 ### Vault Created
 
+![](../.gitbook/assets/tutorial-v2-create-vault-04.png)
+
 Once your create vault transaction has been confirmed onchain you will be notified and asked to proceed to managing your vault.
 
 Your vault will not be visible in the NFTX app until it has been minted to and published. Click "Manage Vault" to complete the process.
-
-{% hint style="warning" %}
-The NFTX subgraph is currently under development. As a result, newly created vaults take up to 5 minutes to be visible on the front end.
-{% endhint %}
-
-![](../.gitbook/assets/screenshot-2021-05-05-at-15.18.02%20%281%29.png)
 
 ### Manage Vault
 
 Vault management allows vault creators to modify a number of important settings as well as publishing the vault so that it becomes visible on the NFTX app.
 
 {% hint style="warning" %}
-Published vaults cannot be edited by the creator. Carefully review the vault's settings before publishing.
+Published vaults cannot be edited by the creator. Carefully review the vault's settings before publishing, including setting the Fees and Eligibility screens.
 {% endhint %}
 
-![](../.gitbook/assets/screenshot-2021-05-05-at-15.24.45.png)
+![](../.gitbook/assets/tutorial-v2-create-vault-05.png)
 
-**Allow Mint Requests**
+**Enable Vault Features**
 
-By enabling this setting, users will have to make a request to mint their NFT to this vault. Once a vault is published, mint requests will be reviewed and approved by the DAO.
+**Enable Minting —** The most important part of creating a vault is allowing users to mint their NFTs in. If you wanted to use the vault as a way to airdrop tokens for users to redeem NFTs from the vault you might disable the mint feature.
+
+**Enable Random Redeems —** Allow users to randomly retrieve an NFT from your vault.
+
+**Enable Target Redeems** — Users will be able to choose the NFTs they are redeem from the vault for an additional fee which you can set within the Fees section.
 
 **Eligibilities**
 
