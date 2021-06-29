@@ -68,7 +68,7 @@ Published vaults cannot be edited by the creator. Carefully review the vault's s
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-05.png)
 
-**Enable Vault Features**
+#### **Enable Vault Features**
 
 **Enable Minting —** The most important part of creating a vault is allowing users to mint their NFTs in. If you wanted to use the vault as a way to airdrop tokens for users to redeem NFTs from the vault you might disable the mint feature.
 
@@ -76,36 +76,51 @@ Published vaults cannot be edited by the creator. Carefully review the vault's s
 
 **Enable Target Redeems** — Users will be able to choose the NFTs they are redeem from the vault for an additional fee which you can set within the Fees section.
 
-**Eligibilities**
+#### Fees
 
-A vault's eligibility list is an allow list of NFT IDs that can be minted to this vault. This can be flipped into a deny list by enabling the "Negate Eligibilities" setting \(see "Negate Eligibility" below\).
+![](../.gitbook/assets/tutorial-v2-create-vault-06.png)
 
-**Eligibility Range**
+Fees can now be set on the individual vaults which will then be distributed to the liqudity providers staking their LP. By default all new vaults are set with 1% Mint Fee \(meaning you receive 0.99 tokens for each NFT minted\), 0% Redeem Fee \(so 1 token always can redeem 1 random NFT from the vault\), and a 5% Targeted Redeem Fee \(1.05 tokens are needed to choose the NFT you want from the vault\).
 
-For blocks of eligible IDs, use this setting to specify the "from" and "to" \(inclusive\) IDs that will be added to the eligibility list.
+When you first create the vault, and _**before**_ you finalise the vault, you can set the mint fees to 0% to encourage the initial seeding of the vault. Once seeded, ensure that you change the fee back to 1% before finanlising the vault or no fees will be generated on minting NFTs.
 
-![](../.gitbook/assets/screenshot-2021-05-05-at-15.28.36.png)
+{% hint style="info" %}
+In a future release, Zaps will allow users who also provide ETH liquidity for the vault to bypass the 1% mint fee set. 
+{% endhint %}
 
-**Unique Eligibilities**
+#### **Eligibilities**
+
+![](../.gitbook/assets/tutorial-v2-create-vault-07.png)
+
+A vault's eligibility list is an allow list or range of NFT IDs that can be minted to this vault.
+
+**List Module**
+
+![](../.gitbook/assets/tutorial-v2-create-vault-08.png)
 
 Use this setting to specific individual IDs to add to the eligibility list.
 
-![](../.gitbook/assets/screenshot-2021-05-05-at-15.28.45.png)
+**Eligibility Range**
 
-**Negate Eligibility**
+![](../.gitbook/assets/tutorial-v2-create-vault-09.png)
 
-The negate eligibility setting flips the eligibility list into an allow \(negate eligibility disabled\) or deny list \(negate eligibility enabled\). For clarity, see the following examples.
+For blocks of eligible IDs, use this setting to specify the "from" and "to" \(inclusive\) IDs that will be added to the eligibility list. ****These work well for projects like Art Blocks Curtated which are all minted from the same contract but have distinct ranges for each project. 
 
-| Setting | Eligibilities | Example Allowed | Example Denied |
-| :--- | :--- | :--- | :--- |
-| Negate Eligibility Enabled | 1, 2, 3, 4, 5 | 2, 3, 5 | 2, 3, 5 |
-| Negate Eligibility Disabled | 1, 2, 3, 4, 5 | 6, 8, 10 | 6, 8, 10 |
+### Publishing your Vault
 
-### Vaults Overview
+Before your vault will be visible on the app you will need to mint at least one eligible NFT.
 
-To view your vaults at any time click the "Manage" link in the navigation. This link is only visible to connected wallets that are a manager of at least 1 vault.
+![](../.gitbook/assets/tutorial-v2-create-vault-12.png)
 
-![](../.gitbook/assets/screenshot-2021-05-05-at-15.43.06-1-.png)
+Once you've added one or more NFTs to your new vault you will have the option to publish your vault. Remember, once the vault has been published the ownership is passed to the DAO and you will no longer be able to update the Fees or Eligibilities.
+
+![](../.gitbook/assets/tutorial-v2-create-vault-14.png)
+
+![Last chance. You are asked to confirm your setting for Fees](../.gitbook/assets/tutorial-v2-create-vault-15.png)
+
+Once confirmed you will be redirected to the vault detail page. On this page it will provide you with an overview of the vault details, including Vault ID, URL, Token Address, current Holdings, and Lifetime Fees.
+
+![](../.gitbook/assets/tutorial-v2-create-vault-16.png)
 
 ## FAQ
 
@@ -118,14 +133,13 @@ Naming conventions provide structure for NFTX vaults that makes them instantly r
 | Vault Name | Vault Symbol |
 | :--- | :--- |
 | Alphanumeric only | Less than 7 characters |
-| Capitalized \(i.e. Punk Attribute 4\) | Singular \(i.e. PUNK for CryptoPunks floor vault\) |
+| Capitalized \(i.e. Meebits\) | Singular \(i.e. PUNK for CryptoPunks floor vault\) |
 |  | Uppercase |
+|  | Real words where possible |
 
 The tight recommendations on Vault Symbol are in place to conform to Twitter's cashtag standard.
 
 ### Why isn't my vault isn't showing in the NFTX app?
 
 The most common reason for this is that your vault does not yet have holdings or has not been published. To add holdings, visit the vault management page and click "Add Holdings".
-
-If the vault is still not appearing, you may need to wait for a maximum of 5 minutes while the vault is indexed. This delay will become immediate once the NFTX subgraph is deployed in V2 of the protocol.
 

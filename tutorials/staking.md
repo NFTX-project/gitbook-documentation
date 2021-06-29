@@ -8,9 +8,47 @@ The documentation on this page is still in progress.
 
 Earn fees from the vault, currently 100% of protocol fees are paid out to those that stake. Stakers also receive an ERC20 “xToken” like xPUNK that is a claim on the underlying staked SLP. We expect other projects to build use cases for these xTokens.
 
-### How to stake on NFTX?
+## How to stake on NFTX?
 
-Mint or Buy
+To stake on NFTX you first need to get a token for one of the NFTX vaults. In this example we're going to look at the $AVASTR vault.
+
+### Get a vToken
+
+There are two ways that you can get a vToken \(vault Token\) from NFTX. Head to [https://v2.nftx.org](https://v2.nftx.org) and you will see a list of the current vaults you can mint into based on the NFTs in your wallet
+
+![The NFTs in my wallet that match the Vaults already created in NFTX v2](../.gitbook/assets/mintable-vaults.jpg)
+
+In this example I'm going to mint one of my Avastars into the $AVASTR vault. I choose the Avastar that I would like to mint and select "Mint $AVASTR". This provides me a single $AVASTR token back.
+
+![](../.gitbook/assets/mint-avastars-for-token.jpg)
+
+Alternatively, you can go to the Redeem section of the app and look to redeem an Avastar from the vault. From here you will have a link to buy an $AVASTR token directly from Sushi.
+
+![](../.gitbook/assets/buy-avastar-from-dex.jpg)
+
+With a vToken, in this case an $AVASTR token, you can head over to the [Staking](https://v2.nftx.org/staking/) page.
+
+From the Staking page you can find the pair that you want to provide liquidity for, in this case it is the AVASTR-ETH SLP, and we want to Add Liquidity to that pool
+
+![](../.gitbook/assets/image%20%2810%29.png)
+
+From this page you can add the amount of AVASTR you want to add to the pool, and the relevant amount of ETH will be calculated below. If you are the first liquidity provider then you will need to set the initial price, which should be the floor price of the NFTs for the vault. One way to calculate this is to search for your NFT contract on OpenSea with the filter Buy Now and order from Lowest to Highest sale price.
+
+![](../.gitbook/assets/image%20%2812%29.png)
+
+Once you have confirmed adding liquidity you will be issued with pool tokens.
+
+With your pool tokens you can return to the Staking screen, Approve the use of the SLP \(this will be where the "Deposit SLP" button can be seen\), and then "Deposit SLP".
+
+![](../.gitbook/assets/image%20%2811%29.png)
+
+Once completed, any pools that you are currently staking will be shown at the top of the staking page with details on your APY, Staked amount, Earnings, and Claimable AVASTAR tokens.
+
+![](../.gitbook/assets/image%20%289%29.png)
+
+{% hint style="warning" %}
+Staking rewards are not yet active while the passive vault migration is happening. We recommend setting up your position in the pools you are interested so that when they are turned on you can start earning yield immediately.
+{% endhint %}
 
 ## Removing Liquidity from V1 Vaults <a id="docs-internal-guid-227675f5-7fff-e5b1-c52b-9d3c69bb7b2e"></a>
 
