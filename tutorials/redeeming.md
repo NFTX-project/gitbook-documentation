@@ -1,9 +1,5 @@
 # Redeeming
 
-{% hint style="warning" %}
-The documentation on this page is still in progress.
-{% endhint %}
-
 ![](../.gitbook/assets/redeemable-vaults-nftx.jpg)
 
 NFTX v2 allows you to easily redeem your [minted](minting.md) ERC20 Vault Tokens \(vTokens\) for either a random or targeted NFT within the vault.
