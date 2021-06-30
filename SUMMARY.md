@@ -7,6 +7,7 @@
 
 ---
 
+* [V2 NFTX App](https://v2.nftx.org)
 * [NFTX App](https://app.nftx.org)
 * [Gallery](https://gallery.nftx.org)
 
