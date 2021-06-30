@@ -28,11 +28,11 @@ With a vToken, in this case an $AVASTR token, you can head over to the [Staking]
 
 From the Staking page you can find the pair that you want to provide liquidity for, in this case it is the AVASTR-ETH SLP, and we want to Add Liquidity to that pool
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 From this page you can add the amount of AVASTR you want to add to the pool, and the relevant amount of ETH will be calculated below. If you are the first liquidity provider then you will need to set the initial price, which should be the floor price of the NFTs for the vault. One way to calculate this is to search for your NFT contract on OpenSea with the filter Buy Now and order from Lowest to Highest sale price.
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 Once you have confirmed adding liquidity you will be issued with pool tokens.
 
@@ -40,11 +40,11 @@ Once you have confirmed adding liquidity you will be issued with pool tokens.
 
 With your pool tokens you can return to the Staking screen, Approve the use of the SLP \(this will be where the "Deposit SLP" button can be seen\), and then "Deposit SLP".
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 Once completed, any pools that you are currently staking will be shown at the top of the staking page with details on your APY, Staked amount, Earnings, and Claimable AVASTAR tokens.
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 {% hint style="warning" %}
 Staking rewards are not yet active while the passive vault migration is happening. We recommend setting up your position in the pools you are interested so that when they are turned on you can start earning yield immediately.
