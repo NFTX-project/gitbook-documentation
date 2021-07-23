@@ -1,9 +1,5 @@
 # Vault Creation
 
-{% hint style="warning" %}
-The documentation on this page is still in progress.
-{% endhint %}
-
 NFTX v2 introduces a new vault creation interface that allows you to easily create a public vault for any NFT or a specific subset of IDs for an NFT.
 
 [Watch the video tutorial for creating vaults on NFTX V2](https://www.youtube.com/watch?v=Yt2aU7hxMmc)
