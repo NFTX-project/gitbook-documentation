@@ -47,7 +47,7 @@ Once completed, any pools that you are currently staking will be shown at the to
 ![](../.gitbook/assets/image%20%2810%29.png)
 
 {% hint style="warning" %}
-Staking rewards are not yet active while the passive vault migration is happening. We recommend setting up your position in the pools you are interested so that when they are turned on you can start earning yield immediately.
+Staking rewards are now active!
 {% endhint %}
 
 ## Removing Liquidity from V1 Vaults <a id="docs-internal-guid-227675f5-7fff-e5b1-c52b-9d3c69bb7b2e"></a>
