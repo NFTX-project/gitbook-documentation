@@ -46,7 +46,7 @@ Once completed, any pools that you are currently staking will be shown at the to
 
 ![](../.gitbook/assets/image%20%2810%29.png)
 
-{% hint style="warning" %}
+{% hint style="success" %}
 Staking rewards are now active!
 {% endhint %}
 
@@ -76,12 +76,11 @@ Once the transaction has been processed you will receive a confirmation along wi
 
 ![](https://lh5.googleusercontent.com/vbZxAEl2uujYEo17DPN-3ByK4pU-PSfT8XZyJAQmauL8ejnb9gQJFzGrCs-7fYsJ1nQbFSI83N6ZN_cmrp_2RPuWDnXJfIebHnBIW8wRVnWl7LMloC2HTdO15YwPsRm7tW1Dz8uv)
 
-You will now be able to view your tokens in Metamask, and if you go to the NFTX App you can see your tokens in the header and sidebar.  
-
+You will now be able to view your tokens in Metamask, and if you go to the NFTX App you can see your tokens in the header and sidebar.
 
 ![](https://lh6.googleusercontent.com/Il6GjVs7IuJRVuG-H7Eyz2ArG9iq5XSmfjyYMzuJd9p20TTDTZbhDYOoliyrFm0UP3_9yYmIz9VF_OkMfNJTA2JXmI7fye7FrhUh1xMK02DgvtabH9rV7q3bUM9D5bnhB37s1buv)
 
-With you tokens you can now Redeem your NFTs from the Vault which will then allow you to 
+With you tokens you can now Redeem your NFTs from the Vault which will then allow you to
 
 ### FAQs
 
@@ -103,9 +102,9 @@ These fractions of tokens are often referred to as dust. You have three options.
 
 #### When will the NFTX DAO remove their liquidity from the V1 Vaults?
 
-The DAO will remove their Liquidity in thirds across three weeks starting from the public release of V2. This is to ensure that holders of the NFT Tokens have time to sell their position without any major slippage/price impact. 
+The DAO will remove their Liquidity in thirds across three weeks starting from the public release of V2. This is to ensure that holders of the NFT Tokens have time to sell their position without any major slippage/price impact.
 
 {% hint style="info" %}
-Lower liquidity does not impact the redeeming of NFTs from the V1 Vaults.  1 Token is always worth 1 NFT from the corresponding vault.
+Lower liquidity does not impact the redeeming of NFTs from the V1 Vaults. 1 Token is always worth 1 NFT from the corresponding vault.
 {% endhint %}
 

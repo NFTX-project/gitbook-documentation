@@ -66,9 +66,9 @@ Published vaults cannot be edited by the creator. Carefully review the vault's s
 
 #### **Enable Vault Features**
 
-**Enable Minting —** The most important part of creating a vault is allowing users to mint their NFTs in. If you wanted to use the vault as a way to airdrop tokens for users to redeem NFTs from the vault you might disable the mint feature.
+**Enable Minting —** The most important part of creating a vault is allowing users to mint their NFTs in. If you wanted to use the vault as a way to airdrop tokens for users to redeem NFTs from the vault you might disable the mint feature.
 
-**Enable Random Redeems —** Allow users to randomly retrieve an NFT from your vault.
+**Enable Random Redeems —** Allow users to randomly retrieve an NFT from your vault.
 
 **Enable Target Redeems** — Users will be able to choose the NFTs they are redeem from the vault for an additional fee which you can set within the Fees section.
 
@@ -81,7 +81,7 @@ Fees can now be set on the individual vaults which will then be distributed to t
 When you first create the vault, and _**before**_ you finalise the vault, you can set the mint fees to 0% to encourage the initial seeding of the vault. Once seeded, ensure that you change the fee back to 1% before finanlising the vault or no fees will be generated on minting NFTs.
 
 {% hint style="info" %}
-In a future release, Zaps will allow users who also provide ETH liquidity for the vault to bypass the 1% mint fee set. 
+In a future release, Zaps will allow users who also provide ETH liquidity for the vault to bypass the 1% mint fee set.
 {% endhint %}
 
 #### **Eligibilities**
@@ -100,7 +100,7 @@ Use this setting to specific individual IDs to add to the eligibility list.
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-09.png)
 
-For blocks of eligible IDs, use this setting to specify the "from" and "to" \(inclusive\) IDs that will be added to the eligibility list. ****These work well for projects like Art Blocks Curtated which are all minted from the same contract but have distinct ranges for each project. 
+For blocks of eligible IDs, use this setting to specify the "from" and "to" \(inclusive\) IDs that will be added to the eligibility list. _\*\*_These work well for projects like Art Blocks Curtated which are all minted from the same contract but have distinct ranges for each project.
 
 ### Publishing your Vault
 
