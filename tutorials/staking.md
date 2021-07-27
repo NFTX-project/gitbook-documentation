@@ -10,7 +10,7 @@ To stake on NFTX you first need to get a token for one of the NFTX vaults. In th
 
 ### Get a vToken
 
-There are two ways that you can get a vToken \(vault Token\) from NFTX. Head to [https://v2.nftx.org](https://v2.nftx.org) and you will see a list of the current vaults you can mint into based on the NFTs in your wallet
+There are two ways that you can get a vToken \(vault Token\) from NFTX. Head to [https://app.nftx.org](https://app.nftx.org) and you will see a list of the current vaults you can mint into based on the NFTs in your wallet
 
 ![The NFTs in my wallet that match the Vaults already created in NFTX v2](../.gitbook/assets/mintable-vaults.jpg)
 
