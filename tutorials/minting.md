@@ -49,19 +49,46 @@ Your NFTs will need to be approved for use by the NFTX contract before they can 
 
 **Mint fee & Tokens received**
 
-The mint fee is new in v2 and will be distributed 100% to the liquidity providers.  The fee is set to a default of 1%, however during the vault creation process this can be changed to any value. Once the vault is published, only the DAO is able to update the mint fees via a governance vote.
+The mint fee is new in v2 and will be distributed 100% to the liquidity providers.  The fee is set to a default of 5%, however during the vault creation process this can be changed to any value. Once the vault is published, only the DAO is able to update the mint fees via a governance vote.
 
-With a 1% mint fee, each NFT minted will result in the distribution of 0.99 vTokens \(in this case $AVASTR tokens\) with the remainder distributed to the liquidity providers.
+With a 5% mint fee, each NFT minted will result in the distribution of 0.95 vTokens \(in this case $AVASTR tokens\) with the remainder distributed to the liquidity providers.
 
 ### **Minting**
 
 With your NFTs approved and your mint value confirmed, click the "Mint" button to generate your vTokens. Each NFT will return a single vToken, minus the mint fee.
 
-For example, minting 2 Avastars to the Avastar vault will return 1.98 AVASTR ERC-20 tokens.
+For example, minting 2 Avastars to the Avastar vault will return 1.9 AVASTR ERC-20 tokens.
 
 {% hint style="info" %}
 It is important to mint your NFT to the appropriate vault. Do not mint high value NFTs \(i.e. a Avastar Rank 70\) to a lower value vault \(i.e. AVASTR\).
 {% endhint %}
+
+### Bypass Mint Fee's with Zaps
+
+To encourage more liquidity for the vaults we allow users to avoid paying the mint fee if they choose to stake liqudity for a minimum of 48 hours.
+
+Below shows the two options
+
+1. 5% mint fee and get back 0.95 vTokens
+2. 0% mint fee and get back 1 vToken
+
+![With your NFT in the basket you can choose to pay the mint fee, or bypass the fee by Minting &amp; Staking](../.gitbook/assets/mint.jpg)
+
+Choosing the Mint & Stake option requires an additional confirmation step, also shown below. This provides an overview of the number of tokens you are pairing, and the amount of ETH you need to pair for the pool.
+
+* **Pool share** — the share of the fee's earned on this vault that you will get each block. In this case, it is 50% of the fee distribution.
+* **Mint fee** — you are being waived the mint fee for staking your liquidity for 48 hours.
+* **Lock time** — the length of time your position will be locked. After 48 hours you can unstake and withdraw your liquidity.
+
+![](../.gitbook/assets/approve-mint-stake.jpg)
+
+{% hint style="danger" %}
+Remember that if you already have a position on the vault your entire position will be locked for the 48 hours, not just the amount you are zapping on this process. This does not affect any other positions you might have in other vaults on NFTX.
+{% endhint %}
+
+Once you have confirmed the Mint & Stake you can view the Staking page to see your positions, and the time left on your locked positions.
+
+![](../.gitbook/assets/screenshot-2021-07-27-at-16.41.16.png)
 
 ### Mint Requests
 
@@ -79,7 +106,7 @@ Some vaults use eligibilities to ensure that only certain sub-categories of an N
 
 #### Your NFT requires wrapping
 
-NFTs that were developed several years ago did not follow the ERC721 or ERC1155 token standard. Token standards are used as a secure interface for other smart contracts and web3 applications. In order to mint a Cryptopunk, Mooncat or any other non-standard NFT, visit their associated wrapping website.
+NFTs that were developed several years ago did not follow the ERC721 or ERC1155 token standard. Unlike in V1, the V2 vaults now support unwrapped Mooncats and CryptoPunks.
 
 #### You have just received your NFT
 
@@ -92,6 +119,8 @@ We currently limit the minter to scanning a wallet's first 1,000 NFTs that may b
 ### Can I get my NFT back once I've added it to a vault?
 
 A vToken provides a claim on a single asset within a vault. In v2 we have introduced targeted redeems which allows you to choose any NFT from the vault for a 5% premium \(this is the default settings, vault owners can change this value during the vault creation process\).
+
+You can buy additional vTokens from SushiSwap, and we will soon allow you to make up the additional costs with ETH directly from the App.
 
 ### My NFT can be deposited in multiple vaults, which one do I choose?
 

@@ -1,7 +1,7 @@
 # Introduction to NFTX
 
 {% hint style="info" %}
-These docs are for v2 and are still in progress. If you are looking for the[ v1 documentation you can find them here](https://docs.nftx.org/v/v1.0/).
+If you are looking for the[ v1 documentation you can find them here](https://docs.nftx.org/v/v1.0/), or toggle the drop down under the logo on the left sidebar.
 {% endhint %}
 
 NFTX is a platform for creating liquid markets for illiquid Non-Fungible Tokens \(NFTs\).
@@ -45,7 +45,7 @@ The above process will continue until a floor price is achieved.
 
 #### Eligibilities
 
-The Mask vault allows any Hashmask to be deposited, however other vaults use an eligibility list that only allows a specific sub-category of NFTs to be deposited. For example, the Punk-Female vault has an eligibility list that includes only female CryptoPunk NFT IDs. Other CryptoPunks cannot be deposited.
+The Mask vault allows any Hashmask to be deposited, however other vaults use an eligibility list that only allows a specific sub-category of NFTs to be deposited. For example, the Kitty Gen 0 vault has an eligibility list that includes only Kitties whose metadata is Generation 0. Other Kitties can not be deposited into this vault.
 
 ### Who Benefits From NFTX?
 
@@ -53,15 +53,15 @@ The Mask vault allows any Hashmask to be deposited, however other vaults use an 
 
 NFTs in their basic form do not earn yield. However, when they are used to mint vTokens they can tap into the world of decentralized finance. Put simply, collectors can use NFTX to unlock more value from their NFTs:
 
-* Earn protocol fees \(coming soon\)
+* Earn protocol fees
 * Earn trading fees as a liquidity provider
 * Farm with stablecoins using vTokens as loan collateral
 
 #### Content Creators
 
-By launching on the NFTX protocol, content creators are able to earn protocol fees in perpetuity \(coming soon\) whilst also improving the reach and fairness of distribution:
+By launching on the NFTX protocol, content creators are able to earn protocol fees in perpetuity whilst also improving the reach and fairness of distribution:
 
-* Earn protocol fees \(coming soon\)
+* Earn protocol fees
 * Distribute NFTs via an AMM in the form of vTokens
 * Create instantly liquid markets for new content
 

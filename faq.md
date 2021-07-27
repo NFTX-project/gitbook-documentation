@@ -4,7 +4,7 @@
 
 ### What is NFTX?
 
-NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles. These tokens are called vault tokens, and \(like all ERC20s\) they are fungible and composable. With NFTX, it is possible to create and trade tokens based on your favorite collectibles such as [CryptoPunks](https://www.larvalabs.com/cryptopunks), [Axies](https://marketplace.axieinfinity.com), [CryptoKitties](https://www.cryptokitties.co/), and [Avastars](https://avastars.io/), right from an exchange.
+NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles. These tokens are called vault tokens, and \(like all ERC20s\) they are fungible and composable. With NFTX, it is possible to create and trade tokens based on your favorite collectibles such as [CryptoPunks](https://www.larvalabs.com/cryptopunks), [CryptoKitties](https://www.cryptokitties.co/), and [Avastars](https://avastars.io/), right from an exchange.
 
 NFTX's mission is to become the primary issuer of NFT vault tokens, allowing anyone to trade & invest in NFT markets without needing the underlying knowledge and expertise required when investing in individual assets. By doing so, NFTX will function as a black hole for NFT assets.
 
@@ -12,7 +12,7 @@ NFTX's mission is to become the primary issuer of NFT vault tokens, allowing any
 
 Yes, NFTX contracts are fully permissionless on-chain contracts.
 
-The NFTX.org interface is built and maintained by the NFTX DAO and will be open-sourced as soon as possible, for anyone to run locally when needed.
+The [NFTX.org](https://nftx.org) interface is built and maintained by the NFTX DAO and will be open-sourced as soon as possible, for anyone to run locally when needed.
 
 ### Who is working on NFTX?
 
@@ -24,15 +24,15 @@ If you'd like to contribute to what NFTX is building, feel free to join the comm
 
 [NFTX V1](https://v1.nftx.org) does not charge any fees.
 
-[NFTX V2](https://v2.nftx.org) allows vault creators to charge fees based on minting and redeeming NFTs in and out of the vaults. There are three fee options in V2 and are set to the following defaults for all DAO and new vault creations
+[NFTX V2](https://app.nftx.org) allows vault creators to charge fees based on minting and redeeming NFTs in and out of the vaults. There are three fee options in V2 and are set to the following defaults for all DAO and new vault creations
 
-1. 1% Minting Fee 
+1. 5% Minting Fee 
 2. 0% Random Redemption Fee
 3. 5% Targeted Redemption Fee
 
 These fees are distributed to the liquidity providers for the vault.
 
-In the \(near\) future, anyone providing liquidity to vaults can bypass minting fees by using a zap to automatically include liquidity.
+Anyone providing liquidity to vaults can bypass minting fees by using a zap to automatically include liquidity. Learn more in the [minting tutorial](tutorials/minting.md).
 
 ### Is there an NFTX token?
 
@@ -53,19 +53,19 @@ The main products are built for investors looking to buy and/or sell floor-price
 
 The second audience we cater to are arbitrageurs, who can profit from ranging prices between NFT vault tokens and their underlying collaterals' floor prices on secondary markets. Arbitrageurs can use the products on nftx.org to interact directly with these pools.
 
-A third audience we cater to are NFT liquidity providers, who can profit from providing additional liquidity and/or inventory to one or multiple NFT vaults. Liquidity providers may use the products on nftx.org to mint additional NFT vault tokens, which can then be supplied as liquidity.
+A third audience we cater to are NFT liquidity providers, who can profit from providing additional liquidity and/or inventory to one or multiple NFT vaults. Liquidity providers may use the products on [nftx.org](https://app.nftx.org) to mint additional NFT vault tokens, which can then be supplied as liquidity.
 
 ### What is the NFTX token address?
 
-The address of NFTX is: 0x87d73e916d7057945c9bcd8cdd94e42a6f47f776
+The address of NFTX is: `0x87d73e916d7057945c9bcd8cdd94e42a6f47f776`
 
 ### How do I buy NFTX?
 
-NFTX is available for trading on decentralized exchanges. To find the best rates across multiple exchanges, we recommend using an aggregator such as [Matcha](https://matcha.xyz/).
+NFTX is available for trading on decentralized exchanges. To find the best rates across multiple exchanges, we recommend using an aggregator such as [Matcha](https://matcha.xyz/). A [detailed tutorial on how to do this can be found on our blog](https://blog.nftx.org/how-to-acquire-nftx-on-matcha/).
 
 ### Where do I find NFTX Vault Tokens?
 
-There are two areas to find the current vaults on NFTX. V1 vaults can be viewed in the [Gallery](https://gallery.nftx.org/) as well as a [list of all vaults and holdings on the main site](https://nftx.org/vaults/).
+V1 vaults can be viewed in the [Gallery](https://gallery.nftx.org/).
 
-V2 NFTX Vaults can be found in the [Explore section on the V2 app](https://v2.nftx.org/explore/).
+V2 NFTX Vaults can be found on the [App homepage.](https://app.nftx.org)
 

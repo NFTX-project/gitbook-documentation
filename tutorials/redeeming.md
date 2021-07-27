@@ -6,9 +6,9 @@ NFTX v2 allows you to easily redeem your [minted](minting.md) ERC20 Vault Tokens
 
 ## Why redeem an NFT?
 
-Redemptions allow users to take ownership of an underlying NFT from within a vault. This means that a user can go to an AMM like Sushiswap, purchase a single vToken like PUNK-BASIC and use that token to claim a random CryptoPunk from the [Punk-Basic vault](https://gallery.nftx.org/funds/punk-basic/).
+Redemptions allow users to take ownership of an underlying NFT from within a vault. This means that a user can go to an AMM like Sushiswap, purchase a single vToken like $PUNK and use that token to claim a random CryptoPunk from the [PUNK Vault](https://app.nftx.org/redeem/0x269616d549d7e8eaa82dfb17028d0b212d11232a/).
 
-For an additional fee, usually 5%, users are able to select a specific NFT from the vault.
+For an additional fee, usually 5% \(1.05 vTokens\), users are able to select a specific NFT from the vault.
 
 ## Redeeming Step-by-Step
 
@@ -16,13 +16,15 @@ For an additional fee, usually 5%, users are able to select a specific NFT from 
 
 ![This shows that I have 4 $BUNNY tokens which will allow me to claim back 4 random Genbit Bunnies from the Vault](../.gitbook/assets/image%20%2815%29.png)
 
-When you visit [https://v2.nftx.org/redeem](https://v2.nftx.org/redeem) and connect your wallet, your vToken and NFTX balances will be displayed on the right hand side. Each vToken represents a claim on a random NFT from within its vault.
+When you visit [https://app.nftx.org/redeem](https://app.nftx.org/redeem) and connect your wallet, your vToken and NFTX balances will be displayed on the right hand side. Each vToken represents a claim on a random NFT from within its vault.
 
 You can also target redeem specific NFTs from the vault by paying the Targeted Redeem fee — often 5% or 1.05 vTokens.
 
 {% hint style="info" %}
-Don't have any vTokens? [Visit our Explore section](https://v2.nftx.org/explore/) to browse the available vaults and exchange trading pairs.
+Don't have any vTokens? [Visit the App](http://app.nftx.org) to browse the available vaults. Once inside the vault you can click on "Buy {vToken}" and pick it up from SushiSwap.
 {% endhint %}
+
+![](../.gitbook/assets/image%20%284%29.png)
 
 ### Redeeming — Random
 
@@ -44,7 +46,7 @@ If the vault is left at the default settings, each targeted redeem will cost 1.0
 
 ### Can I redeem from a vault without a vToken?
 
-Users must have a vToken in their wallet balance to redeem from a vault. To browse the available vaults and vault NFTs, please visit the [Explore section of the App](https://v2.nftx.org/explore/).
+Users must have a vToken in their wallet balance to redeem from a vault. To browse the available vaults and vault NFTs, please visit the [home page of the App](https://app.nftx.org).
 
 
 

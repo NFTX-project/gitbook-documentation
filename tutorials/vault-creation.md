@@ -59,7 +59,7 @@ Your vault will not be visible in the NFTX app until it has been minted to and p
 Vault management allows vault creators to modify a number of important settings as well as publishing the vault so that it becomes visible on the NFTX app.
 
 {% hint style="warning" %}
-Published vaults cannot be edited by the creator. Carefully review the vault's settings before publishing, including setting the Fees and Eligibility screens.
+Published vaults cannot be edited by the creator, only the DAO can make updates to published vaults. Carefully review the vault's settings before publishing, including setting the Fees and Eligibility screens.
 {% endhint %}
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-05.png)
@@ -76,12 +76,12 @@ Published vaults cannot be edited by the creator. Carefully review the vault's s
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-06.png)
 
-Fees can now be set on the individual vaults which will then be distributed to the liqudity providers staking their LP. By default all new vaults are set with 1% Mint Fee \(meaning you receive 0.99 tokens for each NFT minted\), 0% Redeem Fee \(so 1 token always can redeem 1 random NFT from the vault\), and a 5% Targeted Redeem Fee \(1.05 tokens are needed to choose the NFT you want from the vault\).
+Fees can now be set on the individual vaults which will then be distributed to the liqudity providers staking their LP. By default all new vaults are set with 5% Mint Fee \(meaning you receive 0.95 tokens for each NFT minted\), 0% Redeem Fee \(so 1 token always can redeem 1 random NFT from the vault\), and a 5% Targeted Redeem Fee \(1.05 tokens are needed to choose the NFT you want from the vault\).
 
-When you first create the vault, and _**before**_ you finalise the vault, you can set the mint fees to 0% to encourage the initial seeding of the vault. Once seeded, ensure that you change the fee back to 1% before finanlising the vault or no fees will be generated on minting NFTs.
+When you first create the vault, and _**before**_ you finalise the vault, you can set the mint fees to 0% to encourage the initial seeding of the vault. Once seeded, ensure that you change the fee back to 5% before finanlising the vault or no fees will be generated on minting NFTs.
 
 {% hint style="info" %}
-In a future release, Zaps will allow users who also provide ETH liquidity for the vault to bypass the 1% mint fee set.
+Don't forget that you can use Zaps to bypass the 5% mint fee by providing ETH liquidity for the vault and staking it to earn yourself fees. Find out more on [Bypassing Mint Fee's with Zaps](minting.md#bypass-mint-fees-with-zaps).
 {% endhint %}
 
 #### **Eligibilities**
@@ -100,7 +100,7 @@ Use this setting to specific individual IDs to add to the eligibility list.
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-09.png)
 
-For blocks of eligible IDs, use this setting to specify the "from" and "to" \(inclusive\) IDs that will be added to the eligibility list. _\*\*_These work well for projects like Art Blocks Curtated which are all minted from the same contract but have distinct ranges for each project.
+For blocks of eligible IDs, use this setting to specify the "from" and "to" \(inclusive\) IDs that will be added to the eligibility list. **These work well for projects like Art Blocks Curtated which are all minted from the same contract but have distinct ranges for each project.**
 
 ### Publishing your Vault
 
