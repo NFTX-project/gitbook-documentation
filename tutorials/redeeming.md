@@ -28,7 +28,7 @@ To redeem an NFT you must enter the quantity you would like to redeem \(in whole
 
 Once the redeem transaction is confirmed, a receipt will be shown that includes an Etherscan link for viewing NFT ID that was redeemed.
 
-![](../.gitbook/assets/screenshot-2021-04-15-at-13.25.31%20%281%29.png)
+![](../.gitbook/assets/screenshot-2021-04-15-at-13.25.31%20%281%29%20%281%29.png)
 
 ## FAQ
 
