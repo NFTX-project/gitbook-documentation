@@ -10,7 +10,7 @@ Vault creation is at the heart of the NFTX protocol and allows users and content
 
 By creating NFT-backed ERC20 tokens, users can create liquid markets for otherwise illiquid NFTs whilst also earning fees and rewards from liquidity provision.
 
-Protocol fees are also introduced in V2 of the NFTX.
+Protocol fees have been introduced in V2 of the NFTX.
 
 ## Vault Creation Step-by-Step
 
