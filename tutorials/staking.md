@@ -6,7 +6,7 @@ Earn fees from the vault, currently 100% of protocol fees are paid out to those 
 
 ## How to stake on NFTX?
 
-To stake on NFTX you first need to get a token for one of the NFTX vaults. In this example we're going to look at the $AVASTR vault.
+To stake on NFTX you first need to get a token for one of the NFTX vaults. In this example we're going to look at the AVASTR vault.
 
 ### Get a vToken
 
@@ -14,15 +14,15 @@ There are two ways that you can get a vToken \(vault Token\) from NFTX. Head to 
 
 ![The NFTs in my wallet that match the Vaults already created in NFTX v2](../.gitbook/assets/mintable-vaults.jpg)
 
-In this example I'm going to mint one of my Avastars into the $AVASTR vault. I choose the Avastar that I would like to mint and select "Mint $AVASTR". This provides me a single $AVASTR token back.
+In this example I'm going to mint one of my Avastars into the AVASTR vault. I choose the Avastar that I would like to mint and select "Mint AVASTR". This provides me a single AVASTR token back.
 
 ![](../.gitbook/assets/mint-avastars-for-token.jpg)
 
-Alternatively, you can go to the Redeem section of the app and look to redeem an Avastar from the vault. From here you will have a link to buy an $AVASTR token directly from Sushi.
+Alternatively, you can go to the Redeem section of the app and look to redeem an Avastar from the vault. From here you will have a link to buy an AVASTR token directly from Sushi.
 
 ![](../.gitbook/assets/buy-avastar-from-dex.jpg)
 
-With a vToken, in this case an $AVASTR token, you can head over to the [Staking](https://v2.nftx.org/staking/) page.
+With a vToken, in this case an AVASTR token, you can head over to the [Staking](https://v2.nftx.org/staking/) page.
 
 ### Add Liquidity
 
@@ -88,7 +88,7 @@ With you tokens you can now Redeem your NFTs from the Vault which will then allo
 
 No. You can keep your liquidity on the current vaults in V1 for as long as you would like and continue to earn fees on the trades on SushiSwap.
 
-You will not be able to stake your liquidity and earn any of the 1% minting and 5% targeted fees on the new vaults unless you become a liquidity provider on V2.
+You will not be able to stake your liquidity and earn any of the 5% minting and 5% targeted fees on the new vaults unless you become a liquidity provider on V2.
 
 #### I still have fractions of a token left after withdrawing my liquidity, what can I do?
 
