@@ -6,7 +6,7 @@ NFTX v2 allows you to easily redeem your [minted](minting.md) ERC20 Vault Tokens
 
 ## Why redeem an NFT?
 
-Redemptions allow users to take ownership of an underlying NFT from within a vault. This means that a user can go to an AMM like Sushiswap, purchase a single vToken like $PUNK and use that token to claim a random CryptoPunk from the [PUNK Vault](https://app.nftx.org/redeem/0x269616d549d7e8eaa82dfb17028d0b212d11232a/).
+Redemptions allow users to take ownership of an underlying NFT from within a vault. This means that a user can go to an AMM like Sushiswap, purchase a single vToken like PUNK and use that token to claim a random CryptoPunk from the [PUNK Vault](https://app.nftx.org/redeem/0x269616d549d7e8eaa82dfb17028d0b212d11232a/).
 
 For an additional fee, usually 5% \(1.05 vTokens\), users are able to select a specific NFT from the vault.
 
@@ -14,7 +14,7 @@ For an additional fee, usually 5% \(1.05 vTokens\), users are able to select a s
 
 ### vToken Balance
 
-![This shows that I have 4 $BUNNY tokens which will allow me to claim back 4 random Genbit Bunnies from the Vault](../.gitbook/assets/image%20%2815%29.png)
+![This shows that I have 4 BUNNY tokens which will allow me to claim back 4 random Genbit Bunnies from the Vault](../.gitbook/assets/image%20%2815%29.png)
 
 When you visit [https://app.nftx.org/redeem](https://app.nftx.org/redeem) and connect your wallet, your vToken and NFTX balances will be displayed on the right hand side. Each vToken represents a claim on a random NFT from within its vault.
 
@@ -30,7 +30,7 @@ Don't have any vTokens? [Visit the App](http://app.nftx.org) to browse the avail
 
 To redeem an NFT you must enter the quantity you would like to redeem \(in whole numbers\) next to the "Random" section in the redemption baskset and approve the NFTX contract. Once the approval transaction has been confirmed, you will then be able to redeem the desired number of NFTs from the vault.
 
-![Here I am redeeming 2 random Genbit Bunnies using 2 $BUNNY tokens](../.gitbook/assets/image%20%2814%29.png)
+![Here I am redeeming 2 random Genbit Bunnies using 2 BUNNY tokens](../.gitbook/assets/image%20%2814%29.png)
 
 ### Redeeming — Targeted
 
