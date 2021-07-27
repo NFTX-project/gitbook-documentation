@@ -38,7 +38,7 @@ Not seeing your NFT? [See our FAQ](https://docs.nftx.org/tutorials/get-started-v
 The mint basket will show you the NFTs you have selected, their approval status, mint fee and the number of tokens you will recieve after minting.
 
 {% hint style="info" %}
-Although not shown in the screenshot below, you will sometimes need to "Approve" the NFTs to be minted into the Vault. Once Approved, the "Mint $AVASTR" \(or relevant NFT name\) will appear and you can complete the minting process.
+Although not shown in the screenshot below, you will sometimes need to "Approve" the NFTs to be minted into the Vault. Once Approved, the "Mint AVASTR" \(or relevant NFT name\) will appear and you can complete the minting process.
 {% endhint %}
 
 ![](../.gitbook/assets/screenshot-2021-06-22-at-23.57.38.png)
@@ -51,7 +51,7 @@ Your NFTs will need to be approved for use by the NFTX contract before they can 
 
 The mint fee is new in v2 and will be distributed 100% to the liquidity providers.  The fee is set to a default of 5%, however during the vault creation process this can be changed to any value. Once the vault is published, only the DAO is able to update the mint fees via a governance vote.
 
-With a 5% mint fee, each NFT minted will result in the distribution of 0.95 vTokens \(in this case $AVASTR tokens\) with the remainder distributed to the liquidity providers.
+With a 5% mint fee, each NFT minted will result in the distribution of 0.95 vTokens \(in this case AVASTR tokens\) with the remainder distributed to the liquidity providers.
 
 ### **Minting**
 
