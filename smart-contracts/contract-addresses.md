@@ -11,4 +11,4 @@
 | VaultFactory | GitHub | 0xBE86f647b167567525cCAAfcd6f881F1Ee558216 |
 | EligibilityManager | GitHub | 0x4086e98Cce041d286112d021612fD894cFed94D5 |
 | ProxyController address | GitHub | 0x4333d66Ec59762D1626Ec102d7700E64610437Df |
-| NFTXStakingZap | Github | 0x0b8ee2ee7d6f3bfb73c9ae2127558d1172b65fb1 |
+| NFTXStakingZap | Github | `0x0b8ee2ee7d6f3bfb73c9ae2127558d1172b65fb1` |
