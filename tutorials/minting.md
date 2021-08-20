@@ -2,7 +2,7 @@
 
 NFTX v2 introduces a new minting interface that allows you to easily mint a liquid ERC20 token from your NFT!
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%286%29%20%281%29.png)
 
 ## Why mint an NFT?
 

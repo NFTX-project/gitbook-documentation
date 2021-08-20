@@ -30,7 +30,7 @@ Eligibility lists or ranges can be added once the vault has been created. This w
 
 Some assets are already used in other vaults. For example, Art Blocks are used in multiple vaults and separated using eligibility ranges. To avoid adding a duplicate vault and splitting liquidity, review the matching vaults list before proceeding.
 
-![](../.gitbook/assets/check-matching-vaults%20%281%29.png)
+![](../.gitbook/assets/check-matching-vaults%20%281%29%20%281%29.png)
 
 **Vault Name**
 

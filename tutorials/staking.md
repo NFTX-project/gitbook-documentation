@@ -4,6 +4,10 @@
 
 Earn fees from the vault, currently 100% of protocol fees are paid out to those that stake. Stakers also receive an ERC20 “xToken” like xPUNK that is a claim on the underlying staked SLP. We expect other projects to build use cases for these xTokens.
 
+{% hint style="info" %}
+APRs are calculated by annualizing the last 7 days of the vault's fee earnings. The real rate of return will vary throughout the year.
+{% endhint %}
+
 ## How to stake on NFTX?
 
 To stake on NFTX you first need to get a token for one of the NFTX vaults. In this example we're going to look at the AVASTR vault.
@@ -83,6 +87,10 @@ You will now be able to view your tokens in Metamask, and if you go to the NFTX 
 With you tokens you can now Redeem your NFTs from the Vault which will then allow you to
 
 ### FAQs
+
+#### Why has my claimable balance not increased?
+
+Rewards are earned when the vault generates fees. APRs are calculated based on the last 7 days of vault fees.
 
 #### Do I have to remove my Liquidity?
 

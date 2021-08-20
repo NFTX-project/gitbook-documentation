@@ -1,7 +1,5 @@
 # Contract Addresses
 
-
-
 | **Contracts** | **Code** | **Mainnet** |
 | :--- | :--- | :--- |
 | StakingTokenProvider | GitHub | `0x5fAD0e4cc9925365b9B0bbEc9e0C3536c0B1a5C7` |
@@ -12,3 +10,4 @@
 | EligibilityManager | GitHub | `0x4086e98Cce041d286112d021612fD894cFed94D5` |
 | ProxyController address | GitHub | `0x4333d66Ec59762D1626Ec102d7700E64610437Df` |
 | NFTXStakingZap | Github | `0x0b8ee2ee7d6f3bfb73c9ae2127558d1172b65fb1` |
+

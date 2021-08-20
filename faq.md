@@ -55,7 +55,7 @@ Yes. The NFTX token is a governance token that can be used to vote on proposals 
 
 There are three main target audiences for NFTX: Investors, arbitrageurs, and NFT liquidity providers.
 
-The main products are built for investors looking to buy and/or sell floor-priced NFTs without having to wait for a taker/maker on a secondary market. 
+The main products are built for investors looking to buy and/or sell floor-priced NFTs without having to wait for a taker/maker on a secondary market.
 
 The second audience we cater to are arbitrageurs, who can profit from ranging prices between NFT vault tokens and their underlying collaterals' floor prices on secondary markets. Arbitrageurs can use the products on nftx.org to interact directly with these pools.
 

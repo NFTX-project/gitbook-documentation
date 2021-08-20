@@ -15,21 +15,21 @@ Users deposit their NFT into an NFTX vault and mint a fungible ERC20 token \(vTo
 * Instantly sell any NFT by minting it as an ERC20 and swapping via Sushiswap
 * Increased liquidity for NFT investors and speculators
 
-### How does it work?
+## How does it work?
 
-#### Vault Creation
+### Vault Creation
 
 Vaults can be created by anyone for any NFT asset on Ethereum. Once a vault has been created, any user can then deposit eligible NFTs into the vault to mint a fungible NFT-backed token referred to as an "vToken".
 
 [Learn more about vault creation](tutorials/vault-creation.md)
 
-#### Minting vTokens
+### Minting vTokens
 
 Anyone can deposit NFTs into an existing vault \(or one they have created\) in order to mint a fungible vToken that represents a 1:1 claim on a random NFT from within the vault.
 
 [Learn more about minting](tutorials/minting.md)
 
-#### Floor Prices
+### Floor Prices
 
 Users can then pool their minted vTokens in Automated Market Makers \(AMMs\) like Sushiswap to create a liquid market for other users to trade. With liquidity and trading volume established, the NFT-backed vToken enters into price discovery and a "floor price" is discovered.
 
@@ -43,13 +43,13 @@ For example, a user has 5 Hashmasks and values 2 of them highly. However, they c
 
 The above process will continue until a floor price is achieved.
 
-#### Eligibilities
+### Eligibilities
 
 The Mask vault allows any Hashmask to be deposited, however other vaults use an eligibility list that only allows a specific sub-category of NFTs to be deposited. For example, the Kitty Gen 0 vault has an eligibility list that includes only Kitties whose metadata is Generation 0. Other Kitties can not be deposited into this vault.
 
-### Who Benefits From NFTX?
+## Who Benefits From NFTX?
 
-#### Collectors
+### Collectors
 
 NFTs in their basic form do not earn yield. However, when they are used to mint vTokens they can tap into the world of decentralized finance. Put simply, collectors can use NFTX to unlock more value from their NFTs:
 
@@ -57,7 +57,7 @@ NFTs in their basic form do not earn yield. However, when they are used to mint 
 * Earn trading fees as a liquidity provider
 * Farm with stablecoins using vTokens as loan collateral
 
-#### Content Creators
+### Content Creators
 
 By launching on the NFTX protocol, content creators are able to earn protocol fees in perpetuity whilst also improving the reach and fairness of distribution:
 
@@ -65,14 +65,10 @@ By launching on the NFTX protocol, content creators are able to earn protocol fe
 * Distribute NFTs via an AMM in the form of vTokens
 * Create instantly liquid markets for new content
 
-#### Investors
+### Investors
 
 NFTs are typically highly illiquid and difficult to price. NFTX makes speculating and investing in the NFT market a far simpler process:
 
 * Access the most liquid markets for NFTs
 * Track the price of particular categories of NFT
-
-
-
-
 
