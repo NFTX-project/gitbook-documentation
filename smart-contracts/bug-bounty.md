@@ -6,11 +6,17 @@ The NFTX bounty program is derived from the Ethereum Bounty Program, an industry
   
 Please send vulnerability submissions to [bounty@nftx.org](mailto:bounty@nftx.org) 
 
+{% hint style="info" %}
+The NFTX V2 contacts have been through the Code Area bug bounty programme  A number of vulnarabilities were flagged that were either fixed or acknowledge which you can review https://code423n4.com/reports/2021-05-nftx/. 
+
+Please check these prior to submitting your bug bounties as anything already identified here is unlikely to qualify for this Bug Bounty programme outlined below.
+{% endhint %}
+
 ## Rules and Rewards
 
 Please have a look at the bullets below before starting your hunt!
 
-* Issues that have already been submitted by another user or are already known to the NFTX team are not eligible for bounty rewards.
+* Issues that have already been submitted by another user or are already known to the NFTX team are not eligible for bounty rewards (this includes the [Code Area report](https://code423n4.com/reports/2021-05-nftx/)).
 * Public disclosure of a vulnerability makes it ineligible for a bounty.
 * You can start or fork a private chain for bug hunting. Please respect the NFTX main and test networks and refrain from attacking them.
 * All NFTX members paid by the DAO are not eligible for rewards.
