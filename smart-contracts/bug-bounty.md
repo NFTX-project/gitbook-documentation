@@ -7,7 +7,7 @@ The NFTX bounty program is derived from the Ethereum Bounty Program, an industry
 Please send vulnerability submissions to [bounty@nftx.org](mailto:bounty@nftx.org) 
 
 {% hint style="info" %}
-The NFTX V2 contacts have been through the Code Area bug bounty programme  A number of vulnarabilities were flagged that were either fixed or acknowledge which you can review https://code423n4.com/reports/2021-05-nftx/. 
+The NFTX V2 contracts have been through the Code Area bug bounty programme  A number of vulnarabilities were flagged that were either fixed or acknowledge which you can review https://code423n4.com/reports/2021-05-nftx/. 
 
 Please check these prior to submitting your bug bounties as anything already identified here is unlikely to qualify for this Bug Bounty programme outlined below.
 {% endhint %}
