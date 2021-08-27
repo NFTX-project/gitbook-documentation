@@ -36,7 +36,7 @@ Anyone providing liquidity to vaults can bypass minting fees by using a zap to a
 
 ### Can you get rewards from using NFTX?
 
-Yes. To encourage more liquidity for the vaults all fees that are generated from Minting and Target Redeptions are passed to anyone that is staking their LP against that vault. These rewards are paid out on a block-by-block basis, are are paid in the vault tokens you are using to stake.
+Yes. To encourage more liquidity for the vaults all fees that are generated from Minting and Target Redemptions are passed to anyone that is staking their LP against that vault. These rewards are paid out on a block-by-block basis, are paid in the vault tokens you are using to stake.
 
 You can see the APR for each of the different vaults on the [NFTX Staking](https://app.nftx.org/staking/) page.
 
