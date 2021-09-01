@@ -16,10 +16,12 @@
 * [Staking](tutorials/staking.md)
 * [Vault Creation](tutorials/vault-creation.md)
 
-## Smart Contracts
+## Protocol <a id="smart-contracts"></a>
 
 * [Bug Bounty](smart-contracts/bug-bounty.md)
 * [Contract Addresses](smart-contracts/contract-addresses.md)
+* [Subgraph](smart-contracts/subgraph.md)
+* [Dune Analytics](smart-contracts/dune-analytics.md)
 
 ## Ecosystem
 
