@@ -54,6 +54,28 @@ Once completed, any pools that you are currently staking will be shown at the to
 Staking rewards are now active!
 {% endhint %}
 
+## How to UNstake your position on NFTX?
+
+{% hint style="info" %}
+It is best to read through each of the steps below so you know what the whole process is before starting the unstaking/unwinding process.
+{% endhint %}
+
+When you want to unstake your position on NFTX and unwind your liquidity you will need to do this through both [nftx.io](https://nftx.io) and [Sushi.com](https://Sushi.com).
+
+Visit the [NFTX App](https://nftx.io) and make sure that you have connect the wallet that contains your staked position. Go to the [Staking page](https://nftx.io/stake/) where you will be able to see all your staked positions.
+
+![A view on https://nftx.io/stake that shows my Staked positions](../.gitbook/assets/screenshot-2021-09-23-at-15.15.22.jpg)
+
+From this screen you want to click on the the "—" button next to the deposit button.
+
+![Click on this &quot;&#x2014;&quot; button to withdraw your SLP](../.gitbook/assets/screenshot-2021-09-23-at-15.16.45.png)
+
+{% hint style="info" %}
+You will notice that in the above image that there are still 0.1499 BUNNY tokens that can be claimed. If you are unstaking your position those tokens will automatically be claimed as part of the process, saving you an additional transaction fee as part of the process.
+{% endhint %}
+
+
+
 ## Removing Liquidity from V1 Vaults <a id="docs-internal-guid-227675f5-7fff-e5b1-c52b-9d3c69bb7b2e"></a>
 
 ### Overview
