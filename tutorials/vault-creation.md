@@ -118,7 +118,7 @@ Once confirmed you will be redirected to the vault detail page. On this page it 
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-16.png)
 
-## Verifying your vault & adding a vault icon
+### Verifying your vault & adding a vault icon
 
 Once you have created and published your vault you will also need to provide an icon so that the vault can go through the final verification process.
 
