@@ -30,7 +30,7 @@ Eligibility lists or ranges can be added once the vault has been created. This w
 
 Some assets are already used in other vaults. For example, Art Blocks are used in multiple vaults and separated using eligibility ranges. To avoid adding a duplicate vault and splitting liquidity, review the matching vaults list before proceeding.
 
-![](../.gitbook/assets/check-matching-vaults%20%281%29%20%281%29%20%281%29.png)
+![](<../.gitbook/assets/check-matching-vaults (1) (1) (1).png>)
 
 **Vault Name**
 
@@ -43,7 +43,7 @@ This will be the _symbol_ of the ERC20 token that is minted from this vault.
 Both the Vault Name and Vault symbol will appear anywhere that this token appears, from CoinGecko and Etherscan through to Sushi and Uniswap.
 
 {% hint style="info" %}
-A strong name and symbol play a critical part in a vault's long-term success. Try to keep the name singular \(PUNK, not PUNKS\), six characters or less \(to enable ticker links in Twitter\), and use a real word where possible \(BUNNY, not GENBIT\).
+A strong name and symbol play a critical part in a vault's long-term success. Try to keep the name singular (PUNK, not PUNKS), six characters or less (to enable ticker links in Twitter), and use a real word where possible (BUNNY, not GENBIT).
 {% endhint %}
 
 ### Vault Created
@@ -76,7 +76,7 @@ Published vaults cannot be edited by the creator, only the DAO can make updates 
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-06.png)
 
-Fees can now be set on the individual vaults which will then be distributed to the liqudity providers staking their LP. By default all new vaults are set with 5% Mint Fee \(meaning you receive 0.95 tokens for each NFT minted\), 0% Redeem Fee \(so 1 token always can redeem 1 random NFT from the vault\), and a 5% Targeted Redeem Fee \(1.05 tokens are needed to choose the NFT you want from the vault\).
+Fees can now be set on the individual vaults which will then be distributed to the liqudity providers staking their LP. By default all new vaults are set with 5% Mint Fee (meaning you receive 0.95 tokens for each NFT minted), 0% Redeem Fee (so 1 token always can redeem 1 random NFT from the vault), and a 5% Targeted Redeem Fee (1.05 tokens are needed to choose the NFT you want from the vault).
 
 When you first create the vault, and _**before**_ you finalise the vault, you can set the mint fees to 0% to encourage the initial seeding of the vault. Once seeded, ensure that you change the fee back to 5% before finanlising the vault or no fees will be generated on minting NFTs.
 
@@ -100,7 +100,7 @@ Use this setting to specific individual IDs to add to the eligibility list.
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-09.png)
 
-For blocks of eligible IDs, use this setting to specify the "from" and "to" \(inclusive\) IDs that will be added to the eligibility list. **These work well for projects like Art Blocks Curtated which are all minted from the same contract but have distinct ranges for each project.**
+For blocks of eligible IDs, use this setting to specify the "from" and "to" (inclusive) IDs that will be added to the eligibility list. **These work well for projects like Art Blocks Curtated which are all minted from the same contract but have distinct ranges for each project.**
 
 ### Publishing your Vault
 
@@ -118,6 +118,31 @@ Once confirmed you will be redirected to the vault detail page. On this page it 
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-16.png)
 
+## Verifying your vault & adding a vault icon
+
+Once you have created and published your vault you will also need to provide an icon so that the vault can go through the final verification process.
+
+To [add the icon and request verification complete this form](https://notionforms.io/forms/vault-verification), but make sure you have all the information required. Let's take a look at the requirements.
+
+1. **Vault Name:** The name of your vault (not the token name).
+2. **Vault ID:** You can find the Vault ID on the Info tab on your vault page in the right hand sidebar (or at the bottom if your are on mobile).
+3.  **Discord Username** _(i.e. javery#3313)_: You can get this by clicking on your discord user on the bottom left of the discord app. We need this so we can reach out to confirm the details are correct.
+
+    ![](https://downloads.intercomcdn.com/i/o/437512436/12c9066f38f468ba71454c91/Screenshot+2021-12-21+at+12.16.04.png)
+4.  **Vault Icon**: upload a 512x512px transparent PNG icon that you want associated with the vault. See an example of the CryptoPunk vault icon below.
+
+    ![PUNK](https://nftx-8e1220506660.intercom-attachments-1.com/i/o/437571507/89010aeffa2b0579949f63fa/256x256.png)
+5.  **Signed Message**: Visit https://app.mycrypto.com/sign-message and create a signed message with the wallet that you used to create the vault. This allows the NFTX DAO to confirm that the request is originating from the owner of vault.
+
+    \
+    When adding your signed message please **ensure that you are signing the message with the wallet that you used to create the vault**.
+
+Once we recieve the request someone from the team will verifity the signed message, update the vault icon, and verify the vault.
+
+Please note that the vault is usable even though it has not been verified.
+
+[Verify Vault Now](https://notionforms.io/forms/vault-verification)
+
 ## FAQ
 
 ### I am being warned about the vault name or symbol, what does this mean?
@@ -126,16 +151,15 @@ Naming conventions provide structure for NFTX vaults that makes them instantly r
 
 **Naming conventions**
 
-| Vault Name | Vault Symbol |
-| :--- | :--- |
-| Alphanumeric only | Less than 7 characters |
-| Capitalized \(i.e. Meebits\) | Singular \(i.e. PUNK for CryptoPunks floor vault\) |
-|  | Uppercase |
-|  | Real words where possible |
+| Vault Name                 | Vault Symbol                                     |
+| -------------------------- | ------------------------------------------------ |
+| Alphanumeric only          | Less than 7 characters                           |
+| Capitalized (i.e. Meebits) | Singular (i.e. PUNK for CryptoPunks floor vault) |
+|                            | Uppercase                                        |
+|                            | Real words where possible                        |
 
 The tight recommendations on Vault Symbol are in place to conform to Twitter's cashtag standard.
 
 ### Why isn't my vault isn't showing in the NFTX app?
 
 The most common reason for this is that your vault does not yet have holdings or has not been published. To add holdings, visit the vault management page and click "Add Holdings".
-
