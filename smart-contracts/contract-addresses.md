@@ -10,4 +10,7 @@
 | EligibilityManager      | GitHub   | `0x4086e98Cce041d286112d021612fD894cFed94D5` |
 | Marketplace Zap         | GitHub   | `0x0fc584529a2AEfA997697FAfAcbA5831faC0c22d` |
 | ProxyController address | GitHub   | `0x4333d66Ec59762D1626Ec102d7700E64610437Df` |
-| NFTXStakingZap          | Github   | `0x0b8ee2ee7d6f3bfb73c9ae2127558d1172b65fb1` |
+| MultiProxy Controller   | GitHub   | `0x35fb4026dcF19f8cA37dcca4D2D68A549548750C` |
+| Inventory Staking       | GitHub   | `0x3E135c3E981fAe3383A5aE0d323860a34CfAB893` |
+| NFTXStakingZap          | Github   | `0x7a5e0B4069709cF4D02423b8cafDc608f4436791` |
+
