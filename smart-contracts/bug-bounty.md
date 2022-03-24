@@ -7,7 +7,10 @@ The NFTX bounty program is derived from the Ethereum Bounty Program, an industry
 Please send vulnerability submissions to [bounty@nftx.org](mailto:bounty@nftx.org)
 
 {% hint style="info" %}
-The NFTX V2 contracts have been through the Code Area bug bounty programme A number of vulnarabilities were flagged that were either fixed or acknowledge which you can review [https://code423n4.com/reports/2021-05-nftx/](https://code423n4.com/reports/2021-05-nftx/).
+The NFTX V2 contracts have been through the Code Area bug bounty programme on two occassions. A number of vulnarabilities were flagged that were either fixed or acknowledge which you can review in these two reports
+
+* [https://code423n4.com/reports/2021-05-nftx/](https://code423n4.com/reports/2021-05-nftx/)
+* [https://code4rena.com/reports/2021-12-nftx/](https://code4rena.com/reports/2021-12-nftx/)
 
 Please check these prior to submitting your bug bounties as anything already identified here is unlikely to qualify for this Bug Bounty programme outlined below.
 {% endhint %}
@@ -16,16 +19,16 @@ Please check these prior to submitting your bug bounties as anything already ide
 
 Please have a look at the bullets below before starting your hunt!
 
-* Issues that have already been submitted by another user or are already known to the NFTX team are not eligible for bounty rewards \(this includes the [Code Area report](https://code423n4.com/reports/2021-05-nftx/)\).
+* Issues that have already been submitted by another user or are already known to the NFTX team are not eligible for bounty rewards (this includes the [Code Area report](https://code423n4.com/reports/2021-05-nftx/)).
 * Public disclosure of a vulnerability makes it ineligible for a bounty.
 * You can start or fork a private chain for bug hunting. Please respect the NFTX main and test networks and refrain from attacking them.
 * All NFTX members paid by the DAO are not eligible for rewards.
 * NFTX websites or organizational infrastructure in general, are NOT part of the bounty program.
 * NFTX bounty program considers a number of variables in determining rewards. Determinations of eligibility, score and all terms related to an award are at the sole and final discretion of the NFTX DAO.
 
-The value of rewards paid out will vary depending on Severity. The severity is calculated according to the [OWASP](https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology) risk rating model based on Impact and Likelihood :
+The value of rewards paid out will vary depending on Severity. The severity is calculated according to the [OWASP](https://www.owasp.org/index.php/OWASP\_Risk\_Rating\_Methodology) risk rating model based on Impact and Likelihood :
 
-![Severity](https://lh3.googleusercontent.com/B-RaTD0aLBUht3y-NEPSja8vhSyncCHm28gWdE2uIjEfYjL4ceG9kEbcSR2n5IBAExH8uj57jamcoI6eY_ewLfRGBaIdZQD9dYGoQ56rDFA1WGYFEC9JIKRWHjGpog9yYL6OvvVt)
+![Severity](https://lh3.googleusercontent.com/B-RaTD0aLBUht3y-NEPSja8vhSyncCHm28gWdE2uIjEfYjL4ceG9kEbcSR2n5IBAExH8uj57jamcoI6eY\_ewLfRGBaIdZQD9dYGoQ56rDFA1WGYFEC9JIKRWHjGpog9yYL6OvvVt)
 
 Reward sizes are guided by the rules below, but are in the end, determined at the sole discretion of the NFTX DAO.
 
@@ -37,7 +40,7 @@ Reward sizes are guided by the rules below, but are in the end, determined at th
 
 Bounties may be paid out in USD, ETH or NFTX tokens.
 
-In addition to Severity, other variables are also considered when the NFTX DAO decides the score, including \(but not limited to\):
+In addition to Severity, other variables are also considered when the NFTX DAO decides the score, including (but not limited to):
 
 * Quality of description. Higher rewards are paid for clear, well-written submissions.
 * Quality of reproducibility. Please include test code, scripts and detailed instructions. The easier it is for us to reproduce and verify the vulnerability, the higher the reward.
@@ -52,4 +55,3 @@ The bug bounty program is an experimental and discretionary rewards program for 
 The above mentioned bug bounty rules and rewards are applicable to all smart contracts that are actively being used and/or promoted by NFTX.
 
 When in doubt about whether the bug applies to the bounty program, please contact the DAO by sending an email to [bounty@nftx.org](mailto:bounty@nftx.org).
-
