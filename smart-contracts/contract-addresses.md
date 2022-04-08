@@ -12,4 +12,5 @@
 | MultiProxy Controller | GitHub   | `0x35fb4026dcF19f8cA37dcca4D2D68A549548750C` |
 | Inventory Staking     | GitHub   | `0x3E135c3E981fAe3383A5aE0d323860a34CfAB893` |
 | NFTXStakingZap        | Github   | `0x7a5e0B4069709cF4D02423b8cafDc608f4436791` |
+| Unstaking Inventory   | Github   | `0x51d660Ba5c218b2Cf33FBAcA5e3aBb8aEff3543B` |
 
