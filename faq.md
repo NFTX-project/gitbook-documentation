@@ -4,7 +4,7 @@
 
 ### What is NFTX?
 
-NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles. These tokens are called vault tokens, and (like all ERC20s) they are fungible and composable. With NFTX, it is possible to create and trade tokens based on your favorite collectibles such as [CryptoPunks](https://www.larvalabs.com/cryptopunks), [CryptoKitties](https://www.cryptokitties.co), and [Avastars](https://avastars.io), right from an exchange.
+NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles. These tokens are called vault tokens, and (like all ERC20s) they are fungible and composable. With NFTX, it is possible to create and trade tokens based on your favorite collectibles such as [CryptoPunks](https://www.larvalabs.com/cryptopunks), [CryptoKitties](https://www.cryptokitties.co/), and [Avastars](https://avastars.io/), right from an exchange.
 
 NFTX's mission is to become the primary issuer of NFT vault tokens, allowing anyone to trade & invest in NFT markets without needing the underlying knowledge and expertise required when investing in individual assets. By doing so, NFTX will function as a black hole for NFT assets.
 
@@ -67,10 +67,10 @@ The address of NFTX is: `0x87d73e916d7057945c9bcd8cdd94e42a6f47f776`
 
 ### How do I buy NFTX?
 
-NFTX is available for trading on decentralized exchanges. To find the best rates across multiple exchanges, we recommend using an aggregator such as [Matcha](https://matcha.xyz). A [detailed tutorial on how to do this can be found on our blog](https://blog.nftx.org/how-to-acquire-nftx-on-matcha/).
+NFTX is available for trading on decentralized exchanges. To find the best rates across multiple exchanges, we recommend using an aggregator such as [Matcha](https://matcha.xyz/). A [detailed tutorial on how to do this can be found on our blog](https://blog.nftx.org/how-to-acquire-nftx-on-matcha/).
 
 ### Where do I find NFTX Vault Tokens?
 
-V1 vaults can be viewed in the [Gallery](https://gallery.nftx.org).
+V1 vaults can be viewed in the [Gallery](https://gallery.nftx.org/).
 
 V2 NFTX Vaults can be found on the [App homepage.](https://app.nftx.org)

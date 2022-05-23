@@ -15,9 +15,10 @@
 * [Staking](tutorials/staking.md)
 * [Vault Creation](tutorials/vault-creation.md)
 
-## Protocol <a id="smart-contracts"></a>
+## Protocol <a href="#smart-contracts" id="smart-contracts"></a>
 
-* [Bug Bounty](smart-contracts/bug-bounty.md)
+* [Bug Bounty](smart-contracts/bug-bounty/README.md)
+  * [Trail of Bits Audit](smart-contracts/bug-bounty/trail-of-bits-audit.md)
 * [Contract Addresses](smart-contracts/contract-addresses.md)
 * [Subgraph](smart-contracts/subgraph.md)
 * [Dune Analytics](smart-contracts/dune-analytics.md)
@@ -25,4 +26,3 @@
 ## Ecosystem
 
 * [🎨 Brand Kit](ecosystem/brand-kit.md)
-
