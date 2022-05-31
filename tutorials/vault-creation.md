@@ -76,9 +76,9 @@ Published vaults cannot be edited by the creator, only the DAO can make updates 
 
 ![](../.gitbook/assets/tutorial-v2-create-vault-06.png)
 
-Fees can now be set on the individual vaults which will then be distributed to the liqudity providers staking their LP. By default all new vaults are set with 5% Mint Fee (meaning you receive 0.95 tokens for each NFT minted), 0% Redeem Fee (so 1 token always can redeem 1 random NFT from the vault), and a 5% Targeted Redeem Fee (1.05 tokens are needed to choose the NFT you want from the vault).
+Fees can now be set on the individual vaults which will then be distributed to the liqudity providers staking their LP. By default all new vaults are set with 10% Mint Fee (meaning you receive 0.95 tokens for each NFT minted), 4% Random Redeem Fee (so 1.06 tokens can redeem 1 random NFT from the vault), and a 6% Targeted Redeem Fee (1.06 tokens are needed to choose the NFT you want from the vault).
 
-When you first create the vault, and _**before**_ you finalise the vault, you can set the mint fees to 0% to encourage the initial seeding of the vault. Once seeded, ensure that you change the fee back to 5% before finanlising the vault or no fees will be generated on minting NFTs.
+~~When you first create the vault, and _**before**_ you finalise the vault, you can set the mint fees to 0% to encourage the initial seeding of the vault~~. When seeding the vault with liquidity and inventory staking you bypass the mint fees, so you no longer need to reduce the fees to get the vault seeded.
 
 {% hint style="info" %}
 Don't forget that you can use Zaps to bypass the 5% mint fee by providing ETH liquidity for the vault and staking it to earn yourself fees. Find out more on [Bypassing Mint Fee's with Zaps](minting.md#bypass-mint-fees-with-zaps).
