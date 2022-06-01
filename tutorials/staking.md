@@ -2,73 +2,106 @@
 
 ## Why stake on NFTX?
 
-Earn fees from the vault, currently 100% of protocol fees are paid out to those that stake. Stakers also receive an ERC20 “xToken” like xPUNK that is a claim on the underlying staked SLP. We expect other projects to build use cases for these xTokens.
+Earn fees from the vault, currently 100% of protocol fees are paid out to those that stake. Liquidity providers earn a share of 80% and inventory providers earn a share of 20% of the fees.
+
+Stakers also receive an ERC20 “xToken” like xPUNKWETH that is a claim on the underlying staked SLP, or xPUNK which is a claim on the underlying staked inventory. We expect other projects to build use cases for these xTokens.
+
+You can learn more about the benefits of staking on [https://academy.nftx.io/staking](https://academy.nftx.io/staking)
 
 {% hint style="info" %}
-APRs are calculated by annualizing the last 7 days of the vault's fee earnings. The real rate of return will vary throughout the year.
+APRs are calculated by annualizing the last 30 days of the vault's fee earnings. The real rate of return will vary throughout the year.
 {% endhint %}
 
 ## How to stake on NFTX?
 
-To stake on NFTX you first need to get a token for one of the NFTX vaults. In this example we're going to look at the AVASTR vault.
+To stake on NFTX you need an NFT from that collection. In this example we're going to look at the Space Poggers collection.
 
-### Get a vToken
+There are two ways to stake and earn fees
 
-There are two ways that you can get a vToken \(vault Token\) from NFTX. Head to [https://app.nftx.org](https://app.nftx.org) and you will see a list of the current vaults you can mint into based on the NFTs in your wallet
+* Liquidity staking
+* Inventory staking
 
-![The NFTs in my wallet that match the Vaults already created in NFTX v2](../.gitbook/assets/mintable-vaults.jpg)
+Remember that in both situations your NFT ends up inside of the vault where _anyone_ can buy or swap it back out. You are not gauranteed to get the same NFT back, so don't stake any rare NFTs or NFTs that you are attached to.
 
-In this example I'm going to mint one of my Avastars into the AVASTR vault. I choose the Avastar that I would like to mint and select "Mint AVASTR". This provides me a single AVASTR token back.
+### Inventory Staking
 
-![](../.gitbook/assets/mint-avastars-for-token.jpg)
+Go to the Stake page on the vault.
 
-Alternatively, you can go to the Redeem section of the app and look to redeem an Avastar from the vault. From here you will have a link to buy an AVASTR token directly from Sushi.
+![The stake page shows you the NFTs in your connected wallet that you can stake into the vault.](<../.gitbook/assets/image (23).png>)
 
-![](../.gitbook/assets/buy-avastar-from-dex.jpg)
+Select the NFT that you would like to stake as inventory into the vault. Note that in the image below we are staking Pogger #2877 which will give me a share of 3.26% of the inventory rewards (which is 20% of the fees), and the **position will be locked for 7 days**.
 
-With a vToken, in this case an AVASTR token, you can head over to the [Staking](https://v2.nftx.org/staking/) page.
+The lock period is there to avoid users from using staking as a way to bypass the mint/sell fees.
 
-### Add Liquidity
+![](<../.gitbook/assets/image (22).png>)
 
-From the Staking page you can find the pair that you want to provide liquidity for, in this case it is the AVASTR-ETH SLP, and we want to Add Liquidity to that pool
+Once you have confirmed BOTH the **Approve** and **Stake** transactions you will receive the below message that your transaction was successful.
 
-![](../.gitbook/assets/image%20%2811%29.png)
+<img src="../.gitbook/assets/image (6).png" alt="" data-size="original">
 
-From this page you can add the amount of AVASTR you want to add to the pool, and the relevant amount of ETH will be calculated below. If you are the first liquidity provider then you will need to set the initial price, which should be the floor price of the NFTs for the vault. One way to calculate this is to search for your NFT contract on OpenSea with the filter Buy Now and order from Lowest to Highest sale price.
+This will provide you with an xTOKEN (xPOGGER) which is a reference to your staked inventory position. The xTOKEN is usually _less_ than the number of NFTs you have added, for example we received 0.9241 xPOGGER back from staking one Space Pogger.
 
-![](../.gitbook/assets/image%20%2813%29.png)
+When we decide to exit our position, that is equivalent to at least 1 POGGER token plus any fees that are accrued during the time we are staked. When exiting you are also able to claim a random NFT from the vault and bypass the redeem fee, so you're always gauranteed to get the same number of NFTs out of the vault that you put in when inventory staking.
 
-Once you have confirmed adding liquidity you will be issued with pool tokens.
+![](<../.gitbook/assets/image (19).png>)
 
-### Stake your LP
 
-With your pool tokens you can return to the Staking screen, Approve the use of the SLP \(this will be where the "Deposit SLP" button can be seen\), and then "Deposit SLP".
 
-![](../.gitbook/assets/image%20%2812%29.png)
+### Liquidity Staking
 
-Once completed, any pools that you are currently staking will be shown at the top of the staking page with details on your APY, Staked amount, Earnings, and Claimable AVASTAR tokens.
+Go to the Stake page on the vault.
 
-![](../.gitbook/assets/image%20%2810%29.png)
+Select the NFT that you would like to stake as liquidity into the vault. Note that in the image below we are staking Pogger #5389 which will give me a share of 0.78% of the liquidity rewards (which is 80% of the fees), and the **position will be locked for 2 days**.
 
-{% hint style="success" %}
-Staking rewards are now active!
-{% endhint %}
+![](<../.gitbook/assets/image (16).png>)
+
+The lock period is there to avoid users from using staking as a way to bypass the mint/sell fees.
+
+Once you have confirmed BOTH the **Approve** and **Stake** transactions you will receive the below message that your transaction was successful.
+
+<img src="../.gitbook/assets/image (6).png" alt="" data-size="original">
+
+This will provide you with an xTOKENWETH (xPOGGERWETH) which is a reference to your staked liquidity position. The xTOKENWETH is usually _less_ than the number of NFTs you have added, for example we received 0.0992 xPOGGERWETH back from staking one Space Pogger. This is your claim on the SLP on Sushi.
+
+When we decide to exit our position, that **will not** be equivalent to the 1 POGGER or equivalent ETH your added into the pool when staking. If there were lots of sells you will get back more POGGER tokens and less ETH, if there were lots of buys then you will get back more ETH and less POGGER tokens, and unlike Inventory staking your rewards are not compounded into your position, and instead you can claim them at any time through the Dashboard.
+
+![](<../.gitbook/assets/image (25).png>)
+
+
+
+
 
 ## How to UNstake your position on NFTX?
 
-{% hint style="info" %}
-It is best to read through each of the steps below so you know what the whole process is before starting the unstaking/unwinding process.
-{% endhint %}
+You can unstake both your liquidity and inventory positions on the [https://nftx.io/rewards/dashboard/](https://nftx.io/rewards/dashboard/)
 
-When you want to unstake your position on NFTX and unwind your liquidity you will need to do this through both [nftx.io](https://nftx.io) and [Sushi.com](https://Sushi.com).
+Find the position that you would like to exit and select the "Unstake" button.
 
-Visit the [NFTX App](https://nftx.io) and make sure that you have connect the wallet that contains your staked position. Go to the [Staking page](https://nftx.io/stake/) where you will be able to see all your staked positions.
+### Inventory Unstaking
 
-![A view on https://nftx.io/stake that shows my Staked positions](../.gitbook/assets/screenshot-2021-09-23-at-15.15.22.jpg)
+When unstaking your position you have the option to receive just the vault tokens which you can then sell on Sushi for ETH, or you can claim a random NFT (or multiple if you staked more) and bypass the random redeem fee.
 
-From this screen you want to click on the the "—" button next to the deposit button.
+There is also the option to "Withdraw remaining x.xxxx TOKEN" which you could then sell on Sushi. If you decide not to claim the additional tokens they will remain staked and earning fees.
 
-![Click on this &quot;&#x2014;&quot; button to withdraw your SLP](../.gitbook/assets/screenshot-2021-09-23-at-15.16.45.png)
+![](<../.gitbook/assets/image (17).png>)
+
+### Liquidity Unstaking
+
+Choose the "Unstake" button and select the amount of xTOKENWETH you would like to withdraw. This will return the SLP token which you can then unwind on Sushi directly.
+
+When unstaking you will automatically claim all the reward tokens as well (so there is no need to claim your rewards before you unstake).
+
+![](<../.gitbook/assets/image (24).png>)
+
+Once the transaction is complete you can click through the link to "Remove Liquidity". This takes you to Sushi to unwind your SLP position and get back vTOKENS and ETH.
+
+![](<../.gitbook/assets/image (18).png>)
+
+In this example we will be receiving back almost 2 bunny tokens and 0.031ETH.
+
+![Preconfirmation screen to approve the transaction (signed only, no gas)](<../.gitbook/assets/image (21).png>)
+
+![Confirm the burning on the BUNNY/ETH and receiving tokens back - this costs gas.](<../.gitbook/assets/image (20).png>)
 
 {% hint style="info" %}
 You will notice that in the above image that there are still 0.1499 BUNNY tokens that can be claimed. If you are unstaking your position those tokens will automatically be claimed as part of the process, saving you an additional transaction fee as part of the process.
@@ -76,7 +109,7 @@ You will notice that in the above image that there are still 0.1499 BUNNY tokens
 
 
 
-## Removing Liquidity from V1 Vaults <a id="docs-internal-guid-227675f5-7fff-e5b1-c52b-9d3c69bb7b2e"></a>
+## Removing Liquidity from V1 Vaults <a href="#docs-internal-guid-227675f5-7fff-e5b1-c52b-9d3c69bb7b2e" id="docs-internal-guid-227675f5-7fff-e5b1-c52b-9d3c69bb7b2e"></a>
 
 ### Overview
 
@@ -92,7 +125,7 @@ Choose the “Liquidity” tab from that pool and then select “Remove” from 
 
 You will first need to “Approve” the transaction and then “Confirm Withdrawl”.
 
-![](https://lh5.googleusercontent.com/UtVb7DxosPHqg3xGk-U8l7D5JHWBn4wJ_91sONewx6uR9ZdDLxBBifxM87JxfoWwpt2F4oNL4qFuy692uNzXDXQMVR9omEGkceWlbC6fcnz132BMAoKMxbeWJwr0qfMbiem0h6PH)
+![](https://lh5.googleusercontent.com/UtVb7DxosPHqg3xGk-U8l7D5JHWBn4wJ\_91sONewx6uR9ZdDLxBBifxM87JxfoWwpt2F4oNL4qFuy692uNzXDXQMVR9omEGkceWlbC6fcnz132BMAoKMxbeWJwr0qfMbiem0h6PH)
 
 {% hint style="info" %}
 Note: there is no rush for you to remove your liquidity from the pool, especially while GAS prices are high.
@@ -100,11 +133,11 @@ Note: there is no rush for you to remove your liquidity from the pool, especiall
 
 Once the transaction has been processed you will receive a confirmation along with details about the final Tokens and ETH returned.
 
-![](https://lh5.googleusercontent.com/vbZxAEl2uujYEo17DPN-3ByK4pU-PSfT8XZyJAQmauL8ejnb9gQJFzGrCs-7fYsJ1nQbFSI83N6ZN_cmrp_2RPuWDnXJfIebHnBIW8wRVnWl7LMloC2HTdO15YwPsRm7tW1Dz8uv)
+![](https://lh5.googleusercontent.com/vbZxAEl2uujYEo17DPN-3ByK4pU-PSfT8XZyJAQmauL8ejnb9gQJFzGrCs-7fYsJ1nQbFSI83N6ZN\_cmrp\_2RPuWDnXJfIebHnBIW8wRVnWl7LMloC2HTdO15YwPsRm7tW1Dz8uv)
 
 You will now be able to view your tokens in Metamask, and if you go to the NFTX App you can see your tokens in the header and sidebar.
 
-![](https://lh6.googleusercontent.com/Il6GjVs7IuJRVuG-H7Eyz2ArG9iq5XSmfjyYMzuJd9p20TTDTZbhDYOoliyrFm0UP3_9yYmIz9VF_OkMfNJTA2JXmI7fye7FrhUh1xMK02DgvtabH9rV7q3bUM9D5bnhB37s1buv)
+![](https://lh6.googleusercontent.com/Il6GjVs7IuJRVuG-H7Eyz2ArG9iq5XSmfjyYMzuJd9p20TTDTZbhDYOoliyrFm0UP3\_9yYmIz9VF\_OkMfNJTA2JXmI7fye7FrhUh1xMK02DgvtabH9rV7q3bUM9D5bnhB37s1buv)
 
 With you tokens you can now Redeem your NFTs from the Vault which will then allow you to
 
@@ -137,4 +170,3 @@ The DAO will remove their Liquidity in thirds across three weeks starting from t
 {% hint style="info" %}
 Lower liquidity does not impact the redeeming of NFTs from the V1 Vaults. 1 Token is always worth 1 NFT from the corresponding vault.
 {% endhint %}
-
