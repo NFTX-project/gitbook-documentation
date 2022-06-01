@@ -90,7 +90,7 @@ There is also the option to "Withdraw remaining x.xxxx TOKEN" which you could th
 Choose the "Unstake" button and select the amount of xTOKENWETH you would like to withdraw. This will return the SLP token which you can then unwind on Sushi directly.
 
 {% hint style="info" %}
-You will notice that in the above image that there are still 0.1499 BUNNY tokens that can be claimed. If you are unstaking your position those tokens will automatically be claimed as part of the process, saving you an additional transaction fee as part of the process.
+Before we unstaked there were 0.1499 BUNNY tokens that can be claimed. If you are unstaking your position those tokens will automatically be claimed as part of the process, saving you an additional transaction fee as part of the process.
 {% endhint %}
 
 When unstaking you will automatically claim all the reward tokens as well (so there is no need to claim your rewards before you unstake).
