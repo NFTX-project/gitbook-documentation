@@ -16,7 +16,7 @@ You can make `POST` requests to the following endpoint.
 
 ### Global Fees
 
-This requests returns the global fees (default fees) that are applied to all vaults. The vaults have their own fees also applied to them so check what the `usesFactoryFees` is set. If it is set to `true` then the global fees are used, if it is set to `false` then the fees defined on the vault are used.
+This request returns the global fees (default fees) that are applied to all vaults. The vaults have their own fees also applied to them so check what the `usesFactoryFees` is set to. If it is set to `true` then the global fees are used, if it is set to `false` then the fees defined on the vault are used.
 
 {% tabs %}
 {% tab title="Request" %}
@@ -58,7 +58,7 @@ This requests returns the global fees (default fees) that are applied to all vau
 
 ### Retrieve first 10 Published Vaults with Holdings
 
-This request returns the first 10 vaults that have been finalised and have more than `0` NFTs in the holdings. To get all vaults change the `first: 10` to `first: 1000` and loop the request as nescessary (currently there are less than 1000 vaults so no loops required).
+This request returns the first 10 vaults that have been finalised and have more than `0` NFTs in the holdings. To get all vaults change the `first: 10` to `first: 1000` .
 
 {% tabs %}
 {% tab title="Request" %}
