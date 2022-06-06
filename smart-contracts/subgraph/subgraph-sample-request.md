@@ -173,7 +173,7 @@ This request returns the first 10 vaults that have been finalised and have more 
 
 ### Single Vault Details
 
-If you want all the details for a single vault you can pass across the vaultId as an argument
+If you want all the details for a single vault you can pass across the `vaultId` as an argument
 
 {% tabs %}
 {% tab title="Request" %}
@@ -181,7 +181,7 @@ If you want all the details for a single vault you can pass across the vaultId a
 {
   vaults(
     first: 1000
-    where: { vaultId: 1 }
+    where: { vaultId: 0 }
   ) {
     vaultId
     id
@@ -760,6 +760,190 @@ If you want all the details for a single vault you can pass across the vaultId a
         ]
     }
 }
+```
+{% endtab %}
+{% endtabs %}
+
+### NFTX App Request
+
+While there are a number of requests made to the subgraph to run the NFTX site the main request most integrations require is to retrieve all current vaults with the available NFTs available for purchase, and the facility to calculate the price.
+
+This uses a combination of all the requests listed above.
+
+{% tabs %}
+{% tab title="Request" %}
+```graphql
+{
+  globals {
+    fees {
+      mintFee
+      randomRedeemFee
+      targetRedeemFee
+      randomSwapFee
+      targetSwapFee
+    }
+  }
+  vaults(
+    first: 1000
+    where: { vaultId_gte: 0, isFinalized: true, totalHoldings_gt: 0 }
+  ) {
+    vaultId
+    id
+    is1155
+    isFinalized
+    totalHoldings
+    totalMints
+    totalRedeems
+    totalFees
+    totalSwaps
+    createdAt
+    holdings(first: 1000, orderBy: tokenId, orderDirection: asc) {
+      id
+      tokenId
+      amount
+      dateAdded
+    }
+    token {
+      id
+      name
+      symbol
+    }
+    fees {
+      mintFee
+      randomRedeemFee
+      targetRedeemFee
+      randomSwapFee
+      targetSwapFee
+    }
+    usesFactoryFees
+    asset {
+      id
+      name
+      symbol
+    }
+    manager {
+      id
+    }
+    createdBy {
+      id
+    }
+    eligibilityModule {
+      id
+      eligibleIds
+      eligibleRange
+    }
+    features {
+      enableMint
+      enableRandomRedeem
+      enableTargetRedeem
+      enableRandomSwap
+      enableTargetSwap
+    }
+    inventoryStakingPool {
+      id
+      dividendToken {
+        symbol
+      }
+    }
+    lpStakingPool {
+      id
+      stakingToken {
+        id
+      }
+    }
+  }
+}
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```
+// response truncated for brevity.
+{
+    "data": {
+        "globals": [
+            {
+                "fees": {
+                    "mintFee": "100000000000000000",
+                    "randomRedeemFee": "40000000000000000",
+                    "targetRedeemFee": "60000000000000000",
+                    "randomSwapFee": "40000000000000000",
+                    "targetSwapFee": "60000000000000000"
+                }
+            }
+        ],
+        "vaults": [
+            {
+                "vaultId": "297",
+                "id": "0x00c4a73f10b05228c64e971cf81ae84426a64780",
+                "is1155": false,
+                "isFinalized": true,
+                "totalHoldings": "38",
+                "totalMints": "47",
+                "totalRedeems": "9",
+                "totalFees": "2440000000000000000",
+                "totalSwaps": "0",
+                "createdAt": "1639894659",
+                "holdings": [
+                    {
+                        "id": "0x276c-0x00c4a73f10b05228c64e971cf81ae84426a64780",
+                        "tokenId": "10092",
+                        "amount": "1",
+                        "dateAdded": "1646022345"
+                    },
+                    {
+                    ...37 more nfts listed here....
+                    }
+                ],
+                "token": {
+                    "id": "0x00c4a73f10b05228c64e971cf81ae84426a64780",
+                    "name": "MineablePunks",
+                    "symbol": "MPUNK"
+                },
+                "fees": {
+                    "mintFee": "100000000000000000",
+                    "randomRedeemFee": "50000000000000000",
+                    "targetRedeemFee": "100000000000000000",
+                    "randomSwapFee": "50000000000000000",
+                    "targetSwapFee": "100000000000000000"
+                },
+                "usesFactoryFees": true,
+                "asset": {
+                    "id": "0x595a8974c1473717c4b5d456350cd594d9bda687",
+                    "name": "MineablePunks",
+                    "symbol": "MPUNKS"
+                },
+                "manager": {
+                    "id": "0x0000000000000000000000000000000000000000"
+                },
+                "createdBy": {
+                    "id": "0x33569c101562e1faf5b24581057e5cee4c8288d7"
+                },
+                "eligibilityModule": null,
+                "features": {
+                    "enableMint": true,
+                    "enableRandomRedeem": true,
+                    "enableTargetRedeem": true,
+                    "enableRandomSwap": true,
+                    "enableTargetSwap": true
+                },
+                "inventoryStakingPool": {
+                    "id": "0x013cf78239144abcf06bbd56d3d190c65d7f9635",
+                    "dividendToken": {
+                        "symbol": "xMPUNK"
+                    }
+                },
+                "lpStakingPool": {
+                    "id": "0xfda2d4ea96ae4c6c21b34ec4e607576163a55ec0",
+                    "stakingToken": {
+                        "id": "0xe7d5d6b7d3a3c70174d6b567697287a3322c4789"
+                    }
+                }
+            },
+            .... more vaults.....
+            ] 
+        }
+    }
 ```
 {% endtab %}
 {% endtabs %}
