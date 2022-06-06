@@ -857,7 +857,7 @@ This uses a combination of all the requests listed above.
 {% endtab %}
 
 {% tab title="Response" %}
-```
+```json
 // response truncated for brevity.
 {
     "data": {
