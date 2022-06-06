@@ -20,7 +20,8 @@
 * [Bug Bounty](smart-contracts/bug-bounty/README.md)
   * [Trail of Bits Audit](smart-contracts/bug-bounty/trail-of-bits-audit.md)
 * [Contract Addresses](smart-contracts/contract-addresses.md)
-* [Subgraph](smart-contracts/subgraph.md)
+* [Subgraph](smart-contracts/subgraph/README.md)
+  * [Subgraph Sample Request](smart-contracts/subgraph/subgraph-sample-request.md)
 * [Dune Analytics](smart-contracts/dune-analytics.md)
 
 ## Ecosystem
