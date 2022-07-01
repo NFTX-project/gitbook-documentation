@@ -15,6 +15,8 @@ If fees are not excluded then:
 * The distributor contract then calls the `distribute` function, along with the corresponding vaultId that is calling it
 * Distribution logic will vary depending on the contract that is implemented. The different distribution contracts should have ample documentation and commenting to understand.
 
+![](<../.gitbook/assets/NFTX Fee Distribution.png>)
+
 ### Internal Attributes
 
 #### distributionPaused

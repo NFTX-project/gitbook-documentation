@@ -17,7 +17,8 @@
 
 ## Protocol <a href="#smart-contracts" id="smart-contracts"></a>
 
-* [Eligibility Modules](smart-contracts/eligibility-modules.md)
+* [Eligibility Modules](smart-contracts/eligibility-modules/README.md)
+  * [Example Module](smart-contracts/eligibility-modules/example-module.md)
 * [Fee Distribution](smart-contracts/fee-distribution.md)
 * [Bug Bounty](smart-contracts/bug-bounty/README.md)
   * [Trail of Bits Audit](smart-contracts/bug-bounty/trail-of-bits-audit.md)
