@@ -17,6 +17,7 @@
 
 ## Protocol <a href="#smart-contracts" id="smart-contracts"></a>
 
+* [Vault Creation Zap](smart-contracts/vault-creation-zap.md)
 * [Eligibility Modules](smart-contracts/eligibility-modules/README.md)
   * [Example Module](smart-contracts/eligibility-modules/example-module.md)
 * [Fee Distribution](smart-contracts/fee-distribution.md)
