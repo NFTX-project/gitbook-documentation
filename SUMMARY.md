@@ -17,7 +17,6 @@
 
 ## Protocol <a href="#smart-contracts" id="smart-contracts"></a>
 
-* [Vault Creation Zap](smart-contracts/vault-creation-zap.md)
 * [Eligibility Modules](smart-contracts/eligibility-modules/README.md)
   * [Example Module](smart-contracts/eligibility-modules/example-module.md)
 * [Fee Distribution](smart-contracts/fee-distribution.md)
@@ -28,6 +27,7 @@
   * [Subgraph Sample Request](smart-contracts/subgraph/subgraph-sample-request.md)
 * [Dune Analytics](smart-contracts/dune-analytics.md)
 * [Deployment Flow](smart-contracts/deployment-flow.md)
+* [Vault Creation Zap](smart-contracts/vault-creation-zap.md)
 
 ## Ecosystem
 
