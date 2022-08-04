@@ -2,6 +2,7 @@
 
 * [Introduction to NFTX](README.md)
 * [FAQ](faq.md)
+* [NFTX Academy](https://academy.nftx.io)
 
 ## Products
 
