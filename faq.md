@@ -74,3 +74,11 @@ NFTX is available for trading on decentralized exchanges. To find the best rates
 V1 vaults can be viewed in the [Gallery](https://gallery.nftx.org/).
 
 V2 NFTX Vaults can be found on the [App homepage.](https://app.nftx.org)
+
+### What can I do with vTokens?
+
+If you have recently received a small amount of vToken as part of the buying process there are somethings you can do with it.
+
+1. Sell it on [Matcha for ETH](https://www.matcha.xyz/markets/1/ETH)
+2. Stake it as inventory on the [Yield App](https://yield.nftx.io)
+3. Stake it as liquidity (either on [Sushi](https://app.sushi.com/legacy/add) where you can then stake your SLP and earn fees) or as a [concentrated liquidity position on Uniswap](https://app.uniswap.org).
