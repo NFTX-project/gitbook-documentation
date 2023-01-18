@@ -30,6 +30,7 @@
 * [Dune Analytics](smart-contracts/dune-analytics.md)
 * [Deployment Flow](smart-contracts/deployment-flow.md)
 * [Vault Creation Zap](smart-contracts/vault-creation-zap.md)
+* [🧹 Integrations](smart-contracts/integrations.md)
 
 ## Ecosystem
 
