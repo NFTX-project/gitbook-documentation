@@ -10,15 +10,45 @@ NFTX is an NFT liquidity protocl that can be easily integrated into your own NFT
 
 The steps for displaying the items on your NFT marketplace include
 
-1. Return all published vaults with at least one NFT, plus the default global fee settings
-2. For each vault check&#x20;
-   1.
+1. Return all published vaults with at least one NFT
+2. Check the global fees
+3. Loop through all vaults and return vault details
+
+You can make a [single request to retrieve all vault data](integrations.md#return-all-data-from-all-nft-vault-collections) from NFTX, or you can make [individual requests](integrations.md#all-collection-details-from-a-single-vault) depending on your requirements.
+
+These three steps will provide all the details required to display NFTs on the NFTX protocol including
+
+* which collections are supported
+* which NFTs are held in the vaults
+* the number of tokens required to retrieve an item from the vault (fees)
+
+{% hint style="info" %}
+Vault tokens have a 1:1 relationship with the NFTs within the vault.&#x20;
+
+* Adding an NFT to the vault, a vault token (vToken) is minted.
+* Removing an NFT from the vault, a vToken is burned
+
+Retrieving items from the vault, or buying NFTs, requires the 1 token to be burned plus the fees associated with the buy. Likewise, adding an item will return a vToken minus the fees associated with the sell.
+{% endhint %}
+
+The final step is to price the buy/sell price for the NFTs. All NFTs within the vault are the same floor price. To calculate the price for each item you check the fee settings for the collection, and add that to the number of NFTs being bought. For example, on a vault with the default targetRedeem (the fee to choose an item to buy) of 6% the following tokens would be required...
+
+| Number of NFTs | Fee | Total required |
+| -------------- | --- | -------------- |
+| 1              | 6%  | 1.06           |
+| 2              | 6%  | 2.12           |
+| 5              | 6%  | 5.30           |
+| 10             | 6%  | 10.60          |
+
+Next, you calculate the amount of ETH required to buy that number of tokens. NFTX recently switched using the 0x protocol when buying tokens through our 0xMarketplaceZap to take advantage of liquidty on any number of providers, including Uniswap V3 concentrated liquidity pools.
 
 ## API endpoints
 
 The NFTX V2 subgraph is a GraphQL endpoint that is hosted on The Graph. It can be accessed for free through the existing hosted service, and also through The Graph Studio which is a decentralised endpoint supported by a number of indexers.
 
 When making a request is will be a `POST` request and the endpoint URL will always remain the same, while the the body of the request will change depending on the data you require.
+
+### NFTX Graph Endpoints
 
 **Hosted service graph endpoint**: [https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2](https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2)
 
@@ -57,23 +87,33 @@ A few notes about making requests to the Subgraph
 ```
 {% endcode %}
 
-## Return all data from all NFT vault collections
+### 0x Protocol Endpoints
+
+The 0x endpoint is used to check the price for buying the tokens required to redeem NFTs from the NFTX vaults.
+
+The price endpoint allows you to get the current price for displaying on the front end. Once someone adds an item to their basket to purchase you want to make another call to the `quote` endpoint to get the call data.
+
+{% code title="GET request for pricing" overflow="wrap" %}
+```url
+https://api.0x.org/swap/v1/price?buyToken=0x269616D549D7e8Eaa82DFb17028d0B212D11232A&sellToken=WETH&buyAmount=1030000000000000000
+```
+{% endcode %}
+
+{% code title="GET quote request for buying" overflow="wrap" %}
+```url
+https://api.0x.org/swap/v1/quote?buyToken=0x269616D549D7e8Eaa82DFb17028d0B212D11232A&sellToken=WETH&buyAmount=1030000000000000000
+```
+{% endcode %}
+
+## NFTX Graph requests
+
+### Return all data from all NFT vault collections
 
 The below request body returns all the data you need to include every collection within NFTX into your marketplace or aggregator. To increase response times and lower the response size you can remove any data points that are not required for your particular implementation.
 
 Data requests for a specific vault can be found below.
 
-<details>
-
-<summary>Example Curl Request</summary>
-
-```bash
-curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2' \
---header 'Content-Type: application/json' \
---data-raw '{"query":"{\n  globals {\n    fees {\n      mintFee\n      randomRedeemFee\n      targetRedeemFee\n      randomSwapFee\n      targetSwapFee\n    }\n  }\n  vaults(\n    first: 1000\n    where: { vaultId_gte: 0, isFinalized: true, totalHoldings_gt: 0, shutdownDate: \"0\" }\n  ) {\n    vaultId\n    id\n    is1155\n    isFinalized\n    totalHoldings\n    totalMints\n    totalRedeems\n    totalFees\n    totalSwaps\n    createdAt\n    shutdownDate\n    token {\n      id\n      name\n      symbol\n    }\n    fees {\n      mintFee\n      randomRedeemFee\n      targetRedeemFee\n      randomSwapFee\n      targetSwapFee\n    }\n    usesFactoryFees\n    asset {\n      id\n      name\n      symbol\n    }\n    eligibilityModule {\n      id\n      name\n      eligibleIds\n      eligibleRange\n    }\n    features {\n      enableMint\n      enableRandomRedeem\n      enableTargetRedeem\n      enableRandomSwap\n      enableTargetSwap\n    }\n  }\n}\n","variables":{}}'
-```
-
-</details>
+#### Request
 
 {% code title="Request URL" %}
 ```
@@ -160,7 +200,7 @@ The request body is what the NFTX V2 frontend uses to retrieve all the required 
 Additional request examples are found below.
 {% endhint %}
 
-### Response
+#### Response
 
 Below is a breakdown of the response from the request response.
 
@@ -321,45 +361,143 @@ The use of `skip: 1000` will get the next set of holdings up to `2000`. You can 
 
 Currently there are only a couple collections with more than 1000 items.
 
+## 0x Protocol Requests
 
 
 
-
-### Fetch the current buy/sell price for items within a collection
+{% code title="0x API Response" overflow="wrap" %}
+```json
+{
+  "chainId": 1,
+  "price": "66.139686266145680957",
+  "estimatedPriceImpact": "2.4621",
+  "value": "0",
+  "gasPrice": "37000000000",
+  "gas": "259700",
+  "estimatedGas": "259700",
+  "protocolFee": "0",
+  "minimumProtocolFee": "0",
+  "buyTokenAddress": "0x269616d549d7e8eaa82dfb17028d0b212d11232a",
+  "buyAmount": "1030000000000000000",
+  "sellTokenAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+  "sellAmount": "68123876854130051385",
+  "sources": [
+    {
+      "name": "0x",
+      "proportion": "0"
+    },
+    {
+      "name": "Uniswap",
+      "proportion": "0"
+    },
+    {
+      "name": "Uniswap_V2",
+      "proportion": "0"
+    },
+    {
+      "name": "Curve",
+      "proportion": "0"
+    },
+    {
+      "name": "Balancer",
+      "proportion": "0"
+    },
+    {
+      "name": "Balancer_V2",
+      "proportion": "0"
+    },
+    {
+      "name": "Bancor",
+      "proportion": "0"
+    },
+    {
+      "name": "BancorV3",
+      "proportion": "0"
+    },
+    {
+      "name": "mStable",
+      "proportion": "0"
+    },
+    {
+      "name": "SushiSwap",
+      "proportion": "0.9231"
+    },
+    {
+      "name": "Shell",
+      "proportion": "0"
+    },
+    {
+      "name": "DODO",
+      "proportion": "0"
+    },
+    {
+      "name": "DODO_V2",
+      "proportion": "0"
+    },
+    {
+      "name": "CryptoCom",
+      "proportion": "0"
+    },
+    {
+      "name": "Lido",
+      "proportion": "0"
+    },
+    {
+      "name": "MakerPsm",
+      "proportion": "0"
+    },
+    {
+      "name": "KyberDMM",
+      "proportion": "0"
+    },
+    {
+      "name": "Component",
+      "proportion": "0"
+    },
+    {
+      "name": "Saddle",
+      "proportion": "0"
+    },
+    {
+      "name": "Uniswap_V3",
+      "proportion": "0.07692"
+    },
+    {
+      "name": "Curve_V2",
+      "proportion": "0"
+    },
+    {
+      "name": "ShibaSwap",
+      "proportion": "0"
+    },
+    {
+      "name": "Synapse",
+      "proportion": "0"
+    },
+    {
+      "name": "Synthetix",
+      "proportion": "0"
+    },
+    {
+      "name": "Aave_V2",
+      "proportion": "0"
+    },
+    {
+      "name": "Compound",
+      "proportion": "0"
+    }
+  ],
+  "allowanceTarget": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+  "sellTokenToEthRate": "1",
+  "buyTokenToEthRate": "0.01550116240807967",
+  "expectedSlippage": null
+}
+```
+{% endcode %}
 
 
 
 ## Example requests
-
-<details>
-
-<summary>Fetch all active vault ids with more than one item</summary>
-
-{% code title="GraphQL request" %}
-```graphql
-{
-  vaults(
-    first: 1000
-    where: { isFinalized: true, totalHoldings_gt: 0, shutdownDate: "0" }
-  ) {
-    vaultId
-  }
-}
-
-```
-{% endcode %}
-
-{% code title="cURL request" overflow="wrap" %}
-```bash
-curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2' \
---header 'Content-Type: application/json' \
---data-raw '{"query":"{\n  vaults(\n    first: 1000\n    where: { isFinalized: true, totalHoldings_gt: 0, shutdownDate: \"0\" }\n  ) {\n    vaultId\n  }\n}\n","variables":{}}'
-```
-{% endcode %}
-
-</details>
-
-
 
 <details>
 
@@ -390,3 +528,104 @@ curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-pro
 {% endcode %}
 
 </details>
+
+<details>
+
+<summary>Fetch all active vault ids with more than one item</summary>
+
+{% code title="GraphQL request" %}
+```graphql
+{
+  vaults(
+    first: 1000
+    where: { isFinalized: true, totalHoldings_gt: 0, shutdownDate: "0" }
+  ) {
+    vaultId
+  }
+}
+
+```
+{% endcode %}
+
+{% code title="cURL request" overflow="wrap" %}
+```bash
+curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"{\n  vaults(\n    first: 1000\n    where: { isFinalized: true, totalHoldings_gt: 0, shutdownDate: \"0\" }\n  ) {\n    vaultId\n  }\n}\n","variables":{}}'
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary>Fetch single vault details</summary>
+
+The `{vaultId}` can be pulled from response on the Fetch all active vault ids requrest above, i.e. "0" is the CryptoPunks vault, and "1" is the Avastar vault.&#x20;
+
+{% code title="GraphQL request" %}
+```graphql
+{
+  vaults(
+    first: 1000
+    where: { vaultId: "{vaultId}" }
+  ) {
+    vaultId
+    id
+    is1155
+    totalHoldings
+    holdings(first: 1000, orderBy: tokenId, orderDirection: asc) {
+      id
+      tokenId
+      amount
+      dateAdded
+    }
+    token {
+      id
+      name
+      symbol
+    }
+    fees {
+      mintFee
+      randomRedeemFee
+      targetRedeemFee
+      randomSwapFee
+      targetSwapFee
+    }
+    usesFactoryFees
+    asset {
+      id
+      name
+      symbol
+    }
+    eligibilityModule {
+      id
+      name
+      eligibleIds
+      eligibleRange
+    }
+    features {
+      enableMint
+      enableRandomRedeem
+      enableTargetRedeem
+      enableRandomSwap
+      enableTargetSwap
+    }
+  }
+}
+
+```
+{% endcode %}
+
+{% code title="cURL request" overflow="wrap" %}
+```bash
+curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"{\n  globals {\n    fees {\n      mintFee\n      randomRedeemFee\n      targetRedeemFee\n      randomSwapFee\n      targetSwapFee\n    }\n  }\n  vaults(\n    first: 1000\n    where: { vaultId: \"0\" }\n  ) {\n    vaultId\n    id\n    is1155\n    totalHoldings\n    holdings(first: 1000, orderBy: tokenId, orderDirection: asc) {\n      id\n      tokenId\n      amount\n      dateAdded\n    }\n    token {\n      id\n      name\n      symbol\n    }\n    fees {\n      mintFee\n      randomRedeemFee\n      targetRedeemFee\n      randomSwapFee\n      targetSwapFee\n    }\n    usesFactoryFees\n    asset {\n      id\n      name\n      symbol\n    }\n    eligibilityModule {\n      id\n      name\n      eligibleIds\n      eligibleRange\n    }\n    features {\n      enableMint\n      enableRandomRedeem\n      enableTargetRedeem\n      enableRandomSwap\n      enableTargetSwap\n    }\n  }\n}\n","variables":{}}'
+
+
+```
+{% endcode %}
+
+</details>
+
