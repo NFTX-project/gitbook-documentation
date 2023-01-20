@@ -1,26 +1,20 @@
 ---
 description: >-
-  Use the NFTX protocol to access NFT liquidity for buys and sells within
-  Marketplaces and Aggregators
+  Use the NFTX protocol to access liquidity for NFT buys and sells within
+  marketplaces and aggregators
 ---
 
 # 🧹 Integrations
 
-NFTX is an NFT liquidity protocl that can be easily integrated into your own NFT marketplace or NFT aggregator.
+NFTX is an NFT liquidity protocol that can be integrated into other NFT marketplace or NFT aggregator (both [Gem](https://gem.xyz) and [Uniswap](https://app.uniswap.org/#/nfts) have already integrated with NFTX).
 
 The steps for displaying the items on your NFT marketplace include
 
-1. Return all published vaults with at least one NFT
-2. Check the global fees
-3. Loop through all vaults and return vault details
+1. Fetch NFTX vaults and their NFT holdings & fee settings
+2. Check the price of buy/sell of those tokens on 0xProtocol for and ETH price
+3. Call the 0xMarketplaceZap to perform the buy/sell (or the mint (sell) or redeem (buy) functions)
 
 You can make a [single request to retrieve all vault data](integrations.md#return-all-data-from-all-nft-vault-collections) from NFTX, or you can make [individual requests](integrations.md#all-collection-details-from-a-single-vault) depending on your requirements.
-
-These three steps will provide all the details required to display NFTs on the NFTX protocol including
-
-* which collections are supported
-* which NFTs are held in the vaults
-* the number of tokens required to retrieve an item from the vault (fees)
 
 {% hint style="info" %}
 Vault tokens have a 1:1 relationship with the NFTs within the vault.&#x20;
@@ -31,16 +25,16 @@ Vault tokens have a 1:1 relationship with the NFTs within the vault.&#x20;
 Retrieving items from the vault, or buying NFTs, requires the 1 token to be burned plus the fees associated with the buy. Likewise, adding an item will return a vToken minus the fees associated with the sell.
 {% endhint %}
 
-The final step is to price the buy/sell price for the NFTs. All NFTs within the vault are the same floor price. To calculate the price for each item you check the fee settings for the collection, and add that to the number of NFTs being bought. For example, on a vault with the default targetRedeem (the fee to choose an item to buy) of 6% the following tokens would be required...
+## Example marketplace integration
 
-| Number of NFTs | Fee | Total required |
-| -------------- | --- | -------------- |
-| 1              | 6%  | 1.06           |
-| 2              | 6%  | 2.12           |
-| 5              | 6%  | 5.30           |
-| 10             | 6%  | 10.60          |
+These are the pseudo steps to integrate NFTX NFTs and liquidity into your application
 
-Next, you calculate the amount of ETH required to buy that number of tokens. NFTX recently switched using the 0x protocol when buying tokens through our 0xMarketplaceZap to take advantage of liquidty on any number of providers, including Uniswap V3 concentrated liquidity pools.
+1. Retrieve all NFTX vaults from the subgraph, including global fees, and holdings
+2. Use the `asset > id` in the subgraph response to link the NFTX vault with the appropriate NFT collection in your application
+3. Check if the vault uses default fees using `usesFactoryFees` , if `true` use the global fees to calculate the tokens required to buy an NFT, if `false` use the `fees > targetRedeemFee` associated with the vault. To buy an NFT you need 1 token + target redeem fee.
+4. Using the 0xAPI, check the ETH cost to buy the required tokens. As the number of tokens required increases (i.e. the user adds more items to their basket) the average price of the NFT will increase due to price impact on the token buy.
+5. When the user buys, call the `0xMarketplaceZap` to complete the purchase, or alternatively call your own contracts to buy the token, redeem the NFTs using the `redeemTo` function on the vault contract.
+6. For realtime updates on holdings, you can request individual vault holdings.
 
 ## API endpoints
 
@@ -99,7 +93,7 @@ https://api.0x.org/swap/v1/price?buyToken=0x269616D549D7e8Eaa82DFb17028d0B212D11
 ```
 {% endcode %}
 
-{% code title="GET quote request for buying" overflow="wrap" %}
+{% code title="GET quote request for buying/selling" overflow="wrap" %}
 ```url
 https://api.0x.org/swap/v1/quote?buyToken=0x269616D549D7e8Eaa82DFb17028d0B212D11232A&sellToken=WETH&buyAmount=1030000000000000000
 ```
@@ -194,10 +188,10 @@ https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2
 
 
 {% hint style="info" %}
-The request body is what the NFTX V2 frontend uses to retrieve all the required data to build out the homepage of the app. You should use a combination of requests to the subgraph to retrieve the data as needed for your own marketplace or aggregator setup. \
+The above request body is what the NFTX V2 frontend uses to retrieve all the required data to build out the homepage of the app. You should use a combination of requests to the subgraph to retrieve the data as needed for your own marketplace or aggregator setup. \
 
 
-Additional request examples are found below.
+Additional [request examples](integrations.md#example-requests) are found below.
 {% endhint %}
 
 #### Response
@@ -363,7 +357,26 @@ Currently there are only a couple collections with more than 1000 items.
 
 ## 0x Protocol Requests
 
+The final step is to price the buy/sell price for the NFTs. All NFTs within the vault are the same floor price. To calculate the price for each item you check the fee settings for the collection, and add that to the number of NFTs being bought. For example, on a vault with the default targetRedeem (the fee to choose an item to buy) of 6% the following tokens would be required...
 
+| Number of NFTs | Fee | Total required |
+| -------------- | --- | -------------- |
+| 1              | 6%  | 1.06           |
+| 2              | 6%  | 2.12           |
+| 5              | 6%  | 5.30           |
+| 10             | 6%  | 10.60          |
+
+Next, you calculate the amount of ETH required to buy that number of tokens. NFTX recently switched using the 0x protocol when buying tokens through our 0xMarketplaceZap to take advantage of liquidty on any number of providers, including Uniswap V3 concentrated liquidity pools.
+
+**Request**
+
+{% code title="0x API Request" overflow="wrap" %}
+```url
+https://api.0x.org/swap/v1/price?buyToken=0x269616D549D7e8Eaa82DFb17028d0B212D11232A&sellToken=WETH&buyAmount=1030000000000000000
+```
+{% endcode %}
+
+**Response**
 
 {% code title="0x API Response" overflow="wrap" %}
 ```json
@@ -561,7 +574,7 @@ curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-pro
 
 <summary>Fetch single vault details</summary>
 
-The `{vaultId}` can be pulled from response on the Fetch all active vault ids requrest above, i.e. "0" is the CryptoPunks vault, and "1" is the Avastar vault.&#x20;
+The `{vaultId}` can be pulled from response on the Fetch all active vault ids request above, i.e. "0" is the CryptoPunks vault, and "1" is the Avastar vault.&#x20;
 
 {% code title="GraphQL request" %}
 ```graphql
@@ -624,6 +637,41 @@ curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-pro
 --data-raw '{"query":"{\n  globals {\n    fees {\n      mintFee\n      randomRedeemFee\n      targetRedeemFee\n      randomSwapFee\n      targetSwapFee\n    }\n  }\n  vaults(\n    first: 1000\n    where: { vaultId: \"0\" }\n  ) {\n    vaultId\n    id\n    is1155\n    totalHoldings\n    holdings(first: 1000, orderBy: tokenId, orderDirection: asc) {\n      id\n      tokenId\n      amount\n      dateAdded\n    }\n    token {\n      id\n      name\n      symbol\n    }\n    fees {\n      mintFee\n      randomRedeemFee\n      targetRedeemFee\n      randomSwapFee\n      targetSwapFee\n    }\n    usesFactoryFees\n    asset {\n      id\n      name\n      symbol\n    }\n    eligibilityModule {\n      id\n      name\n      eligibleIds\n      eligibleRange\n    }\n    features {\n      enableMint\n      enableRandomRedeem\n      enableTargetRedeem\n      enableRandomSwap\n      enableTargetSwap\n    }\n  }\n}\n","variables":{}}'
 
 
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary>Fetch singe vault holdings</summary>
+
+The `{vaultId}` can be pulled from response on the Fetch all active vault ids request above, i.e. "0" is the CryptoPunks vault, and "1" is the Avastar vault.&#x20;
+
+{% code title="GraphQL request" %}
+```graphql
+{
+  vaults(
+    where: { vaultId: "{vaultId}" }
+  ) {
+    totalHoldings
+    holdings(first: 1000, orderBy: tokenId, orderDirection: asc) {
+      id
+      tokenId
+      amount
+      dateAdded
+    }
+  }
+}
+
+```
+{% endcode %}
+
+{% code title="cURL request" overflow="wrap" %}
+```bash
+curl --location --request POST 'https://api.thegraph.com/subgraphs/name/nftx-project/nftx-v2' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"{\n  vaults(\n    where: { vaultId: \"0\" }\n  ) {\n    totalHoldings\n    holdings(first: 1000, orderBy: tokenId, orderDirection: asc) {\n      id\n      tokenId\n      amount\n      dateAdded\n    }\n  }\n}","variables":{}}'
 ```
 {% endcode %}
 
