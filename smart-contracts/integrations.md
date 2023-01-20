@@ -31,10 +31,11 @@ These are the pseudo steps to integrate NFTX NFTs and liquidity into your applic
 
 1. Retrieve all NFTX vaults from the subgraph, including global fees, and holdings
 2. Use the `asset > id` in the subgraph response to link the NFTX vault with the appropriate NFT collection in your application
-3. Check if the vault uses default fees using `usesFactoryFees` , if `true` use the global fees to calculate the tokens required to buy an NFT, if `false` use the `fees > targetRedeemFee` associated with the vault. To buy an NFT you need 1 token + target redeem fee.
-4. Using the 0xAPI, check the ETH cost to buy the required tokens. As the number of tokens required increases (i.e. the user adds more items to their basket) the average price of the NFT will increase due to price impact on the token buy.
-5. When the user buys, call the `0xMarketplaceZap` to complete the purchase, or alternatively call your own contracts to buy the token, redeem the NFTs using the `redeemTo` function on the vault contract.
-6. For realtime updates on holdings, you can request individual vault holdings.
+3. Verify that the vault has `features > enableTargetRedeems` set to `true` so specific NFTs can be bought from the vault.
+4. Check if the vault uses default fees using `usesFactoryFees` , if `true` use the global fees to calculate the tokens required to buy an NFT, if `false` use the `fees > targetRedeemFee` associated with the vault. To buy an NFT you need 1 token + target redeem fee.
+5. Using the 0xAPI, check the ETH cost to buy the required tokens. As the number of tokens required increases (i.e. the user adds more items to their basket) the average price of the NFT will increase due to price impact on the token buy.
+6. When the user buys, call the `0xMarketplaceZap` to complete the purchase, or alternatively call your own contracts to buy the token, redeem the NFTs using the `redeemTo` function on the vault contract.
+7. For realtime updates on holdings, you can request individual vault holdings.
 
 ## API endpoints
 
