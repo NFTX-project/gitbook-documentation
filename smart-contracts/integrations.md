@@ -37,6 +37,73 @@ These are the pseudo steps to integrate NFTX NFTs and liquidity into your applic
 6. When the user buys, call the `0xMarketplaceZap` to complete the purchase, or alternatively call your own contracts to buy the token, redeem the NFTs using the `redeemTo` function on the vault contract.
 7. For realtime updates on holdings, you can request individual vault holdings.
 
+## Contract Calls
+
+{% hint style="info" %}
+We recommend using the `NFTXMarketplace0xZap` contract for interactions to ensure the best price is offered. This address can be found on our [contract-addresses.md](contract-addresses.md "mention") page.
+{% endhint %}
+
+There are 3 main logic approaches that we can undertake in this contract.
+
+* BuyAndRedeem
+* BuyAndSwap
+* MintAndSell
+
+Both `BuyAndSwap` and `MintAndSell` functions have 721 and 1155 function variants that can be called. `BuyAndRedeem` handles both of these standards in a single function. The 1155 variations will take an additional `uint256[] amounts` function parameter to allow multiples of each token to be interacted with.
+
+### BuyAndRedeem
+
+Purchases vault tokens from 0x with ETH (converted to WETH in the call) and then redeems the tokens for either random or specific token IDs from the vault. The specified recipient will receive the ERC721 tokens, as well as any WETH dust that is left over from the tx.
+
+#### Parameters
+
+* `vaultId` (uint256) : The ID of the NFTX vault
+* `amount` (uint256) : The number of tokens to buy
+* `specificIds` (uint256\[]) : An array of any specific token IDs to be minted
+* `swapCallData` (bytes) : The \`data\` field from the 0x API response
+* `to` (address payable) : The recipient of the token IDs from the tx
+
+#### Events Emitted
+
+* Emits NFTXMarketplace0xZap : Buy(amount, quoteAmount, to);
+* Emits NFTXVaultUpgradable : Redeemed(redeemedIds, specificIds, to);
+* Emits NFTXMarketplace0xZap : DustReturned(remaining, dustBalance, dustRecipient);
+
+### BuyAndSwap721 / BuyAndSwap1155
+
+Purchases vault tokens from 0x with ETH (converted to WETH in the call) and then swaps the tokens for either random or specific token IDs from the vault. The specified recipient will receive the ERC721 / ERC1155 tokens, as well as any WETH dust that is left over from the tx.
+
+#### Parameters
+
+* `vaultId` (uint256) : The ID of the NFTX vault
+* `idsIn` (uint256\[]) : An array of random token IDs to be minted
+* `specificIds` (uint256\[]) : An array of any specific token IDs to be minted
+* `swapCallData` (bytes) : The \`data\` field from the 0x API response
+* `to` (address payable) : The recipient of the token IDs from the tx
+
+#### Events Emitted
+
+* Emits NFTXMarketplace0xZap : Swap(idsIn.length, amount, to);
+* Emits NFTXVaultUpgradable : Redeemed(redeemedIds, specificIds, to);
+* Emits NFTXMarketplace0xZap : DustReturned(remaining, dustBalance, dustRecipient);
+
+### MintAndSell721 / MintAndSell1155
+
+Mints tokens on our NFTX vault and sells the generated tokens on 0x.
+
+#### Parameters
+
+* `vaultId` (uint256) : The ID of the NFTX vault
+* `ids` (uint256\[]) : An array of token IDs to be minted
+* `swapCallData` (bytes) : The \`data\` field from the 0x API response
+* `to` (address payable) : The recipient of the token IDs from the tx
+
+#### Events Emitted
+
+* Emits NFTXMarketplace0xZap : emit Sell(ids.length, amount, to);
+* Emits NFTXVaultUpgradable : Redeemed(redeemedIds, specificIds, to);
+* Emits NFTXMarketplace0xZap : DustReturned(remaining, dustBalance, dustRecipient);
+
 ## API endpoints
 
 The NFTX V2 subgraph is a GraphQL endpoint that is hosted on The Graph. It can be accessed for free through the existing hosted service, and also through The Graph Studio which is a decentralised endpoint supported by a number of indexers.
