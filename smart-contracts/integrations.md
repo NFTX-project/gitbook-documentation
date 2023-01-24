@@ -11,7 +11,7 @@ NFTX is an NFT liquidity protocol that can be integrated into other NFT marketpl
 The steps for displaying the items on your NFT marketplace include
 
 1. Fetch NFTX vaults and their NFT holdings & fee settings
-2. Check the price of buy/sell of those tokens on 0xProtocol for and ETH price
+2. Check the price of buy/sell of those tokens on 0xProtocol for an ETH price
 3. Call the 0xMarketplaceZap to perform the buy/sell (or the mint (sell) or redeem (buy) functions)
 
 You can make a [single request to retrieve all vault data](integrations.md#return-all-data-from-all-nft-vault-collections) from NFTX, or you can make [individual requests](integrations.md#all-collection-details-from-a-single-vault) depending on your requirements.
