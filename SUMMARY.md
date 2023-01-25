@@ -23,6 +23,7 @@
   * [Merkle Eligibility](smart-contracts/eligibility-modules/merkle-eligibility.md)
 * [Fee Distribution](smart-contracts/fee-distribution.md)
 * [Bug Bounty](smart-contracts/bug-bounty/README.md)
+  * [SECBIT Audit](smart-contracts/bug-bounty/secbit-audit.md)
   * [Trail of Bits Audit](smart-contracts/bug-bounty/trail-of-bits-audit.md)
 * [Contract Addresses](smart-contracts/contract-addresses.md)
 * [Subgraph](smart-contracts/subgraph/README.md)
