@@ -2,19 +2,20 @@
 
 Below are the tutorials available for interacting with NFTX.
 
-If you are missing information in any of the tutorials below, make sure to[ ask your question on our Discord channel! ](https://discord.gg/fJg5burAKH)
+If you are missing information in any of the tutorials below, make sure to ask your question on our Discord channel!&#x20;
 
-{% page-ref page="how-to-create-an-nft-index-fund.md" %}
+{% content-ref url="how-to-create-an-nft-index-fund.md" %}
+[how-to-create-an-nft-index-fund.md](how-to-create-an-nft-index-fund.md)
+{% endcontent-ref %}
 
-{% endpage-ref %}
+{% content-ref url="how-to-get-my-index-fund-listed-on-the-nftx-gallery.md" %}
+[how-to-get-my-index-fund-listed-on-the-nftx-gallery.md](how-to-get-my-index-fund-listed-on-the-nftx-gallery.md)
+{% endcontent-ref %}
 
-{% page-ref page="how-to-get-my-index-fund-listed-on-the-nftx-gallery.md" %}
+{% content-ref url="minting-fund-tokens.md" %}
+[minting-fund-tokens.md](minting-fund-tokens.md)
+{% endcontent-ref %}
 
-{% endpage-ref %}
-
-{% page-ref page="minting-fund-tokens.md" %}
-
-{% endpage-ref %}
-
-{% page-ref page="redeeming-nfts.md" %}
-
+{% content-ref url="redeeming-nfts.md" %}
+[redeeming-nfts.md](redeeming-nfts.md)
+{% endcontent-ref %}

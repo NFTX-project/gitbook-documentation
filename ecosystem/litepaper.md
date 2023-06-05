@@ -69,4 +69,4 @@ When in doubt, we will store our organization's wealth in these assets. And, unl
 
 We invite anyone and everyone to join us in our mission. Over time, that mission will inevitably change but it's important that we begin our journey on the same footing, and with the same principles in mind, so that we may move forward, not only as a community, but as an anti-fragile digital warband 😈
 
-Discord link: [https://discord.gg/5ygF8rxdYR](https://discord.gg/5ygF8rxdYR)
+Discord link: https://discord.gg/nftx
