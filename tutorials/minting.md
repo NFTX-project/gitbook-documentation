@@ -82,7 +82,7 @@ NFTs that were developed several years ago did not follow the ERC721 or ERC1155 
 
 #### You have just received your NFT
 
-We use the OpenSea API to list the available NFTs that you may have in your wallet. The API can sometimes take a few minutes to update. Please wait 5 minutes and if it is still not showing, [reach out to us on Discord](https://discord.com/invite/fJg5burAKH).
+We use the OpenSea API to list the available NFTs that you may have in your wallet. The API can sometimes take a few minutes to update. Please wait 5 minutes and if it is still not showing, reach out to us on Discord.
 
 #### Your wallet contains more than 1,000 NFTs
 
@@ -149,7 +149,7 @@ From there a side bar will open, and you can scroll down to `revokeMintRequests`
 
 ![](<../.gitbook/assets/image (2).png>)
 
-To find the `vaultId` you can [review the list of current vaults and holdings](https://charts.mongodb.com/charts-nftx-funds-kgodb/public/dashboards/609e6965-a20a-4918-8849-9c686f6d2621). The `nftIDs` are the IDs of the NFT you would like to get back from escrow. For example:
+To find the `vaultId` you can review the list of current vaults and holdings. The `nftIDs` are the IDs of the NFT you would like to get back from escrow. For example:
 
 * **VaultId** `11` (Avastar-Rank-30)
 * **VauldIds** `[1234, 9786, 19111]`

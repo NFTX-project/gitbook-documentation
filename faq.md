@@ -4,7 +4,7 @@
 
 ### What is NFTX?
 
-NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles. These tokens are called funds, and (like all ERC20s) they are fungible and composable. With NFTX, it is possible to create and trade funds based on your favorite collectibles such as [CryptoPunks](https://www.larvalabs.com/cryptopunks), [Axies](https://marketplace.axieinfinity.com), [CryptoKitties](https://www.cryptokitties.co), and [Avastars](https://avastars.io), right from an exchange.
+NFTX is a platform for making ERC20 tokens that are backed by NFT collectibles. These tokens are called funds, and (like all ERC20s) they are fungible and composable. With NFTX, it is possible to create and trade funds based on your favorite collectibles such as [CryptoPunks](https://www.larvalabs.com/cryptopunks), [Axies](https://marketplace.axieinfinity.com), [CryptoKitties](https://www.cryptokitties.co/), and [Avastars](https://avastars.io/), right from an exchange.
 
 NFTX's mission is to become the primary issuer of NFT index funds, allowing anyone to invest in NFT markets without needing the underlying knowledge and expertise required when investing in individual assets. By doing so, NFTX will function as a black hole for NFT assets.
 
@@ -26,7 +26,7 @@ The NFTX.org interface is built and maintained by the NFTX DAO and will be open-
 
 NFTX is built by a decentralized autonomous organization (DAO) - a group of community members, contributors, and core members closely aligned to build the primary NFT index fund ecosystem. As NFTX is an open organization, anyone anywhere may join to provide expertise and/or additional resources with the goal to grow NFTXs' success.
 
-If you'd like to contribute to what NFTX is building, feel free to join the community [on Discord.](https://discord.gg/xcJkxMXSR8)
+If you'd like to contribute to what NFTX is building, feel free to join the community on Discord.
 
 ### Does NFTX charge any fees?
 
@@ -65,7 +65,7 @@ The address of NFTX is: 0x87d73e916d7057945c9bcd8cdd94e42a6f47f776
 
 ### How do I buy NFTX?
 
-NFTX is available for trading on decentralized exchanges. To find the best rates across multiple exchanges, we recommend using an aggregator such as [Matcha](https://matcha.xyz).
+NFTX is available for trading on decentralized exchanges. To find the best rates across multiple exchanges, we recommend using an aggregator such as [Matcha](https://matcha.xyz/).
 
 ### Where do I find NFTX Index Funds?
 
