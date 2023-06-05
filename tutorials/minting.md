@@ -6,11 +6,11 @@ NFTX v1.x introduces a new minting interface that allows you to easily mint a li
 
 ## Why mint an NFT?
 
-By adding your NFT to an NFTX vault you mint an ERC-20 token \(vToken\) that has a 1:1 claim on a random NFT inside the vault.
+By adding your NFT to an NFTX vault you mint an ERC-20 token (vToken) that has a 1:1 claim on a random NFT inside the vault.
 
-Unlike a non-fungible token \(NFT\), an ERC-20 is fungible \(all tokens are the same\) and this allows it to be:
+Unlike a non-fungible token (NFT), an ERC-20 is fungible (all tokens are the same) and this allows it to be:
 
-* Instantly sold at an AMM \(like Sushiswap\) 
+* Instantly sold at an AMM (like Sushiswap)&#x20;
 * Pooled in an AMM to earn trading fees
 * Used as collateral to borrow stablecoins
 
@@ -34,7 +34,7 @@ The mint basket will show you the NFTs you have selected, their approval status 
 
 #### Approval
 
-Your NFTs will need to be approved for use by the NFTX contract before they can be minted into an ERC-20. Click the NFT line item's "Approve" button to approve each NFT individually. To approve all your NFTs in this contract \(i.e. the Wrapped Punks contract\), click "Approve all".
+Your NFTs will need to be approved for use by the NFTX contract before they can be minted into an ERC-20. Click the NFT line item's "Approve" button to approve each NFT individually. To approve all your NFTs in this contract (i.e. the Wrapped Punks contract), click "Approve all".
 
 **Mint Value**
 
@@ -49,14 +49,14 @@ With your NFTs approved and your mint value confirmed, click the "Mint" button t
 For example, minting 3 Hashmasks to the Mask vault will return 3 MASK ERC-20 tokens.
 
 {% hint style="info" %}
-It is important to mint your NFT to the appropriate vault. Do not mint high value NFTs \(i.e. a Punk Zombie\) to a lower value vault \(i.e. Punk-Basic\).
+It is important to mint your NFT to the appropriate vault. Do not mint high value NFTs (i.e. a Punk Zombie) to a lower value vault (i.e. Punk-Basic).
 {% endhint %}
 
 ## Additional Info
 
 ### Eligibilities
 
-Many vaults have an eligibility list. This ensures that the vault only accepts a certain sub-category of NFTs \(i.e. Punk-Female\).
+Many vaults have an eligibility list. This ensures that the vault only accepts a certain sub-category of NFTs (i.e. Punk-Female).
 
 ### Mint Requests
 
@@ -86,7 +86,7 @@ We use the OpenSea API to list the available NFTs that you may have in your wall
 
 #### Your wallet contains more than 1,000 NFTs
 
-We currently limit the minter to scanning a wallet's first 1,000 NFTs that may be available for minting. If you have more than 1,000 NFTs in your wallet please [reach out to us on Discord](https://discord.com/invite/fJg5burAKH) for assistance.
+We currently limit the minter to scanning a wallet's first 1,000 NFTs that may be available for minting. If you have more than 1,000 NFTs in your wallet please reach out to us on Discord for assistance.
 
 ### Can I get my NFT back once I've added it to a vault?
 
@@ -104,7 +104,7 @@ Always check an NFT's available vaults before minting an vToken to ensure the mo
 
 There are two potential causes.
 
-1. You need to add the vault token as a custom token to your metamask wallet \(see [an example of how to add custom tokens here](https://blog.nftx.org/how-do-i-view-my-nftx-tokens-in-metamask/#how-can-you-see-your-nftx-tokens-inside-of-metamask)\)
+1. You need to add the vault token as a custom token to your metamask wallet (see [an example of how to add custom tokens here](https://blog.nftx.org/how-do-i-view-my-nftx-tokens-in-metamask/#how-can-you-see-your-nftx-tokens-inside-of-metamask))
 2. The NFT you were minting required "Request Mint" and needs to be approved.
 
 The second situation is the most common, so let's look at that in more detail.
@@ -113,7 +113,7 @@ The majority of the vaults on NFTX are floor vaults which will accept any NFT fr
 
 Other vaults are set up to only allow specific NFTs from the contract. These include vaults like Punk-Female which only accept Female Punks, or Punk-Zombie which only accept Zombie Punks. This eligibility is controlled through a list of permitted ID's assigned to vaults that require these limitations.
 
-For NFT projects like CryptoKitties and Avastars it is not possible to get a full list of eligible IDs because there's either tens of thousands of ID's \(Kitties\) or there are still new NFTs being created \(Avastars\). When you mint into the following vaults and the ID hasn't already been approved it will need to be manually checked before being accepted:
+For NFT projects like CryptoKitties and Avastars it is not possible to get a full list of eligible IDs because there's either tens of thousands of ID's (Kitties) or there are still new NFTs being created (Avastars). When you mint into the following vaults and the ID hasn't already been approved it will need to be manually checked before being accepted:
 
 * Kitty Gen 0
 * Kitty Gen 0 Fast
@@ -138,21 +138,19 @@ The request mint is not going to be required once the vaults move across to NFTX
 
 If you have request to mint an NFT into a vault that requires a review you can cancel that request at any time before it is accepted using the `revokeMintRequests` function.
 
-1. [ ] Visit [https://classic.nftx.org/\#/backend](https://classic.nftx.org/#/backend)
-2. [ ] Select "Connect Accout" and connect using the wallet you used to mint the NFT
+* [ ] Visit [https://classic.nftx.org/#/backend](https://classic.nftx.org/#/backend)
+* [ ] Select "Connect Accout" and connect using the wallet you used to mint the NFT
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](<../.gitbook/assets/image (1).png>)
 
 * [ ] Choose the drop down on the right hand side of the NFTX Contract and choose `Write`
 
 From there a side bar will open, and you can scroll down to `revokeMintRequests`
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](<../.gitbook/assets/image (2).png>)
 
 To find the `vaultId` you can [review the list of current vaults and holdings](https://charts.mongodb.com/charts-nftx-funds-kgodb/public/dashboards/609e6965-a20a-4918-8849-9c686f6d2621). The `nftIDs` are the IDs of the NFT you would like to get back from escrow. For example:
 
-* **VaultId** `11` \(Avastar-Rank-30\)
+* **VaultId** `11` (Avastar-Rank-30)
 * **VauldIds** `[1234, 9786, 19111]`
-
-
 
